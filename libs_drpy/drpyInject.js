@@ -1,9 +1,8 @@
 import axios, {toFormData} from 'axios';
 import axiosX from './axios.min.js';
+import {createHttpsInstance, httpsAgent} from './fetchAxios.js';
 import crypto from 'crypto';
-import http from "http";
-import https from 'https';
-import fs from 'node:fs';
+import fs from 'fs';
 import qs from 'qs';
 import _ from './underscore-esm.min.js'
 // import _ from './underscore-esm.js'
@@ -17,6 +16,7 @@ import {ENV} from '../utils/env.js';
 
 // import {batchFetch1, batchFetch2, batchFetch3} from './drpyBatchFetch.js';
 import {batchFetch3} from './hikerBatchFetch.js';
+import createAxiosInstance from "../utils/createAxiosAgent.js";
 
 globalThis.batchFetch = batchFetch3;
 globalThis.axios = axios;
@@ -24,27 +24,37 @@ globalThis.axiosX = axiosX;
 globalThis.hlsParser = hlsParser;
 globalThis.qs = qs;
 
-const AgentOption = {keepAlive: true, maxSockets: 64, timeout: 30000}; // 最大连接数64,30秒定期清理空闲连接
-const httpAgent = new http.Agent(AgentOption);
-let httpsAgent = new https.Agent({rejectUnauthorized: false, ...AgentOption});
-
+const maxSockets = 64;
+const _axios = createAxiosInstance({maxSockets: maxSockets});
+let $axios;
+const dsReqLib = Number(process.env.DS_REQ_LIB) || 0;
+console.log('[drpyInject]DS/CAT源底层req实现 DS_REQ_LIB (0 fetch 1 axios):', dsReqLib);
 // 配置 axios 使用代理
-const _axios = axios.create({
-    httpAgent,  // 用于 HTTP 请求的代理
-    httpsAgent, // 用于 HTTPS 请求的代理
-});
 
-// 请求拦截器
-_axios.interceptors.request.use((config) => {
+if (dsReqLib === 0) {
+    $axios = createHttpsInstance();
+    // 请求拦截器
+    $axios.useRequestInterceptor(RequestInterceptor, (error) => {
+        return Promise.reject(error);
+    });
+} else {
+    $axios = _axios;
+    // 请求拦截器
+    $axios.interceptors.request.use(RequestInterceptor, (error) => {
+        return Promise.reject(error);
+    });
+}
+
+function RequestInterceptor(config) {
     // 生成 curl 命令
+    const show_curl = Number(ENV.get('show_curl', '0')) === 1;
+    // console.log(`拦截器 show_curl: ${show_curl}`);
     const curlCommand = generateCurlCommand(config);
-    if (ENV.get('show_curl', '0') === '1') {
+    if (show_curl) {
         console.log(`Generated cURL command:\n${curlCommand}`);
     }
     return config;
-}, (error) => {
-    return Promise.reject(error);
-});
+}
 
 /**
  * 生成 curl 命令
@@ -167,7 +177,7 @@ async function request(url, opt = {}) {
     }
     try {
         // 发送请求
-        const resp = await _axios({
+        const resp = await $axios({
             url: typeof url === 'object' ? url.url : url,
             method,
             headers,
@@ -216,7 +226,7 @@ async function request(url, opt = {}) {
         return {code: resp.status, headers: resHeader, content: responseData};
     } catch (error) {
         const {response: resp} = error;
-        console.error(`Request error: ${error.message}`);
+        console.error(`[request]Request error: ${error.message}`);
         let responseData = '';
         // console.log('responseData:',responseData);
         try {
@@ -228,7 +238,7 @@ async function request(url, opt = {}) {
                 responseData = buffer.toString('utf-8');
             }
         } catch (e) {
-            console.error(`get error response Text failed: ${e.message}`);
+            console.error(`[request]get error response Text failed: ${e.message}`);
         }
         // console.log('responseData:',responseData);
         return {
@@ -296,7 +306,7 @@ function aes(mode, encrypt, input, inBase64, key, iv, outBase64) {
         const outBuf = Buffer.concat([cipher.update(inBuf), cipher.final()]);
         return outBase64 ? base64EncodeBuf(outBuf) : outBuf.toString('utf8');
     } catch (error) {
-        console.log(error);
+        console.log('[aes]', error);
     }
     return '';
 }
@@ -323,7 +333,7 @@ function des(mode, encrypt, input, inBase64, key, iv, outBase64) {
         const outBuf = Buffer.concat([cipher.update(inBuf), cipher.final()]);
         return outBase64 ? base64EncodeBuf(outBuf) : outBuf.toString('utf8');
     } catch (error) {
-        console.log(error);
+        console.log('[des]', error);
     }
     return '';
 }
@@ -377,7 +387,7 @@ function rsa(mode, pub, encrypt, input, inBase64, key, outBase64) {
         }
         return outBase64 ? base64EncodeBuf(outBuf) : outBuf.toString('utf8');
     } catch (error) {
-        console.log(error);
+        console.log('[rsa]', error);
     }
     return '';
 }

@@ -1,87 +1,91 @@
 # drpyS(drpy-node)
 
 nodejs作为服务端的drpy实现。全面升级异步写法  
-~~积极开发中，每日一更~~，当前进度 `49%`  
-找工作中，随缘更新
+~~积极开发中，每日一更~~，当前进度 `99.9999%`  
+~~找工作中，随缘更新~~  
+上班当牛马，下班要带娃，阶段性佛系趁娃睡觉熬夜更新
 
-* [本地配置接口-动态本地](/config?pwd=)
-* [本地配置接口-动态外网/局域网](/config/1?pwd=)
-* [其他配置接口-订阅过滤](/docs/sub.md)
-* [代码加解密工具](/admin/encoder)
-* [V我50支付凭证生成器](/authcoder?len=10&number=1)
-* [接口压测教程](/docs/httpTest.md)
-* [央视点播解析工具](/proxy/央视大全[官]/index.html)
-* [cookie管理插件](/apps/cookie-butler/index.html)
-* [本站防止爬虫协议](/robots.txt)
+### 常用超链接
+
 * [本项目主页-免翻](https://git-proxy.playdreamer.cn/hjdhnx/drpy-node)
-* [DS源适配猫影视](https://github.com/hjdhnx/CatPawOpen/tree/ds-cat)
+* [接口文档](docs/apidoc.md) | [接口列表如定时任务](docs/apiList.md) | [小猫影视-待对接T4](https://github.com/waifu-project/movie/pull/135)
+* [代码质量评估工具说明](docs/codeCheck.md) | [DS项目代码评估报告](docs/codeCheckReport.md)
+* [本地配置接口-动态本地](/config?healthy=1&pwd=$pwd)
+* [本地配置接口-动态外网/局域网](/config/1?healthy=1&pwd=$pwd)
+* [其他配置接口-订阅过滤](/docs/sub.md)
+* [python环境](/docs/pyenv.md) | [DS项目环境变量说明](/docs/envdoc.md)
+* [猫源调试教程](/docs/catDebug.md)
+* [接口压测教程](/docs/httpTest.md)
+* [AI编程工具 trae](https://www.trae.ai/account-setting#subscription) | 邮编ZIP输入: 518000
+* [免费AI-360纳米](https://bot.n.cn/)|[免费AI-当贝AI](https://ai.dangbei.com/chat)
+* [本站防止爬虫协议](/robots.txt)
+* [油猴脚本-反切屏检测](/public/monkey/check_screen_leave.user.js)
+* [油猴脚本-通用网页脚本框架](/public/monkey/clipboard-sender.user.js)
+* [油猴脚本-通用网页脚本框架自定义指令集](/public/monkey/自定义指令集-道长.json)
+
+-------------------------
+
+### 插件应用列表
+
+* [cookie管理插件](/apps/cookie-butler/index.html)
+* [cron表达式插件](/apps/cron-generator/index.html)
+* [剪切板智能推送插件](/apps/clipboard-pusher/index.html)
+* [DS源可用性检测插件](/apps/source-checker/index.html)
+* [DS解析检测插件](/apps/vip-parser/index.html)
+* [DS源配置编辑插件](/apps/source-editor/index.html)
+* [DS内存图片管理器插件](/apps/image-manager/index.html)
+* [DS时钟插件-白色时钟](/apps/clock/white_clock.html)|[日历时钟](/apps/clock/index.html)
+* [DS庆祝页面-完结撒花](/apps/happy/index.html)
+* [代码加解密工具](/admin/encoder)
+* [央视点播解析工具](/proxy/央视大全[官]/index.html)
 * [在线猫ds源主页](/cat/index.html)
+* [V我50支付凭证生成器](/authcoder?len=10&number=1)
+
+### 同作者项目
+
+* [DS源适配猫影视](https://github.com/hjdhnx/CatPawOpen/tree/ds-cat)
+* [DS插件项目-golang](https://github.com/hjdhnx/drpy-plugin)
+* [drpy2打包项目](https://github.com/hjdhnx/drpy-webpack)
 
 ## 更新记录
 
-### 20250310
+### 20250919
 
-更新至V1.1.23
+更新至V1.3.4
 
-### 20250227
+### 20250918
 
-更新至V1.1.22
+更新至V1.3.3
 
-### 20250226
+### 20250916
 
-更新至V1.1.21
+更新至V1.3.2
 
-### 20250225
+### 20250914
 
-更新至V1.1.20
+更新至V1.3.1
 
-### 20250224
+框架已完成，预留0.1%进度修bug
 
-更新至V1.1.19
+### 20250913
 
-### 20250211
+更新至V1.2.30
 
-更新至V1.1.18
+### 20250911
 
-### 20250206
+更新至V1.2.29
+完美dr2模板源适配
 
-更新至V1.1.17
+### 20250910
 
-### 20250123
-
-更新至V1.1.16
-
-### 20250122
-
-更新至V1.1.15
-
-1. ds源和dr2源增加装逼壳图标支持
-
-### 20250121
-
-更新至V1.1.14
-
-1. 猫源ds在线配置支持接口密码
-2. 新增源
-3. 磁盘加速
-
-### 20250120
-
-更新至V1.1.13
-
-1. 完善猫在线配置
-
-### 20250117
-
-本次未更新版本
-
-1. 新开项目，使ds源适用于新版猫影视 [猫爪catpwd](https://github.com/CatPawApp/CatPawOpen)
+更新至V1.2.28
 
 [点此查看完整更新记录](docs/updateRecord.md)
 
 **注意事项**
 
-总是有人遇到各种奇葩问题，像什么没弹幕，访问/config/1服务马上崩溃等等，能自行解决最好，解决不了我建议你使用下方安装教程 `3.道长腾讯轻量云服务器安装方案`
+总是有人遇到各种奇葩问题，像什么没弹幕，访问/config/1服务马上崩溃等等，能自行解决最好，解决不了我建议你使用下方安装教程
+`3.道长腾讯轻量云服务器安装方案`
 跟我一样还有问题那就不可能了，我能用你即能用
 
 ## 基础框架
@@ -108,10 +112,13 @@ todo:
 * [puppeteer使用教程](docs/pupInstall.md)
 * [drpyS源属性说明](docs/ruleAttr.md)
 * [drpy2写源简述](docs/ruleDesc.md)
+* [关姐算法搭建说明](docs/suanfa.md)
 
 ## 问题说明
 
 1. windows上直接运行index.js可能会发现运行过程中的日志打印出中文乱码。建议通过yarn dev运行或者在package.json里点击dev脚本运行
+2. `pinyin` 库依赖的 `nodejieba` 跑路了现在无法完成安装
+3. `new Promise` 里发生的错误无法被外部try catch 导致程序崩溃，如 `番薯动漫.js` 里的写法
 
 ## 安装说明
 
@@ -123,11 +130,11 @@ todo:
 
 * 终端执行
 
-`bash -c "$(curl -fsSLk https://git-proxy.playdreamer.cn/hjdhnx/drpy-node/raw/refs/heads/main/autorun.sh)"`
+`bash -c "$(curl -fsSLk https://git-proxy.playdreamer.cn/hjdhnx/drpy-node/raw/refs/heads/main/install/autorun.sh)"`
 
 * 添加定时方案
 
-`echo "30 7 * * * cd /patch && bash -c \"\$(curl -fsSLk https://git-proxy.playdreamer.cn/hjdhnx/drpy-node/raw/refs/heads/main/autorun.sh)\" >> /patch/drpyslog.log 2>&1" | crontab -`
+`echo "30 7 * * * cd /patch && bash -c \"\$(curl -fsSLk https://git-proxy.playdreamer.cn/hjdhnx/drpy-node/raw/refs/heads/main/install/autorun.sh)\" >> /patch/drpyslog.log 2>&1" | crontab -`
 
 或者下载脚本到本地后
 
@@ -170,7 +177,8 @@ pm2 restart drpys
 * [猫影视git文件加速](https://github.catvod.com/)
 * [猫影视多功能主页](https://catvod.com/)
 * [ZY写源教学](https://zy.catni.cn/editSource/edit-grammar.html)
-* [源动力](https://sourcepower.top/index)
+* [源动力-新](https://tvshare.cn/)
+* [源动力-老](https://sourcepower.top/index)
 
 ## AI接入
 

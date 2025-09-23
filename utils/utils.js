@@ -224,9 +224,37 @@ export function naturalSortAny(arr, key, customOrder = []) {
     });
 }
 
+/**
+ * 构造Basic验证请求头
+ * @param {string} username - 用户名，如果不提供则从环境变量API_AUTH_NAME获取
+ * @param {string} password - 密码，如果不提供则从环境变量API_AUTH_CODE获取
+ * @returns {Object} - 包含Authorization头的对象
+ */
+export function createBasicAuthHeaders(username, password) {
+    const authName = username || process.env.API_AUTH_NAME;
+    const authCode = password || process.env.API_AUTH_CODE;
+
+    // if (!authName || !authCode) {
+    //     throw new Error('Basic认证信息不完整，请检查用户名和密码或环境变量API_AUTH_NAME和API_AUTH_CODE');
+    // }
+
+    const credentials = Buffer.from(`${authName}:${authCode}`).toString('base64');
+
+    return {
+        'Authorization': `Basic ${credentials}`
+    };
+}
+
 export const $js = {
     toString(func) {
         let strfun = func.toString();
-        return strfun.replace(/^\(\)(\s+)?=>(\s+)?\{/, "js:").replace(/\}$/, '');
+        // 处理 async () => { ... } 形式
+        // 匹配: async () => { 或 async() => { 或 () => { 
+        strfun = strfun.replace(/^(async\s*)?\(\)(\s+)?=>(\s+)?\{/, "js:");
+        // 移除末尾的 }
+        strfun = strfun.replace(/\}$/, '');
+        // 去除开头和结尾的多余空白字符，但保留内部格式
+        strfun = strfun.replace(/^js:\s*/, 'js:').replace(/\s*$/, '');
+        return strfun;
     }
 };
