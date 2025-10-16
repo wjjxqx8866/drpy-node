@@ -8,6 +8,11 @@ import './_dist/node-rsa.js';
 import './_dist/gb18030.js';
 import './_dist/json5.js';
 
+// 导入RSA，这样文件内部也可以使用
+import {RSA} from './drpyRsa.js';
+// 重新导出RSA供其他模块使用
+export {RSA};
+
 // User Agent 常量
 export const MOBILE_UA = 'Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.91 Mobile Safari/537.36';
 export const PC_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36';
@@ -278,6 +283,7 @@ export const decodeStr = (input, encoding = 'gbk') => {
  */
 export const getCryptoJS = () => 'log("CryptoJS已装载");';
 
+/*
 // 封装的RSA加解密类
 export const RSA = {
     decode(data, key, option = {}) {
@@ -316,6 +322,7 @@ export const RSA = {
         return this.fixKey(key, prefix, endfix);
     }
 };
+*/
 
 /**
  * 智能对比去除广告。支持嵌套m3u8。只需要传入播放地址
@@ -954,6 +961,102 @@ export async function processImage(vod_pic, moduleObject, injectVars = null) {
     return vod_pic;
 }
 
+// 格式化时间为SRT格式 HH:MM:SS,mmm
+function formatSrtTime(milliseconds) {
+    const hours = Math.floor(milliseconds / 3600000);
+    const minutes = Math.floor((milliseconds % 3600000) / 60000);
+    const seconds = Math.floor((milliseconds % 60000) / 1000);
+    const ms = milliseconds % 1000;
+
+    return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')},${ms.toString().padStart(3, '0')}`;
+}
+
+// LRC格式歌词转SRT字幕格式
+export function lrcToSrt(lrcContent) {
+    if (!lrcContent || typeof lrcContent !== 'string') {
+        return '';
+    }
+
+    // 解析LRC歌词行
+    const lines = lrcContent.split('\n');
+    const timeLines = [];
+
+    for (const line of lines) {
+        const trimmedLine = line.trim();
+        if (!trimmedLine) continue;
+
+        // 匹配时间标签格式 [mm:ss.xx] 或 [mm:ss]
+        const timeMatch = trimmedLine.match(/^\[(\d{1,2}):(\d{2})(?:\.(\d{1,3}))?\](.*)$/);
+        if (timeMatch) {
+            const minutes = parseInt(timeMatch[1]);
+            const seconds = parseInt(timeMatch[2]);
+            const milliseconds = timeMatch[3] ? parseInt(timeMatch[3].padEnd(3, '0')) : 0;
+            const text = timeMatch[4].trim();
+
+            // 计算总毫秒数
+            const totalMs = minutes * 60 * 1000 + seconds * 1000 + milliseconds;
+
+            if (text) { // 只添加有文本内容的行
+                timeLines.push({
+                    time: totalMs,
+                    text: text
+                });
+            }
+        }
+    }
+
+    // 按时间排序
+    timeLines.sort((a, b) => a.time - b.time);
+
+    if (timeLines.length === 0) {
+        return '';
+    }
+
+    // 转换为SRT格式
+    let srtContent = '';
+    for (let i = 0; i < timeLines.length; i++) {
+        const currentLine = timeLines[i];
+        const nextLine = timeLines[i + 1];
+
+        // 计算结束时间（下一行的开始时间，或当前时间+3秒）
+        const endTime = nextLine ? nextLine.time : currentLine.time + 3000;
+
+        // 格式化时间为SRT格式 HH:MM:SS,mmm
+        const startTimeStr = formatSrtTime(currentLine.time);
+        const endTimeStr = formatSrtTime(endTime);
+
+        // 添加SRT条目
+        srtContent += `${i + 1}\n`;
+        srtContent += `${startTimeStr} --> ${endTimeStr}\n`;
+        srtContent += `${currentLine.text}\n\n`;
+    }
+
+    return srtContent.trim();
+}
+
+/**
+ * 字符串正则表达式提取函数
+ * @param {string} content - 要搜索的源字符串
+ * @param {string} pattern - 正则表达式模式
+ * @param {number} groupIndex - 捕获组索引，0表示整个匹配，1表示第一个捕获组，以此类推
+ * @returns {string} 提取到的字符串，如果没有匹配则返回空字符串
+ */
+export function strExtract(content, pattern, groupIndex = 0) {
+    try {
+        const regex = new RegExp(pattern);
+        const match = content.match(regex);
+
+        if (match && match[groupIndex] !== undefined) {
+            return match[groupIndex];
+        }
+
+        return '';
+    } catch (error) {
+        console.error('strExtract error:', error);
+        return '';
+    }
+}
+
 export const pako = globalThis.pako;
 export const gbkTool = globalThis.gbkTool;
 export const JSEncrypt = globalThis.JSEncrypt;
@@ -971,3 +1074,5 @@ globalThis.base64Decode = base64Decode;
 globalThis.gzip = gzip;
 globalThis.ungzip = ungzip;
 globalThis.parseQueryString = parseQueryString;
+globalThis.lrcToSrt = lrcToSrt;
+globalThis.strExtract = strExtract;

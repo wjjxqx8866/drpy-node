@@ -27,6 +27,10 @@
 // globalThis.JSONbig = JSONbig; // 必须在drpyS.js里引入
 
 // 网络请求工具 - 提供HTTP请求功能
+import {getFirstLetter} from "../utils/pinyin-tool.js";
+import {createFTPClient} from "../utils/ftp.js";
+import {toBeijingTime} from "../utils/datetime-format.js";
+
 globalThis.reqs = reqs;
 
 // 加密工具库 - 提供各种加密算法和数字签名功能
@@ -67,6 +71,10 @@ globalThis.Baidu = Baidu;
 
 // 百度网盘接口2 - 百度网盘的另一个实现版本
 globalThis.Baidu2 = Baidu2;
+// webdav
+globalThis.createWebDAVClient = createWebDAVClient;
+// ftp
+globalThis.createFTPClient = createFTPClient;
 
 // AI服务接口 - 提供人工智能相关服务
 globalThis.AIS = AIS;
@@ -90,10 +98,14 @@ globalThis.WebSocketServer = WebSocketServer;
 globalThis.setResult = setResult;
 
 // ds沙箱文件读写函数
-globalThis.pathLib = pathLib;
+// globalThis.pathLib = pathLib;
 
 // UA
 globalThis.MOBILE_UA = MOBILE_UA;
 globalThis.PC_UA = PC_UA;
 // 其他常用
 globalThis.$js = $js;
+globalThis.getFirstLetter = getFirstLetter;
+globalThis.get_size = get_size;
+globalThis.urljoin = urljoin;
+globalThis.toBeijingTime = toBeijingTime;

@@ -10,9 +10,9 @@
     actions: [
       {
         name: '推送',
-        action: '{\'actionId\':\'推送视频播放\',\'id\':\'push\',\'type\':\'input\',\'title\':\'推送视频地址进行播放\',\'tip\':\'支持网盘、官链、直链、待嗅探链接\',\'value\':\'\',\'msg\':\'请输入待推送的视频地址\',\'imageUrl\':\'https://github.catvod.com/https://raw.githubusercontent.com/hjdhnx/drpy-node/refs/heads/main/public/images/lives.jpg\',\'imageHeight\':200,\'imageType\':\'card_pic_3\',\'keep\':true,\'button\':4,\'width\':640,\'selectData\':\'123:=https://www.123684.com/s/oec7Vv-DggWh?ZY4K,腾讯:=https://v.qq.com/x/cover/mzc00200vkqr54u/u4100l66fas.html,爱奇艺:=http://www.iqiyi.com/v_1b0tk1b8tl8.html,夸克:=https://pan.quark.cn/s/6c8158e258f3,UC:=https://drive.uc.cn/s/59023f57d3ce4?public=1,阿里:=https://www.alipan.com/s/vgXMcowK8pQ,天翼:=https://cloud.189.cn/web/share?code=INJbU3NbqyUj,移动1:=https://yun.139.com/shareweb/#/w/i/0i5CLQ7BpV7Ai,移动2:=https://caiyun.139.com/m/i?2jexC1gcjeN7q,移动3:=https://yun.139.com/shareweb/#/w/i/2i2MoE9ZHn9p1,直链1:=https://vdse.bdstatic.com//628ca08719cef5987ea2ae3c6f0d2386.mp4,嗅探1:=https://www.6080kk.cc/haokanplay/178120-1-1.html,嗅探2:=https://www.hahads.com/play/537106-3-1.html,多集:=https://v.qq.com/x/cover/m441e3rjq9kwpsc/m00253deqqo.html#https://pan.quark.cn/s/6c8158e258f3,海阔二级单线路:=H4sIAAAAAAAAA52Uy27TQBSGXwUZlsT2GefadZ+AN3ATk7qKL7guUoKQXAQFeoEG6oKaVBUFlBZFbdQ0TXAIeRjPTJwVr8AYCsNyijQbnzPfPz72p3kk6WXf8aQFibzszFsb0l2p7Ni+YfusFAe78/W383C6eC8OmnEQsEVal7NxiEebeLQ/i75oKvl6iccfZwdPWY0OhnR8+uPbdnJ2kUx7ONrAo094skMOD+ZHHbL1nIbHbCf53KdBh7RPaP+Yfm8n5x+S3gWr016TtCb03VUa2Brh6A0Nm8ngVRysk7Nt+mI3aYfk9fs0YfMERxENn+FoKw6e3KJ7V8lgyF6+YnrG9UAPTLu6ZNgrpu4ZNlJRlrXve47FWrNomgzPEdJYydYtIx1/Z0rbXTzps9zrza5ZZo1l33dXFxSFPWlyvdGom5ZeNVblsmMpa27N0SvKQ6eipEwGIINAgYKGIA+lYg7kFbfKkta8Wnpqt6sC+8Z3/kQuyXm1qDZ+RbEMt6bXFVBBQ6UMy5KXfat2O4WQMIQ4pAlDGoeywlCWQzlhKMehvDCU51BBGCpwqCgMFTlUEoZKfyFQxX+uyqkbKMGdAHEnAP0Xxa0AcZWAawHiLgH3AsRlAi4GiNsE3AwQ1wm4GiDuE/zjhrhQiLuBxI1C3A0kbhTibqAb3DK/3ZAe/wSSQMKkPgYAAA==\'}',
+        action: '{\'actionId\':\'推送视频播放\',\'id\':\'push\',\'type\':\'input\',\'title\':\'推送视频地址进行播放\',\'tip\':\'支持网盘、官链、直链、待嗅探链接\',\'value\':\'\',\'msg\':\'请输入待推送的视频地址\',\'imageUrl\':\'https://youke1.picui.cn/s1/2025/10/10/68e7ec0390944.jpg\',\'imageHeight\':200,\'imageType\':\'card_pic_3\',\'keep\':true,\'button\':4,\'width\':640,\'selectData\':\'123:=https://www.123684.com/s/oec7Vv-DggWh?ZY4K,腾讯:=https://v.qq.com/x/cover/mzc00200vkqr54u/u4100l66fas.html,爱奇艺:=http://www.iqiyi.com/v_1b0tk1b8tl8.html,夸克:=https://pan.quark.cn/s/6c8158e258f3,UC:=https://drive.uc.cn/s/59023f57d3ce4?public=1,阿里:=https://www.alipan.com/s/vgXMcowK8pQ,天翼:=https://cloud.189.cn/web/share?code=INJbU3NbqyUj,移动1:=https://yun.139.com/shareweb/#/w/i/0i5CLQ7BpV7Ai,移动2:=https://caiyun.139.com/m/i?2jexC1gcjeN7q,移动3:=https://yun.139.com/shareweb/#/w/i/2i2MoE9ZHn9p1,直链1:=https://vdse.bdstatic.com//628ca08719cef5987ea2ae3c6f0d2386.mp4,嗅探1:=https://www.6080kk.cc/haokanplay/178120-1-1.html,嗅探2:=https://www.hahads.com/play/537106-3-1.html,多集:=https://v.qq.com/x/cover/m441e3rjq9kwpsc/m00253deqqo.html#https://pan.quark.cn/s/6c8158e258f3,海阔二级单线路:=H4sIAAAAAAAAA52Uy27TQBSGXwUZlsT2GefadZ+AN3ATk7qKL7guUoKQXAQFeoEG6oKaVBUFlBZFbdQ0TXAIeRjPTJwVr8AYCsNyijQbnzPfPz72p3kk6WXf8aQFibzszFsb0l2p7Ni+YfusFAe78/W383C6eC8OmnEQsEVal7NxiEebeLQ/i75oKvl6iccfZwdPWY0OhnR8+uPbdnJ2kUx7ONrAo094skMOD+ZHHbL1nIbHbCf53KdBh7RPaP+Yfm8n5x+S3gWr016TtCb03VUa2Brh6A0Nm8ngVRysk7Nt+mI3aYfk9fs0YfMERxENn+FoKw6e3KJ7V8lgyF6+YnrG9UAPTLu6ZNgrpu4ZNlJRlrXve47FWrNomgzPEdJYydYtIx1/Z0rbXTzps9zrza5ZZo1l33dXFxSFPWlyvdGom5ZeNVblsmMpa27N0SvKQ6eipEwGIINAgYKGIA+lYg7kFbfKkta8Wnpqt6sC+8Z3/kQuyXm1qDZ+RbEMt6bXFVBBQ6UMy5KXfat2O4WQMIQ4pAlDGoeywlCWQzlhKMehvDCU51BBGCpwqCgMFTlUEoZKfyFQxX+uyqkbKMGdAHEnAP0Xxa0AcZWAawHiLgH3AsRlAi4GiNsE3AwQ1wm4GiDuE/zjhrhQiLuBxI1C3A0kbhTibqAb3DK/3ZAe/wSSQMKkPgYAAA==\'}',
         vod_name: '推送视频播放',
-        vod_pic: 'https://github.catvod.com/https://raw.githubusercontent.com/hjdhnx/drpy-node/refs/heads/main/public/images/lives.jpg',
+        vod_pic: 'https://youke1.picui.cn/s1/2025/10/10/68e7ec0390944.jpg',
         vod_tag: 'action'
       },
       {
@@ -88,6 +88,11 @@ let quick_data1 = {
     '十日终焉': 'https://fanqienovel.com/page/7143038691944959011',
     '斩神': 'https://fanqienovel.com/page/6982529841564224526',
 };
+let quick_data1Q = {
+    '掌门怀孕': 'https://www.qimao.com/shuku/2014393/',
+    '史上最强师父': 'https://www.qimao.com/shuku/1817221/',
+    '被逐出宗门后，美人师尊跪求我原谅': 'https://www.qimao.com/shuku/1886669/',
+};
 let quick_data2 = {
     '推送': 'push',
     '夸克': 'quark',
@@ -99,24 +104,18 @@ let quick_data2 = {
     '测试': 'test',
 };
 
-let selectDataList = [];
-let selectDataList1 = [];
-let selectDataList2 = [];
+let selectData = renderSelect(quick_data);
+let selectData1 = renderSelect(quick_data1);
+let selectDataList1Q = renderSelect(quick_data1Q);
+let selectData2 = renderSelect(quick_data2);
 
-for (let key of Object.keys(quick_data)) {
-    selectDataList.push(`${key}:=${quick_data[key]}`);
+function renderSelect(quick_data1) {
+    let selectDataList1 = [];
+    for (let key of Object.keys(quick_data1)) {
+        selectDataList1.push(`${key}:=${quick_data1[key]}`);
+    }
+    return selectDataList1.join(',')
 }
-let selectData = selectDataList.join(',');
-
-for (let key of Object.keys(quick_data1)) {
-    selectDataList1.push(`${key}:=${quick_data1[key]}`);
-}
-let selectData1 = selectDataList1.join(',');
-
-for (let key of Object.keys(quick_data2)) {
-    selectDataList2.push(`${key}:=${quick_data2[key]}`);
-}
-let selectData2 = selectDataList2.join(',');
 
 var rule = {
     类型: '设置',
@@ -273,7 +272,8 @@ var rule = {
                         imageHeight: 200,
                         imageType: 'card_pic_3',
                         keep: true,
-                        button: 4,
+                        // button: 3,
+                        button: 4, //故意传4,壳子应该默认视为3
                         width: 640,
                         // selectData: '腾讯:=https://v.qq.com/x/cover/m441e3rjq9kwpsc/l0045w5hv1k.html,2:=bb输入默认值bbbbb,3:=c输入默认值ddd,4:=输入默认值,5:=111,6:=22222,7:=HOHO,HELLO,world'
                         selectData: selectData
@@ -299,6 +299,26 @@ var rule = {
                         selectData: selectData1
                     }),
                     vod_name: '推送番茄小说',
+                    vod_pic: images.read,
+                    vod_tag: 'action'
+                },);
+
+                d.push({
+                    vod_id: JSON.stringify({
+                        actionId: '推送七猫小说',
+                        id: 'push',
+                        type: 'input',
+                        title: '推送七猫小说网页目录链接进行解析',
+                        tip: '支持七猫小说网页版链接',
+                        value: 'https://www.qimao.com/shuku/2014393/',
+                        msg: '请输入待推送的七猫小说网页版链接',
+                        imageUrl: images.read,
+                        imageHeight: 200,
+                        imageType: 'card_pic_3',
+                        keep: false,
+                        selectData: selectDataList1Q
+                    }),
+                    vod_name: '推送七猫小说',
                     vod_pic: images.read,
                     vod_tag: 'action'
                 },);
@@ -434,6 +454,9 @@ var rule = {
             case 'videoParse':
                 d.push(genMultiInput('mg_hz', '设置芒果解析画质', '默认为4，可自行配置成其他值 (视频质量，9=4K, 4=1080p, 3=720p, 2=560p)', images.settings));
                 d.push(getInput('get_mg_hz', '查看芒果解析画质', images.settings));
+
+                d.push(genMultiInput('PROXY_AUTH', '设置代理播放授权', '默认为drpys，可自行配置成其他值', images.settings));
+                d.push(getInput('get_PROXY_AUTH', '查看代理播放授权', images.settings));
                 break;
         }
         return d
@@ -1219,6 +1242,21 @@ var rule = {
                 return '推送番茄小说发生错误：' + e.message;
             }
         }
+        if (action === '推送七猫小说') {
+            try {
+                const obj = JSON.parse(value);
+                return JSON.stringify({
+                    action: {
+                        actionId: '__detail__',
+                        skey: 'drpyS_七猫小说[书]',
+                        ids: obj.push,
+                    },
+                    toast: `开始解析小说:${obj.push}`
+                });
+            } catch (e) {
+                return '推送七猫小说发生错误：' + e.message;
+            }
+        }
         let cookie_sets = [
             'quark_cookie',
             'uc_cookie',
@@ -1251,6 +1289,7 @@ var rule = {
             'cat_sub_code',
             'must_sub_code',
             'mg_hz',
+            'PROXY_AUTH',
         ];
         let get_cookie_sets = [
             'get_quark_cookie',
@@ -1284,6 +1323,7 @@ var rule = {
             'get_cat_sub_code',
             'get_must_sub_code',
             'get_mg_hz',
+            'get_PROXY_AUTH',
         ];
         if (cookie_sets.includes(action) && value) {
             try {

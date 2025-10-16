@@ -3,7 +3,8 @@
  * 统一管理和注册所有控制器路由
  * 提供应用程序的所有API端点和功能模块
  */
-
+import formBody from '@fastify/formbody';
+import websocket from '@fastify/websocket';
 // 静态文件服务控制器
 import staticController from './static.js';
 // 文档服务控制器
@@ -36,6 +37,16 @@ import cronTaskerController from './cron-tasker.js';
 import sourceCheckerController from './source-checker.js';
 // 图片存储控制器
 import imageStoreController from './image-store.js';
+// WebDAV 代理控制器
+import webdavProxyController from './webdav-proxy.js';
+// FTP 代理控制器
+import ftpProxyController from './ftp-proxy.js';
+// 文件代理控制器
+import fileProxyController from './file-proxy.js';
+import m3u8ProxyController from './m3u8-proxy.js';
+import unifiedProxyController from './unified-proxy.js';
+// WebSocket控制器
+import websocketController from './websocket.js';
 
 /**
  * 注册所有路由控制器
@@ -44,6 +55,10 @@ import imageStoreController from './image-store.js';
  * @param {Object} options - 路由配置选项
  */
 export const registerRoutes = (fastify, options) => {
+    // 注册插件以支持 application/x-www-form-urlencoded
+    fastify.register(formBody);
+    // 注册WebSocket插件
+    fastify.register(websocket);
     // 注册静态文件服务路由
     fastify.register(staticController, options);
     // 注册文档服务路由
@@ -76,4 +91,15 @@ export const registerRoutes = (fastify, options) => {
     fastify.register(sourceCheckerController, options);
     // 注册图片存储路由
     fastify.register(imageStoreController, options);
+    // 注册 WebDAV 代理路由
+    fastify.register(webdavProxyController, options);
+    // 注册 FTP 代理路由
+    fastify.register(ftpProxyController, options);
+    // 注册文件代理路由
+    fastify.register(fileProxyController, options);
+    fastify.register(m3u8ProxyController, options);
+    // 注册统一代理路由
+    fastify.register(unifiedProxyController, options);
+    // 注册WebSocket路由
+    fastify.register(websocketController, options);
 };
