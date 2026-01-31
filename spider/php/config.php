@@ -42,7 +42,9 @@ foreach ($files as $file) {
     if (in_array($file, ['index.php', 'spider.php', 'example_t4.php', 'test_runner.php']) ||
         $file === $self ||
         strpos($file, '_') === 0 ||
-        fnmatch('config*.php', $file)) {
+        fnmatch('config*.php', $file) ||
+        stripos($file, 'test') !== false ||
+        stripos($file, 'bridge') !== false) {
         continue;
     }
 
@@ -71,6 +73,7 @@ foreach ($files as $file) {
 // 2. 尝试加载 index.json (同级) 或 ../drpy-node/index.json 或 ../../drpy-node/index.json
 // ==================
 $possiblePaths = [
+    $dir . '/config.json',
     $dir . '/index.json',
     $dir . '/../drpy-node/index.json',
     $dir . '/../../drpy-node/index.json'

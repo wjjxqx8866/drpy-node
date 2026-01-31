@@ -10,10 +10,12 @@
 })
 */
 
+
 var rule = {
     类型: '漫画',
     title: '番茄漫画',
-    host: 'https://qkfqapi.vv9v.cn',
+    // host: 'https://qkfqapi.vv9v.cn',
+    host: 'http://47.108.80.161:5005',
     homeUrl: '/api/discover/style?tab=漫画',
     url: 'fyclass',
     searchUrl: '/api/search?key=**&tab_type=8&offset=((fypage-1)*10)',
@@ -28,21 +30,22 @@ var rule = {
     limit: 10,
     class_parse: async function () {
         let {input} = this;
+        // log('[class_parse] input:', input);
         let html = await request(input);
         let data = html.parseX.data;
         let d = data.filter(item => item.url.trim()).map((it) => {
             return {
                 type_name: it.title,
-                type_id: it.url,
+                type_id: gzip(it.url),
             }
         });
         return {class: d}
     },
     lazy: async function () {
-        let {input, pdfa, pdfh} = this;
+        let {input, pdfa, pdfh, HOST} = this;
         let title = input.split('@')[1];
         input = input.split('@')[0];
-        let content_url = `https://qkfqapi.vv9v.cn/api/content?tab=漫画&item_id=${input}&show_html=0`; // 正文获取接口
+        let content_url = `${HOST}/api/content?tab=漫画&item_id=${input}&show_html=0`; // 正文获取接口
         let jsonStr = await request(content_url);
         let images = jsonStr.parseX.data.images;
         images = pdfa(images, 'img');
@@ -73,16 +76,20 @@ var rule = {
     推荐: async function () {
         let {HOST} = this;
         let url = HOST + '/api/discover?tab=漫画&type=7&gender=2&genre_type=110&page=1';
+        // log('[推荐]: url: ' + url);
         let html = await request(url);
         return this.parseList(html);
     },
     一级: async function (tid, pg, filter, extend) {
+        // log('[一级]: tid:', tid);
+        tid = ungzip(tid);
         input = jinja.render(tid, {page: pg});
+        // log('[一级]: input: ' + input);
         let html = await request(input);
         return this.parseList(html);
     },
     二级: async function () {
-        let {input, orId} = this;
+        let {input, orId, HOST} = this;
         let html = await request(input);
         let data = html.parseX.data.data;
         let VOD = {};
@@ -96,7 +103,7 @@ var rule = {
         VOD.vod_actor = '';
         VOD.vod_director = data.author;
         VOD.vod_play_from = '番茄漫画';
-        let jsonStr = await request(`https://qkfqapi.vv9v.cn/api/book?book_id=${orId}`);
+        let jsonStr = await request(`${HOST}/api/book?book_id=${orId}`);
         let book_info = jsonStr.parseX.data.data;
         let list = book_info.chapterListWithVolume.flat();
         let urls = [];
