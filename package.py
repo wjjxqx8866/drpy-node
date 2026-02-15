@@ -7,10 +7,9 @@ import re
 EXCLUDE_DIRS = ['.git', '.idea', 'soft', 'examples', 'apps/cat', 'plugins/pvideo', 'plugins/req-proxy',
                 'plugins/pup-sniffer', 'plugins/mediaProxy',
                 'pyTools', 'drop_code',
-                'jstest',
                 'local', 'logs',
                 '对话1.txt',
-                'vod_cache', 'data/mv']
+                'vod_cache', 'data/mv', 'drpy-node-mcp', 'drpy-node-bundle']
 
 # 要排除的文件列表
 EXCLUDE_FILES = ['config/env.json', '.env', '.claude', 'clipboard.txt', 'clipboard.txt.bak', '.plugins.js', 'yarn.lock',

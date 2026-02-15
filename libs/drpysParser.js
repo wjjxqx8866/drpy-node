@@ -61,6 +61,8 @@ class PageRequestCache {
             this.delete(key);
             console.log(`[PageRequestCache] 自动清理过期缓存: ${key}`);
         }, this.maxAge);
+        // 让定时器不阻止进程退出
+        if (timer.unref) timer.unref();
         this.timers.set(key, timer);
 
         console.log(`[PageRequestCache] 缓存已设置: ${key}, 当前缓存数量: ${this.cache.size}`);
@@ -424,7 +426,7 @@ export async function homeParse(rule) {
     return context;
 }
 
-export async function homeParseAfter(d, _type, hikerListCol, hikerClassListCol, hikerSkipEr, injectVars) {
+export async function homeParseAfter(d, _type, hikerListCol, hikerClassListCol, mergeList, injectVars) {
     if (!d) {
         d = {};
     }
@@ -436,8 +438,9 @@ export async function homeParseAfter(d, _type, hikerListCol, hikerClassListCol, 
         d.hikerClassListCol = hikerClassListCol;
     }
     // 跳过形式二级
-    if (hikerSkipEr) {
-        d.hikerSkipEr = hikerSkipEr;
+    if (mergeList) {
+        d.hikerSkipEr = mergeList;
+        d.mergeList = mergeList;
     }
     const {
         classes,
@@ -458,6 +461,14 @@ export async function homeParseAfter(d, _type, hikerListCol, hikerClassListCol, 
         d.type_flag = home_flag;
     }
     d.class = d.class.filter(it => !cate_exclude || !(new RegExp(cate_exclude).test(it.type_name)));
+    if (d.filters && Object.keys(d.filters).length === 1 && Object.keys(d.filters)[0] === '*') {
+        const common_filters = d.filters['*'];
+        const show_filters = {};
+        d.class.forEach(it => {
+            show_filters[it.type_id] = common_filters;
+        });
+        d.filters = show_filters;
+    }
     return d
 }
 
@@ -1489,7 +1500,7 @@ export async function invokeWithInjectVars(rule, method, injectVars, args) {
             }
             break;
         case 'class_parse':
-            result = await homeParseAfter(result, rule.类型, rule.hikerListCol, rule.hikerClassListCol, rule.hikerSkipEr, injectVars);
+            result = await homeParseAfter(result, rule.类型, rule.hikerListCol, rule.hikerClassListCol, rule.mergeList, injectVars);
             break;
         case '一级':
             result = await cateParseAfter(rule, result, args[1]);

@@ -416,9 +416,10 @@ export async function init(filePath, env = {}, refresh) {
         // ruleScript.runInContext(context);
         // const result = await ruleScript.runInContext(context);
         const executeWithTimeout = (script, context, timeout) => {
+            let timer;
             return Promise.race([
                 new Promise((_, reject) =>
-                    setTimeout(() => reject(new Error('Code execution timed out')), timeout)
+                    timer = setTimeout(() => reject(new Error('Code execution timed out')), timeout)
                 ),
                 new Promise((resolve, reject) => {
                     try {
@@ -434,7 +435,9 @@ export async function init(filePath, env = {}, refresh) {
                         reject(error);
                     }
                 })
-            ]);
+            ]).finally(() => {
+                if (timer) clearTimeout(timer);
+            });
         };
         const result = await executeWithTimeout(ruleScript, context, 30000);
         // log('result:', result);
@@ -708,7 +711,7 @@ async function invokeMethod(filePath, env, method, args = [], injectVars = {}) {
             result = await searchParseAfter(moduleObject, result, args[2]);
             log(`[invokeMethod js:] 搜索 ${injectVars.input} 执行完毕,结果为:`, JSON.stringify(result.list.slice(0, 2)));
         } else if (method === 'class_parse') {
-            result = await homeParseAfter(result, moduleObject.类型, moduleObject.hikerListCol, moduleObject.hikerClassListCol, moduleObject.hikerSkipEr, injectVars);
+            result = await homeParseAfter(result, moduleObject.类型, moduleObject.hikerListCol, moduleObject.hikerClassListCol, moduleObject.mergeList, injectVars);
         }
         return result;
     }
@@ -798,9 +801,9 @@ async function initParse(rule, env, vm, context) {
     if (!rule.hasOwnProperty('sniffer')) { // 默认关闭辅助嗅探
         rule.sniffer = false;
     }
-    // 二级为*自动添加hikerSkipEr属性允许跳过形式二级
-    if (!rule.hasOwnProperty('hikerSkipEr') && rule.二级 === '*') {
-        rule.hikerSkipEr = 1;
+    // 二级为*自动添加mergeList属性允许跳过形式二级
+    if (!rule.hasOwnProperty('mergeList') && rule.二级 === '*') {
+        rule.mergeList = 1;
     }
     rule.sniffer = rule.hasOwnProperty('sniffer') ? rule.sniffer : '';
     rule.sniffer = !!(rule.sniffer && rule.sniffer !== '0' && rule.sniffer !== 'false');
