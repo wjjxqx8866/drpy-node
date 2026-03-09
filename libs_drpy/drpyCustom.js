@@ -693,7 +693,7 @@ export const objectToQueryString = (obj) => {
 export async function getOriginalJs(js_code) {
     // let current_match = /var rule|[\u4E00-\u9FA5]+|function|let |var |const |\(|\)|"|'/;
     let current_match = /var rule|function|let |var |const|class Rule|async|this\./;
-    let current_match1 = /["{}]/;
+    let current_match1 = /["{}&]/;
     if (current_match.test(js_code)) {
         return js_code
     }
