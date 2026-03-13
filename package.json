@@ -80,6 +80,7 @@
     "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
+    "@anthropic-ai/mcpb": "^2.1.2",
     "rolldown": "^1.0.0-rc.4"
   }
 }
