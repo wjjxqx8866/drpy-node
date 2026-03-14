@@ -1,10 +1,10 @@
 {
-  "exportTime": "2026-03-14T04:55:39.367Z",
+  "exportTime": "2026-03-14T05:07:55.462Z",
   "configUrl": "http://localhost:5757/config/1?sub=all&healthy=0&pwd=dzyyds",
   "totalSources": 299,
   "summary": {
-    "success": 248,
-    "error": 51,
+    "success": 249,
+    "error": 50,
     "pending": 0
   },
   "sources": [
@@ -17,10 +17,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E8%AE%BE%E7%BD%AE%E4%B8%AD%E5%BF%83?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -32,10 +30,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%A4%AE%E8%A7%86%E5%A4%A7%E5%85%A8[%E5%AE%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -47,10 +43,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E8%85%BE%E4%BA%91%E9%A9%BE%E9%9B%BE[%E5%AE%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -62,10 +56,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%9B%B4%E6%92%AD%E8%BD%AC%E7%82%B9%E6%92%AD[%E5%90%88]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTz8ksSzVKzi3WA%2FEAuuBHLxUAAAA%3D"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -77,10 +69,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E4%BA%BA%E4%BA%BA%E5%BD%B1%E8%A7%86[%E4%BC%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -92,10 +82,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%9F%AD%E5%89%A7%E8%81%9A%E5%90%88[%E7%9F%AD]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -107,10 +95,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%9B%B4%E6%92%AD%E8%BD%AC%E7%82%B9%E6%92%AD[%E5%90%88]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTz8ksSzVKzi3WLU7WAwkAANFSeAoYAAAA"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -122,10 +108,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%89%A7%E6%B5%B7%E5%BD%B1%E8%A7%86[%E4%BC%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -137,10 +121,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%98%9F%E8%BE%B0%E5%BD%B1%E9%99%A2[%E4%BC%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -152,10 +134,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%9C%A8%E5%85%AE[%E4%BC%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -167,10 +147,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%AF%92%E8%88%8C%E5%BD%B1%E8%A7%86[%E4%BC%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -182,10 +160,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%B0%8F%E8%8B%B9%E6%9E%9C[%E4%BC%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -197,10 +173,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%A8%B1%E8%8A%B1%E5%8A%A8%E6%BC%AB[%E4%BC%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -212,10 +186,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%83%AD%E6%92%AD%E5%BD%B1%E8%A7%86[%E4%BC%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -227,10 +199,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%B3%A5%E8%A7%86%E9%A2%91[%E4%BC%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -242,10 +212,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%8B%AC%E6%92%AD%E5%BA%93[%E4%BC%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -257,10 +225,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%B2%A4%E6%BC%AB%E4%B9%8B%E5%AE%B6[%E4%BC%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -272,10 +238,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E8%80%90%E7%9C%8B%E7%82%B9%E6%92%AD[%E4%BC%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -287,10 +251,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%B0%B8%E4%B9%90%E8%A7%86%E9%A2%91[%E4%BC%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -302,10 +264,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%BA%BB%E9%9B%80%E8%A7%86%E9%A2%91[%E4%BC%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -317,10 +277,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%A3%9E%E5%BF%ABTV[%E4%BC%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -332,10 +290,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E8%BF%BD%E6%96%B0%E5%BD%B1%E8%A7%86[%E4%BC%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -347,10 +303,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%82%BB%E6%A0%B7[%E7%9B%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -362,10 +316,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%A4%B8%E5%85%8B%E7%A4%BE[%E7%9B%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -377,10 +329,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%9C%A8%E5%81%B6[%E7%9B%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -392,10 +342,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%A4%9A%E5%A4%9A[%E7%9B%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -407,10 +355,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Emby[%E4%BC%98]?pwd=dzyyds&extend=H4sIAAAAAAAAAx3NQU7DMBCF4bt4Tdyxx4k9uUHXSOxn7HFrQZOqcZEAcXcS9t97%2F4%2B5rls3s7n2ft%2Fm00lv8mWFl8vz1mxm82Kemz7OZScJNE0uS60OA0plEC1ZOaZEo5DbbV%2FfdTmogLiJWaOmAJgFiyOaSJLPSOB3WvSzZf0%2FVvYxc40D8eiG4IEGcTwOGINUhOxrLfsifzRd%2Bps%2BtrYekWDJgsWje%2BeLvrZvNTPC7x9iYTnC1AAAAA%3D%3D"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -422,10 +368,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%88%B1%E7%9C%8B%E8%B5%84%E6%BA%90[%E7%9B%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -437,10 +381,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%9F%AD%E5%89%A7%E7%BD%91[%E7%9B%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -452,10 +394,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%9B%98Ta[%E7%9B%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -467,10 +407,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%AB%8B%E6%92%AD[%E7%9B%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -482,10 +420,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%AC%A7%E5%93%A5[%E7%9B%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -497,11 +433,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%95%AA%E8%8C%84%E5%B0%8F%E8%AF%B4[%E4%B9%A6]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E7%95%AA%E8%8C%84%E5%B0%8F%E8%AF%B4[%E4%B9%A6]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -513,10 +446,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E8%8D%90%E7%89%87[%E4%BC%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -528,11 +459,8 @@
       "lang": "php",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%95%AA%E8%8C%84%E5%B0%8F%E8%AF%B4%20%E1%B5%88%E1%B6%BB[%E4%B9%A6]?do=php&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E7%95%AA%E8%8C%84%E5%B0%8F%E8%AF%B4%20%E1%B5%88%E1%B6%BB[%E4%B9%A6]?do=php&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -544,11 +472,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/TG%E9%A2%91%E9%81%93?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTD3F%2FuWjiy8bJL1t7n%2B9dpwcSAwBCcG9sGwAAAA%3D%3D",
-        "category": "http://localhost:5757/api/TG%E9%A2%91%E9%81%93?pwd=dzyyds&ac=list&t=1&pg=1&extend=H4sIAAAAAAAAA9PT088qzs%2FTD3F%2FuWjiy8bJL1t7n%2B9dpwcSAwBCcG9sGwAAAA%3D%3D"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -560,11 +485,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%93%9C%E5%AD%90[%E4%BC%98]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E7%93%9C%E5%AD%90[%E4%BC%98]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -576,11 +498,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/TG%E9%A2%91%E9%81%93?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTD3F%2FPn%2Ft087lLxdNfNk4WQ8kBgDLqEoeGwAAAA%3D%3D",
-        "category": "http://localhost:5757/api/TG%E9%A2%91%E9%81%93?pwd=dzyyds&ac=list&t=1&pg=1&extend=H4sIAAAAAAAAA9PT088qzs%2FTD3F%2FPn%2Ft087lLxdNfNk4WQ8kBgDLqEoeGwAAAA%3D%3D"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -592,10 +511,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%BD%91%E7%9B%98[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTfzp%2F%2FtMJvS9be5%2FvXacHElF5MWfh8zVTAI8Mua8gAAAA"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -607,10 +524,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%A4%B8%E5%85%8B%E5%BD%B1%E8%A7%86[%E7%9B%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -622,11 +537,8 @@
       "lang": "ds",
       "status": "success",
       "message": "手动标记为正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/UC%E5%88%86%E4%BA%AB?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTD3V%2B2tH2ZNdqPRAPAKubOwMVAAAA",
-        "category": "http://localhost:5757/api/UC%E5%88%86%E4%BA%AB?pwd=dzyyds&ac=list&t=1&pg=1&extend=H4sIAAAAAAAAA9PT088qzs%2FTD3V%2B2tH2ZNdqPRAPAKubOwMVAAAA"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": true
     },
     {
@@ -638,11 +550,8 @@
       "lang": "ds",
       "status": "success",
       "message": "手动标记为正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/webdav%E5%BD%B1%E8%A7%86[%E7%9B%98]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTL09NSkks0wOxASthelgTAAAA",
-        "category": "http://localhost:5757/api/webdav%E5%BD%B1%E8%A7%86[%E7%9B%98]?pwd=dzyyds&ac=list&t=1&pg=1&extend=H4sIAAAAAAAAA9PT088qzs%2FTL09NSkks0wOxASthelgTAAAA"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": true
     },
     {
@@ -654,13 +563,8 @@
       "lang": "ds",
       "status": "success",
       "message": "3/4 接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E4%B8%83%E5%91%B3[%E4%BC%98]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E4%B8%83%E5%91%B3[%E4%BC%98]?pwd=dzyyds&ac=list&t=1&pg=1",
-        "search": "http://localhost:5757/api/%E4%B8%83%E5%91%B3[%E4%BC%98]?pwd=dzyyds&ac=list&wd=%E6%B5%8B%E8%AF%95",
-        "detail": "http://localhost:5757/api/%E4%B8%83%E5%91%B3[%E4%BC%98]?pwd=dzyyds&ac=detail&ids=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -672,11 +576,8 @@
       "lang": "ds",
       "status": "success",
       "message": "手动标记为正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/webdav[%E7%9B%98]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTL09NSkks0wOxASthelgTAAAA",
-        "category": "http://localhost:5757/api/webdav[%E7%9B%98]?pwd=dzyyds&ac=list&t=1&pg=1&extend=H4sIAAAAAAAAA9PT088qzs%2FTL09NSkks0wOxASthelgTAAAA"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": true
     },
     {
@@ -688,11 +589,8 @@
       "lang": "ds",
       "status": "success",
       "message": "手动标记为正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/webdav[%E7%9B%98]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTL09NSkkse7p344vlbXogEQDz64JLGQAAAA%3D%3D",
-        "category": "http://localhost:5757/api/webdav[%E7%9B%98]?pwd=dzyyds&ac=list&t=1&pg=1&extend=H4sIAAAAAAAAA9PT088qzs%2FTL09NSkkse7p344vlbXogEQDz64JLGQAAAA%3D%3D"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": true
     },
     {
@@ -704,11 +602,8 @@
       "lang": "ds",
       "status": "success",
       "message": "手动标记为正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/ftp[%E7%9B%98]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTTysp0AMxAIzjQSIQAAAA",
-        "category": "http://localhost:5757/api/ftp[%E7%9B%98]?pwd=dzyyds&ac=list&t=1&pg=1&extend=H4sIAAAAAAAAA9PT088qzs%2FTTysp0AMxAIzjQSIQAAAA"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": true
     },
     {
@@ -720,10 +615,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E8%87%B3%E8%87%BB[%E7%9B%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -735,10 +628,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E8%99%8E%E6%96%91[%E7%9B%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -750,10 +641,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%BD%91%E7%9B%98[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTfzp%2F%2FtMJvS9be5%2FvXacHElF5NmfF08ZtABDtdR4gAAAA"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -765,10 +654,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%BD%91%E7%9B%98[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTfzp%2F%2FtMJvS9be5%2FvXacHElF5umQWEAEA1%2BC5iSAAAAA%3D"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -780,10 +667,8 @@
       "lang": "cat",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/alist?do=cat&pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTT8zJLC7RAzEB657OqRIAAAA%3D"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -795,10 +680,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%94%B5%E5%BD%B1%E6%B8%AF[%E7%A3%81]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -810,10 +693,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%BD%91%E7%9B%98[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTfzp%2F%2FtMJvS9be5%2FvXacHElF50b75RftuAAWyZJQgAAAA"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -825,10 +706,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%9B%86%E7%99%BE%E5%8A%A8%E6%BC%AB[%E6%BC%AB]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -840,10 +719,8 @@
       "lang": "php",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%98%9F%E6%98%9F%E7%9F%AD%E5%89%A7%20%E1%B5%88%E1%B6%BB[%E7%9F%AD]?do=php&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -855,10 +732,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%8A%A8%E6%BC%AB%E8%B1%86[%E6%BC%AB]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -870,10 +745,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/360%E5%BD%B1%E8%A7%86[%E5%AE%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -885,10 +758,8 @@
       "lang": "cat",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%94%9C%E5%9C%88%E7%9F%AD%E5%89%A7[%E7%9F%AD]?do=cat&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -900,10 +771,8 @@
       "lang": "cat",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E8%81%9A%E5%90%88%E7%9F%AD%E5%89%A7[%E7%9F%AD]?do=cat&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -915,10 +784,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%88%91%E7%9A%84%E5%93%94%E5%93%A9[%E5%AE%98]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTfzp5ytPJK5919D%2BbvUkPJAIADgS31hkAAAA%3D"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -930,10 +797,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%88%91%E7%9A%84%E5%93%94%E5%93%A9[%E5%AE%98]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTfzp5ytPJK59NnfmiaZMeSAQAgv7xPBkAAAA%3D"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -945,10 +810,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%88%91%E7%9A%84%E5%93%94%E5%93%A9[%E5%AE%98]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTfzp5ytPJK59umPi0Zb8eSAQAOsH08xkAAAA%3D"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -960,10 +823,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%88%91%E7%9A%84%E5%93%94%E5%93%A9[%E5%AE%98]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTfzp5ytPJK58uWf60dYUeSAQAZ2A%2BOBkAAAA%3D"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -975,10 +836,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%88%91%E7%9A%84%E5%93%94%E5%93%A9[%E5%AE%98]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTfzp5ytPJK58uWf5sbtPz5pV6IEEAolZcGBwAAAA%3D"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -990,10 +849,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%96%97%E9%B1%BC%E7%9B%B4%E6%92%AD%E5%BC%B9%E5%B9%95[%E5%AE%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1005,11 +862,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%89%A7%E9%80%8F%E7%A4%BE[%E7%9B%98]?do=py&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%89%A7%E9%80%8F%E7%A4%BE[%E7%9B%98]?do=py&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1021,10 +875,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%93%94%E5%93%A9%E5%BD%B1%E8%A7%86[%E5%AE%98]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1036,10 +888,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%BD%91%E7%9B%98[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTfzp%2F%2FtMJvS9be5%2FvXacHElF53rfyaeM2FUMAXj8hgiIAAAA%3D"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1051,11 +901,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%BD%91%E7%9B%98[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTfzp%2F%2FtMJvS9be5%2FvXacHElF5MbPv2bSJAFZ8CcsgAAAA",
-        "category": "http://localhost:5757/api/%E7%BD%91%E7%9B%98[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=H4sIAAAAAAAAA9PT088qzs%2FTfzp%2F%2FtMJvS9be5%2FvXacHElF5MbPv2bSJAFZ8CcsgAAAA"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1067,11 +914,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%A8%B1%E6%BC%AB[%E6%BC%AB]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E6%A8%B1%E6%BC%AB[%E6%BC%AB]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1083,11 +927,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%98%9F%E8%8A%BD%E7%9F%AD%E5%89%A7[%E7%9F%AD]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E6%98%9F%E8%8A%BD%E7%9F%AD%E5%89%A7[%E7%9F%AD]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1099,11 +940,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E4%B8%83%E7%8C%AB%E7%9F%AD%E5%89%A7[%E7%9F%AD]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E4%B8%83%E7%8C%AB%E7%9F%AD%E5%89%A7[%E7%9F%AD]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1115,11 +953,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%89%9B%E7%89%9B%E7%9F%AD%E5%89%A7[%E7%9F%AD]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E7%89%9B%E7%89%9B%E7%9F%AD%E5%89%A7[%E7%9F%AD]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1131,11 +966,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%88%B1%E5%8A%A8%E6%BC%AB[%E6%BC%AB]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E7%88%B1%E5%8A%A8%E6%BC%AB[%E6%BC%AB]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1147,11 +979,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E8%A5%BF%E9%A5%AD%E7%9F%AD%E5%89%A7[%E7%9F%AD]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E8%A5%BF%E9%A5%AD%E7%9F%AD%E5%89%A7[%E7%9F%AD]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1163,11 +992,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%93%94%E5%93%A9%E6%94%B6%E8%97%8F[%E5%AE%98]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTfzp5ytPJK59N2fZier8eSAQA1H95AxkAAAA%3D",
-        "category": "http://localhost:5757/api/%E5%93%94%E5%93%A9%E6%94%B6%E8%97%8F[%E5%AE%98]?pwd=dzyyds&ac=list&t=1&pg=1&extend=H4sIAAAAAAAAA9PT088qzs%2FTfzp5ytPJK59N2fZier8eSAQA1H95AxkAAAA%3D"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1179,11 +1005,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E4%BC%98%E9%85%B7[%E5%AE%98]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E4%BC%98%E9%85%B7[%E5%AE%98]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1195,11 +1018,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E8%8F%9C%E7%8B%97[%E5%AE%98]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E8%8F%9C%E7%8B%97[%E5%AE%98]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1211,11 +1031,8 @@
       "lang": "php",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%9E%9C%E6%9E%9C%20%E1%B5%88%E1%B6%BB[%E5%AE%98]?do=php&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E6%9E%9C%E6%9E%9C%20%E1%B5%88%E1%B6%BB[%E5%AE%98]?do=php&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1227,11 +1044,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%99%BE%E5%BF%99%E6%97%A0%E6%9E%9C[%E5%AE%98]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E7%99%BE%E5%BF%99%E6%97%A0%E6%9E%9C[%E5%AE%98]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1243,11 +1057,8 @@
       "lang": "cat",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%93%A9%E5%93%A9[%E5%AE%98]?do=cat&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%93%A9%E5%93%A9[%E5%AE%98]?do=cat&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1259,11 +1070,8 @@
       "lang": "cat",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%A4%AE%E5%A4%AE[%E5%AE%98]?do=cat&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%A4%AE%E5%A4%AE[%E5%AE%98]?do=cat&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1275,11 +1083,8 @@
       "lang": "php",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E8%85%BE%E8%85%BE%20%E1%B5%88%E1%B6%BB[%E5%AE%98]?do=php&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E8%85%BE%E8%85%BE%20%E1%B5%88%E1%B6%BB[%E5%AE%98]?do=php&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1291,11 +1096,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E8%BD%AF%E9%B8%AD%E7%9F%AD%E5%89%A7[%E7%9F%AD]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E8%BD%AF%E9%B8%AD%E7%9F%AD%E5%89%A7[%E7%9F%AD]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1307,11 +1109,8 @@
       "lang": "ds",
       "status": "success",
       "message": "手动标记为正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%95%AA%E8%8C%84%E7%9F%AD%E5%89%A7[%E7%9F%AD]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E7%95%AA%E8%8C%84%E7%9F%AD%E5%89%A7[%E7%9F%AD]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": true
     },
     {
@@ -1323,11 +1122,8 @@
       "lang": "cat",
       "status": "success",
       "message": "分类接口正常 (容错:分类2)",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%A5%87%E5%A5%87[%E5%AE%98]?do=cat&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%A5%87%E5%A5%87[%E5%AE%98]?do=cat&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1339,11 +1135,8 @@
       "lang": "php",
       "status": "success",
       "message": "分类接口正常 (容错:分类2)",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%A5%87%E5%A5%87%20%E1%B5%88%E1%B6%BB[%E5%AE%98]?do=php&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%A5%87%E5%A5%87%20%E1%B5%88%E1%B6%BB[%E5%AE%98]?do=php&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1355,11 +1148,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常 (容错:分类2)",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%A5%87%E7%8F%8D%E5%BC%82%E5%85%BD[%E5%AE%98]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%A5%87%E7%8F%8D%E5%BC%82%E5%85%BD[%E5%AE%98]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1371,10 +1161,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/DJ%E9%9F%B3%E4%B9%90[%E5%90%AC]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1386,10 +1174,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%85%AD%E6%9C%88%E5%90%AC%E4%B9%A6[%E5%90%AC]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1401,10 +1187,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/16wMV[%E5%90%AC]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTf9rb%2BLR17ZMd7c%2FW9jybvUmvpKIEABrNdgcbAAAA"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1416,10 +1200,8 @@
       "lang": "cat",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%90%AC%E4%BA%86%E4%B9%88[%E5%90%AC]?do=cat&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1431,10 +1213,8 @@
       "lang": "cat",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%BD%91%E6%8A%91%E4%BA%91[%E5%90%AC]?do=cat&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1446,10 +1226,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%88%B1%E6%8E%A8%E5%9B%BE[%E7%94%BB]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1461,10 +1239,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%8C%85%E5%AD%90%E6%BC%AB%E7%94%BB[%E7%94%BB]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1476,10 +1252,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%85%B7%E7%88%B1%E6%BC%AB%E7%94%BB[%E7%94%BB]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1491,10 +1265,8 @@
       "lang": "ds",
       "status": "success",
       "message": "手动标记为正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%95%AA%E8%8C%84%E6%BC%AB%E7%94%BB[%E7%94%BB]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": true
     },
     {
@@ -1506,10 +1278,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%85%89%E7%A4%BE%E6%BC%AB%E7%94%BB[%E7%94%BB]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1521,10 +1291,8 @@
       "lang": "php",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%85%B7%E7%88%B1%E6%BC%AB%E7%94%BB%20%E1%B5%88%E1%B6%BB[%E7%94%BB]?do=php&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1536,11 +1304,8 @@
       "lang": "cat",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%9E%9C%E6%9E%9C[%E5%AE%98]?do=cat&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E6%9E%9C%E6%9E%9C[%E5%AE%98]?do=cat&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1552,11 +1317,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/30wMV[%E5%90%AC]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/30wMV[%E5%90%AC]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1568,11 +1330,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%87%A4%E5%87%B0FM[%E5%90%AC]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%87%A4%E5%87%B0FM[%E5%90%AC]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1584,11 +1343,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%88%B1%E7%8E%A9%E9%9F%B3%E4%B9%90[%E5%90%AC]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E7%88%B1%E7%8E%A9%E9%9F%B3%E4%B9%90[%E5%90%AC]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1600,11 +1356,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%8D%9A%E7%9C%8B%E5%90%AC%E4%B9%A6[%E5%90%AC]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%8D%9A%E7%9C%8B%E5%90%AC%E4%B9%A6[%E5%90%AC]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1616,11 +1369,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%B8%83%E8%B0%B7%E9%9F%B3%E4%B9%90[%E5%90%AC]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%B8%83%E8%B0%B7%E9%9F%B3%E4%B9%90[%E5%90%AC]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1632,11 +1382,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%8B%97%E7%8B%97%E9%9F%B3%E4%B9%90[%E5%90%AC]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E7%8B%97%E7%8B%97%E9%9F%B3%E4%B9%90[%E5%90%AC]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1648,11 +1395,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E8%9C%BB%E8%9C%93FM[%E5%90%AC]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E8%9C%BB%E8%9C%93FM[%E5%90%AC]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1664,10 +1408,8 @@
       "lang": "cat",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%9D%92%E6%9C%A8%E5%80%AA%E5%A3%81%E7%BA%B8[%E7%94%BB]?do=cat&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1679,11 +1421,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%85%B7%E6%88%91%E5%90%AC%E4%B9%A6[%E5%90%AC]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E9%85%B7%E6%88%91%E5%90%AC%E4%B9%A6[%E5%90%AC]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1695,10 +1434,8 @@
       "lang": "php",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%8C%85%E5%AD%90%E6%BC%AB%E7%94%BB%20%E1%B5%88%E1%B6%BB[%E7%94%BB]?do=php&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1710,11 +1447,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%B1%B3%E5%85%94%E9%9F%B3%E4%B9%90[%E5%90%AC]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E7%B1%B3%E5%85%94%E9%9F%B3%E4%B9%90[%E5%90%AC]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1726,11 +1460,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E4%B8%83%E7%8C%AB%E5%B0%8F%E8%AF%B4[%E4%B9%A6]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E4%B8%83%E7%8C%AB%E5%B0%8F%E8%AF%B4[%E4%B9%A6]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1742,11 +1473,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%8A%AA%E5%8A%AA%E4%B9%A6%E5%9D%8A[%E4%B9%A6]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%8A%AA%E5%8A%AA%E4%B9%A6%E5%9D%8A[%E4%B9%A6]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1758,11 +1486,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%8E%BB%E8%AF%BB%E4%B9%A6[%E4%B9%A6]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%8E%BB%E8%AF%BB%E4%B9%A6[%E4%B9%A6]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1774,11 +1499,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%98%85%E8%AF%BB%E5%8A%A9%E6%89%8B[%E4%B9%A6]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E9%98%85%E8%AF%BB%E5%8A%A9%E6%89%8B[%E4%B9%A6]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1790,11 +1512,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%88%B1%E7%8E%A9%E9%9F%B3%E4%B9%90[%E5%90%AC]?do=py&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E7%88%B1%E7%8E%A9%E9%9F%B3%E4%B9%90[%E5%90%AC]?do=py&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1806,11 +1525,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%9F%B3%E4%B9%90%E7%A3%81%E5%9C%BA[%E5%90%AC]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E9%9F%B3%E4%B9%90%E7%A3%81%E5%9C%BA[%E5%90%AC]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1822,11 +1538,8 @@
       "lang": "php",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%8E%BB%E8%AF%BB%E4%B9%A6%20%E1%B5%88%E1%B6%BB[%E4%B9%A6]?do=php&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%8E%BB%E8%AF%BB%E4%B9%A6%20%E1%B5%88%E1%B6%BB[%E4%B9%A6]?do=php&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1838,11 +1551,8 @@
       "lang": "php",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E4%B8%83%E7%8C%AB%E5%B0%8F%E8%AF%B4%20%E1%B5%88%E1%B6%BB[%E4%B9%A6]?do=php&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E4%B8%83%E7%8C%AB%E5%B0%8F%E8%AF%B4%20%E1%B5%88%E1%B6%BB[%E4%B9%A6]?do=php&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1854,11 +1564,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%88%B1%E5%90%AC%E9%9F%B3%E4%B9%90[%E5%90%AC]?do=py&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E7%88%B1%E5%90%AC%E9%9F%B3%E4%B9%90[%E5%90%AC]?do=py&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1870,11 +1577,8 @@
       "lang": "php",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%98%85%E8%AF%BB%E5%8A%A9%E6%89%8B%20%E1%B5%88%E1%B6%BB[%E4%B9%A6]?do=php&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E9%98%85%E8%AF%BB%E5%8A%A9%E6%89%8B%20%E1%B5%88%E1%B6%BB[%E4%B9%A6]?do=php&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1886,11 +1590,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%BC%AB%E7%94%BB%E5%A4%A7%E5%85%A8[%E7%94%BB]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E6%BC%AB%E7%94%BB%E5%A4%A7%E5%85%A8[%E7%94%BB]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1902,11 +1603,8 @@
       "lang": "php",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/74P%E7%A6%8F%E5%88%A9%E5%9B%BE%20%E1%B5%88%E1%B5%87[%E7%94%BB]?do=php&pwd=dzyyds",
-        "category": "http://localhost:5757/api/74P%E7%A6%8F%E5%88%A9%E5%9B%BE%20%E1%B5%88%E1%B5%87[%E7%94%BB]?do=php&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1918,11 +1616,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%A1%B6%E7%82%B9%E5%B0%8F%E8%AF%B4[%E4%B9%A6]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E9%A1%B6%E7%82%B9%E5%B0%8F%E8%AF%B4[%E4%B9%A6]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1934,11 +1629,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%BC%AB%E7%A5%9E[%E7%94%BB]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E6%BC%AB%E7%A5%9E[%E7%94%BB]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1950,11 +1642,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%8A%A8%E6%BC%AB%E5%95%A6[%E7%94%BB]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%8A%A8%E6%BC%AB%E5%95%A6[%E7%94%BB]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1966,11 +1655,8 @@
       "lang": "cat",
       "status": "success",
       "message": "手动标记为正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%85%B7%E9%85%B7[%E5%AE%98]?do=cat&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E9%85%B7%E9%85%B7[%E5%AE%98]?do=cat&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": true
     },
     {
@@ -1982,11 +1668,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E4%B8%83%E7%8C%AB%E5%B0%8F%E8%AF%B4[%E4%B9%A6]?do=py&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E4%B8%83%E7%8C%AB%E5%B0%8F%E8%AF%B4[%E4%B9%A6]?do=py&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -1998,11 +1681,8 @@
       "lang": "ds",
       "status": "success",
       "message": "手动标记为正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%9F%B3%E4%B9%90%E8%81%9A%E5%90%88[%E5%90%AC]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E9%9F%B3%E4%B9%90%E8%81%9A%E5%90%88[%E5%90%AC]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": true
     },
     {
@@ -2014,11 +1694,8 @@
       "lang": "php",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/74P%E7%A6%8F%E5%88%A9%E5%9B%BE%20%E1%B5%88%E1%B6%BB[%E7%94%BB]?do=php&pwd=dzyyds",
-        "category": "http://localhost:5757/api/74P%E7%A6%8F%E5%88%A9%E5%9B%BE%20%E1%B5%88%E1%B6%BB[%E7%94%BB]?do=php&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2030,11 +1707,8 @@
       "lang": "unknown",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E8%93%9D%E9%B9%B0",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E8%93%9D%E9%B9%B0"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2046,11 +1720,8 @@
       "lang": "php",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%8A%A8%E6%BC%AB%E5%95%A6%20%E1%B5%88%E1%B6%BB[%E7%94%BB]?do=php&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%8A%A8%E6%BC%AB%E5%95%A6%20%E1%B5%88%E1%B6%BB[%E7%94%BB]?do=php&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2062,11 +1733,8 @@
       "lang": "ds",
       "status": "success",
       "message": "手动标记为正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%95%AA%E8%8C%84%E7%95%85%E5%90%AC[%E5%90%AC]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E7%95%AA%E8%8C%84%E7%95%85%E5%90%AC[%E5%90%AC]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": true
     },
     {
@@ -2078,11 +1746,8 @@
       "lang": "ds",
       "status": "success",
       "message": "手动标记为正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%92%AD%E5%AE%A2[%E5%90%AC]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E6%92%AD%E5%AE%A2[%E5%90%AC]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": true
     },
     {
@@ -2094,11 +1759,8 @@
       "lang": "php",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%95%AA%E8%8C%84%E6%BC%AB%E7%94%BB%20%E1%B5%88%E1%B6%BB[%E7%94%BB]?do=php&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E7%95%AA%E8%8C%84%E6%BC%AB%E7%94%BB%20%E1%B5%88%E1%B6%BB[%E7%94%BB]?do=php&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2110,10 +1772,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/TG%E6%90%9C[%E6%90%9C]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2125,10 +1785,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/TG%E7%9B%98%E6%90%9C[%E6%90%9C]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2140,10 +1798,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%85%84%E5%BC%9F%E7%9B%98[%E6%90%9C]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2155,10 +1811,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%99%BE%E5%BA%A6%E7%9B%98[%E6%90%9C]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2170,10 +1824,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90[%E6%90%9C]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2185,10 +1837,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/iptv?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2200,10 +1850,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/push_agent?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2215,10 +1863,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%8A%A8%E4%BD%9C%E4%BA%A4%E4%BA%92?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2230,10 +1876,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%8A%A8%E4%BD%9C%E6%B5%8B%E8%AF%95%E6%96%B0%E5%AE%9A%E6%A0%87%E5%87%86%E7%89%88?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2245,10 +1889,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%82%B9%E6%AD%8C%E6%AC%A2%E5%94%B1[B]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTf9rb%2BLR17ZMd7c%2FW9jybvUmvpKIEABrNdgcbAAAA"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2260,10 +1902,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%A2%A8%E5%9B%AD%E8%A1%8C[%E6%88%8F]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2275,11 +1915,8 @@
       "lang": "unknown",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E5%BD%B1%E8%A7%86",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E5%BD%B1%E8%A7%86"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2291,11 +1928,8 @@
       "lang": "unknown",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E5%B0%8F%E7%8C%AA",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E5%B0%8F%E7%8C%AA"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2307,11 +1941,8 @@
       "lang": "unknown",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E5%A5%87%E5%A5%87",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E5%A5%87%E5%A5%87"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2323,10 +1954,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%88%B1%E5%A3%B9%E5%B8%86?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2338,11 +1967,8 @@
       "lang": "unknown",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E4%BC%98%E5%85%94",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E4%BC%98%E5%85%94"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2354,11 +1980,8 @@
       "lang": "unknown",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E7%B4%AB%E9%87%91",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E7%B4%AB%E9%87%91"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2370,11 +1993,8 @@
       "lang": "unknown",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E4%BA%94%E5%85%AB",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E4%BA%94%E5%85%AB"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2386,11 +2006,8 @@
       "lang": "unknown",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E4%B8%AB%E4%B8%AB%E5%8A%A8%E6%BC%AB",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E4%B8%AB%E4%B8%AB%E5%8A%A8%E6%BC%AB"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2402,11 +2019,8 @@
       "lang": "unknown",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E7%88%B1%E7%9B%88",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E7%88%B1%E7%9B%88"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2418,11 +2032,8 @@
       "lang": "unknown",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E5%85%83%E5%92%B2%E5%8A%A8%E6%BC%AB",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E5%85%83%E5%92%B2%E5%8A%A8%E6%BC%AB"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2434,11 +2045,8 @@
       "lang": "unknown",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E7%81%AB%E7%8B%90",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E7%81%AB%E7%8B%90"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2450,11 +2058,8 @@
       "lang": "unknown",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E6%95%B0%E5%AD%97",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E6%95%B0%E5%AD%97"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2466,11 +2071,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/APP%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE?pwd=dzyyds",
-        "category": "http://localhost:5757/api/APP%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2482,11 +2084,8 @@
       "lang": "unknown",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E6%96%B9%E8%88%9F%E5%8A%A8%E6%BC%AB",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E6%96%B9%E8%88%9F%E5%8A%A8%E6%BC%AB"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2498,11 +2097,8 @@
       "lang": "unknown",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E7%95%AA%E8%96%AF%E5%8A%A8%E6%BC%AB",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E7%95%AA%E8%96%AF%E5%8A%A8%E6%BC%AB"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2514,11 +2110,8 @@
       "lang": "unknown",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E9%87%91%E7%89%8C",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E9%87%91%E7%89%8C"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2530,11 +2123,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%85%94%E5%B0%8F%E8%B4%9D[%E5%84%BF]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%85%94%E5%B0%8F%E8%B4%9D[%E5%84%BF]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2546,11 +2136,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%BC%80%E7%9C%BC?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%BC%80%E7%9C%BC?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2562,11 +2149,8 @@
       "lang": "unknown",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E5%92%95%E5%92%95%E5%8A%A8%E6%BC%AB",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E5%92%95%E5%92%95%E5%8A%A8%E6%BC%AB"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2578,11 +2162,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%87%A1%E5%AE%A2TV?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%87%A1%E5%AE%A2TV?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2594,11 +2175,8 @@
       "lang": "ds",
       "status": "success",
       "message": "手动标记为正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/php?pwd=dzyyds&extend=H4sIAAAAAAAAA6tWysgvLlGyUsooKSkottLXLy8v10tKzEwp1UvOz1WqBQCTzRcDIAAAAA%3D%3D",
-        "category": "http://localhost:5757/api/php?pwd=dzyyds&ac=list&t=1&pg=1&extend=H4sIAAAAAAAAA6tWysgvLlGyUsooKSkottLXLy8v10tKzEwp1UvOz1WqBQCTzRcDIAAAAA%3D%3D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": true
     },
     {
@@ -2610,13 +2188,8 @@
       "lang": "unknown",
       "status": "success",
       "message": "2/4 接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E7%8E%8B%E5%AD%90",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E7%8E%8B%E5%AD%90",
-        "search": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&wd=%E6%B5%8B%E8%AF%95&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E7%8E%8B%E5%AD%90",
-        "detail": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=detail&ids=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E7%8E%8B%E5%AD%90"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2628,13 +2201,8 @@
       "lang": "ds",
       "status": "success",
       "message": "3/4 接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%9E%AB%E6%9E%97%E5%BD%B1%E8%A7%86?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E6%9E%AB%E6%9E%97%E5%BD%B1%E8%A7%86?pwd=dzyyds&ac=list&t=1&pg=1",
-        "search": "http://localhost:5757/api/%E6%9E%AB%E6%9E%97%E5%BD%B1%E8%A7%86?pwd=dzyyds&ac=list&wd=%E6%B5%8B%E8%AF%95",
-        "detail": "http://localhost:5757/api/%E6%9E%AB%E6%9E%97%E5%BD%B1%E8%A7%86?pwd=dzyyds&ac=detail&ids=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2646,11 +2214,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常 (容错:分类2)",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%88%B1%E7%9C%8B%E6%9C%BA%E5%99%A8%E4%BA%BA[%E8%99%AB]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E7%88%B1%E7%9C%8B%E6%9C%BA%E5%99%A8%E4%BA%BA[%E8%99%AB]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2662,10 +2227,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%9B%B4%E6%92%AD%E8%BD%AC%E7%82%B9%E6%92%AD[%E5%90%88]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTz8ksSzVKzi3WzS3TAwkAAGomgm4YAAAA"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2677,10 +2240,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E8%B4%9D%E4%B9%90%E8%99%8E[%E5%84%BF]?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2692,10 +2253,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%8E%96%E6%9C%88%E5%BD%B1%E8%A7%86?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2707,10 +2266,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%87%87%E9%9B%86%E4%B9%8B%E7%8E%8B[%E5%90%88]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTf9ne%2FnJ2W3RVZezLuTOfNTTqgURVDAGu%2FMCKHwAAAA%3D%3D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2722,10 +2279,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%8E%8B%E5%AD%90TV?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2737,10 +2292,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%87%87%E9%9B%86%E4%B9%8B%E7%8E%8B[%E5%90%88]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTf9ne%2FnJ228u5M581NOqBRFQMAcGPDNobAAAA"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2752,10 +2305,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%87%87%E9%9B%86%E4%B9%8B%E7%8E%8B[%E5%90%88]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTf9ne%2FnJ2m5GBkcnLuTOfNTTqgURVDFUAlKCu7yAAAAA%3D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2767,10 +2318,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%87%87%E9%9B%86%E4%B9%8B%E7%8E%8B[%E5%90%88]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTf9ne%2FnJ2W%2FTT9W2xL%2BfOfNbQqAcSVjFUAQAd5YgpIQAAAA%3D%3D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2782,10 +2331,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%A3%9E%E7%89%9B%E5%BD%B1%E8%A7%86?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2797,10 +2344,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%BA%A6%E7%94%B0%E5%BD%B1%E9%99%A2?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2812,10 +2357,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%87%87%E9%9B%86%E4%B9%8B%E7%8E%8B[%E5%90%88]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTf9ne%2FnJ2m5GBkenLuTOfNTTqgURVDFUAfHtVViAAAAA%3D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2827,10 +2370,8 @@
       "lang": "cat",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/mtv60w[%E5%B7%AE]?do=cat&pwd=dzyyds&extend=music.db"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2842,10 +2383,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%88%B1%E7%9C%8B%E9%AB%98%E6%B8%85?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2857,10 +2396,8 @@
       "lang": "ds",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%AC%BC%E7%89%87%E4%B9%8B%E5%AE%B6?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2872,10 +2409,8 @@
       "lang": "cat",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%B2%B3%E5%8D%97%E7%94%B5%E8%A7%86%E4%BB%A3%E7%90%86?do=cat&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2887,10 +2422,8 @@
       "lang": "cat",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%8C%AB%E6%B5%8B%E8%AF%95?do=cat&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2902,10 +2435,8 @@
       "lang": "cat",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%9C%88%E5%85%89%E5%BD%B1%E8%A7%86?do=cat&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2917,10 +2448,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/4K%E5%BD%B1%E8%A7%86?do=py&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2932,10 +2461,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppFei?do=py&pwd=dzyyds&extend=https%3A%2F%2Fysc.yy-fun.cc%2Ffeiapp"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2947,10 +2474,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppFei?do=py&pwd=dzyyds&extend=https%3A%2F%2Fysa.yy-fun.cc%2Ffeiapp"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2962,10 +2487,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/4KVM?do=py&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2977,10 +2500,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppFox?do=py&pwd=dzyyds&extend=%7B%22host%22%3A%22https%3A%2F%2Fcunchu8.obs.cn-north-4.myhuaweicloud.com%2Fconfig.json%22%2C%22parse%22%3A%7B%22JL4K%22%3A%22http%3A%2F%2F194.147.100.155%3A7891%2F%3Furl%3D%22%7D%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -2992,10 +2513,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppGet?do=py&pwd=dzyyds&extend=%7B%22host%22%3A%22https%3A%2F%2Fgitee.com%2Fwmmoliill%2Fwimg%2Fraw%2Fmaster%2Fimg%2Fbk%2F9.txt%22%2C%22key%22%3A%2288689667dce61725%22%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3007,10 +2526,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppGet?do=py&pwd=dzyyds&extend=%7B%22host%22%3A%22https%3A%2F%2Fsnysw.xyz%2Fmf4kzs327.txt%22%2C%22key%22%3A%221234567887654321%22%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3022,10 +2539,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppGet?do=py&pwd=dzyyds&extend=%7B%22host%22%3A%22https%3A%2F%2Fdy.58ys.vip%22%2C%22key%22%3A%22JEWibY1AgWF0V1xx%22%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3037,10 +2552,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppGet?do=py&pwd=dzyyds&extend=%7B%22host%22%3A%22http%3A%2F%2Ftv.yy-fun.cc%22%2C%22key%22%3A%22qkxnwkfjwpcnwycl%22%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3052,10 +2565,8 @@
       "lang": "cat",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E8%8D%90%E7%89%87?do=cat&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3067,10 +2578,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppGet?do=py&pwd=dzyyds&extend=%7B%22host%22%3A%22https%3A%2F%2Fapp.omofun1.top%22%2C%22key%22%3A%2266dc309cbeeca454%22%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3082,11 +2591,8 @@
       "lang": "ds",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%BE%8E%E9%A2%9C%E6%80%AA[%E6%93%A6]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E7%BE%8E%E9%A2%9C%E6%80%AA[%E6%93%A6]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3098,10 +2604,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppHs?do=py&pwd=dzyyds&extend=%7B%22host%22%3A%22https%3A%2F%2Fdy.jszdzs.com%22%2C%22app_id%22%3A%22xuebao%22%2C%22deviceid%22%3A%22%22%2C%22versionCode%22%3A%2221300%22%2C%22UMENG_CHANNEL%22%3A%22share%22%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3113,10 +2617,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppSk?do=py&pwd=dzyyds&extend=%7B%22host%22%3A%22https%3A%2F%2Fskyappdata-1321528676.cos.accelerate.myqcloud.com%2F4kapp%2Fappipr.txt%22%2C%22key%22%3A%22ygcnbckhcuvygdyb%22%2C%22iv%22%3A%224023892775143708%22%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3128,11 +2630,8 @@
       "lang": "cat",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%96%9C%E5%88%B7%E5%88%B7?do=cat&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%96%9C%E5%88%B7%E5%88%B7?do=cat&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3144,11 +2643,8 @@
       "lang": "cat",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/yikm[%E6%B8%B8%E6%88%8F]?do=cat&pwd=dzyyds",
-        "category": "http://localhost:5757/api/yikm[%E6%B8%B8%E6%88%8F]?do=cat&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3160,11 +2656,8 @@
       "lang": "cat",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%88%B1%E7%8E%A9%E9%9F%B3%E4%B9%90?do=cat&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E7%88%B1%E7%8E%A9%E9%9F%B3%E4%B9%90?do=cat&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3176,11 +2669,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppFox?do=py&pwd=dzyyds&extend=https%3A%2F%2Fqh.70qh.top",
-        "category": "http://localhost:5757/api/AppFox?do=py&pwd=dzyyds&ac=list&t=1&pg=1&extend=https%3A%2F%2Fqh.70qh.top"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3192,11 +2682,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppFox?do=py&pwd=dzyyds&extend=http%3A%2F%2Fhost1.sopython.top%2Fhost.json",
-        "category": "http://localhost:5757/api/AppFox?do=py&pwd=dzyyds&ac=list&t=1&pg=1&extend=http%3A%2F%2Fhost1.sopython.top%2Fhost.json"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3208,10 +2695,8 @@
       "lang": "cat",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%B5%B7%E9%BE%9F?do=cat&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3223,10 +2708,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppHs?do=py&pwd=dzyyds&extend=%7B%22host%22%3A%22https%3A%2F%2Fdy.jmzp.net.cn%22%2C%22app_id%22%3A%22shiguang%22%2C%22deviceid%22%3A%22%22%2C%22versionCode%22%3A%2210000%22%2C%22UMENG_CHANNEL%22%3A%22guan%22%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3238,10 +2721,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppToV5?do=py&pwd=dzyyds&extend=http%3A%2F%2F118.89.203.120%3A8762"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3253,10 +2734,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppV2%C2%B2?do=py&pwd=dzyyds&extend=http%3A%2F%2F38.47.213.61%3A41271"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3268,10 +2747,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppV1?do=py&pwd=dzyyds&extend=http%3A%2F%2Fziyuncms.feifan12.xyz%2Fapi.php"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3283,10 +2760,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppSk?do=py&pwd=dzyyds&extend=%7B%22host%22%3A%22https%3A%2F%2Fkankelm.cn%3A2024%2Fappdomain.txt%22%2C%22key%22%3A%22ygcnbcvybqqckwqy%22%2C%22iv%22%3A%221583560747143708%22%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3298,10 +2773,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppSk?do=py&pwd=dzyyds&extend=%7B%22host%22%3A%22https%3A%2F%2Fdmsk.oss-rg-china-mainland.aliyuncs.com%2Fdmapp%2Fdmapi.txt%22%2C%22key%22%3A%22ygcnbcobcegtgigg%22%2C%22iv%22%3A%224058263969143708%22%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3313,10 +2786,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppV2%C2%B2?do=py&pwd=dzyyds&extend=http%3A%2F%2Fjxfmax.juxiafan.com"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3328,10 +2799,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppV6?do=py&pwd=dzyyds&extend=%7B%22api%22%3A%22http%3A%2F%2Fyjyi.juyongjiu.com%2Ficciu_api.php%2Fv1.vod%22%2C%22datasignkey%22%3A%226QQNUsP3PkD2ajJCPCY8%22%2C%22apisignkey%22%3A%22lvdoutv-1.0.0%22%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3343,10 +2812,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppV6?do=py&pwd=dzyyds&extend=http%3A%2F%2Fjxfmax.juxiafan.com%2Ficciu_api.php%2Fv1.vod"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3358,10 +2825,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppToV5?do=py&pwd=dzyyds&extend=http%3A%2F%2F38.55.237.41%3A8762"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3373,10 +2838,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E4%BE%9D%E8%B5%96%E6%B5%8B%E8%AF%95?do=py&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3388,10 +2851,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%8A%A8%E4%BD%9C%E4%BB%A3%E7%90%86%E6%B5%8B%E8%AF%95?do=py&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3403,10 +2864,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/getapp3.4.4?do=py&pwd=dzyyds&extend=%7B%22host%22%3A%22http%3A%2F%2Ftvb.yy-fun.cc%22%2C%22key%22%3A%22jcTz6Jda2aKrH8Tk%22%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3418,10 +2877,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppYqk?do=py&pwd=dzyyds&extend=%7B%22host%22%3A%22https%3A%2F%2Fgapi0320.3njzmrx1.com%2Fconfig.json%2Chttps%3A%2F%2Fgapi0320.lq0okex8.com%2Fconfig.json%2Chttps%3A%2F%2Fgapi0320.zabqs8xp.com%2Fconfig.json%2Chttps%3A%2F%2Fyappconfig-20250628-1318635097.cos.ap-shanghai.myqcloud.com%2Fconfig.json%2Chttps%3A%2F%2Fyconfig-20250628-1360051343.cos.ap-guangzhou.myqcloud.com%2Fconfig.json%22%2C%22appId%22%3A%22d6d520ea90904f1ba680ed6c9c9f9007%22%2C%22appkey%22%3A%2270af67d2b6cf47679b397ea4c1886877%22%2C%22udid%22%3A%22bfc18c00-c866-46cb-8d7b-121c39b942d4%22%2C%22bundlerId%22%3A%22com.flotimingo.ts%22%2C%22source%22%3A%221001_default%22%2C%22version%22%3A%221.3.10%22%2C%22versionCode%22%3A1104%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3433,10 +2890,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppYqk?do=py&pwd=dzyyds&extend=%7B%22host%22%3A%22https%3A%2F%2Fgapi0725.5p8jcjc.com%2Fconfig.json%2Chttps%3A%2F%2Fgapi0725.olrv5gz.com%2Fconfig.json%2Chttps%3A%2F%2Fgapi0725.mvljeat.com%2Fconfig.json%2Chttps%3A%2F%2Fjzapp-1318635097.cos.ap-shanghai.myqcloud.com%2Fconfig.json%2Chttps%3A%2F%2Fjuzi-config-1360051343.cos.ap-shanghai.myqcloud.com%2Fconfig.json%22%2C%22appId%22%3A%22fea23e11fc1241409682880e15fb2851%22%2C%22appkey%22%3A%22f384b87cc9ef41e4842dda977bae2c7f%22%2C%22udid%22%3A%22bfc18c00-c866-46cb-8d7b-121c39b942d4%22%2C%22bundlerId%22%3A%22com.voraguzzee.ts%22%2C%22source%22%3A%221003_default%22%2C%22version%22%3A%221.0.1%22%2C%22versionCode%22%3A1000%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3448,10 +2903,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%87%92%E6%87%92%E8%A7%86%E9%A2%91?do=py&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3463,10 +2916,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppSk?do=py&pwd=dzyyds&extend=%7B%22host%22%3A%22https%3A%2F%2Fsk.xiaoyaoys.top%2Fskkkkkkk.txt%22%2C%22key%22%3A%22ygcnbcczduwydmrs%22%2C%22iv%22%3A%224672921073143708%22%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3478,13 +2929,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "3/4 接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9?do=py&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9?do=py&pwd=dzyyds&ac=list&t=1&pg=1",
-        "search": "http://localhost:5757/api/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9?do=py&pwd=dzyyds&ac=list&wd=%E6%B5%8B%E8%AF%95",
-        "detail": "http://localhost:5757/api/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9?do=py&pwd=dzyyds&ac=detail&ids=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3496,10 +2942,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%83%AD%E6%92%ADAPP?do=py&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3511,10 +2955,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%93%87%E5%93%87APP?do=py&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3526,10 +2968,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%96%B0%E9%9F%A9%E5%89%A7%E7%BD%91?do=py&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3541,10 +2981,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%AC%A3%E6%AC%A3%E5%BD%B1%E8%A7%86?do=py&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3556,10 +2994,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%9C%8B%E5%AE%A2TV?do=py&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3571,10 +3007,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%8B%AC%E6%92%AD%E5%BA%93?do=py&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3586,10 +3020,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%AB%AF%E6%9C%A8?do=py&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3601,10 +3033,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%BA%BB%E9%9B%80%E8%A7%86%E9%A2%91?do=py&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3616,10 +3046,8 @@
       "lang": "php",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%9D%9A%E6%9E%9C%E8%A7%86%E9%A2%91%20%E1%B5%88%E1%B6%BB?do=php&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3631,10 +3059,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%BA%A6%E7%94%B0%E5%BD%B1%E9%99%A2?do=py&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3646,10 +3072,8 @@
       "lang": "php",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%87%91%E7%89%8C%20%E1%B5%88%E1%B6%BB?do=php&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3661,10 +3085,8 @@
       "lang": "php",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E4%BA%BA%E4%BA%BA%E5%BD%B1%E8%A7%86%20%E1%B5%88%E1%B6%BB?do=php&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3676,10 +3098,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%8C%8E%E6%89%8BAPP?do=py&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3691,10 +3111,8 @@
       "lang": "php",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%BA%BB%E9%9B%80%E8%A7%86%E9%A2%91%20%E1%B5%88%E1%B6%BB?do=php&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3706,10 +3124,8 @@
       "lang": "php",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%B1%B1%E6%9C%89%E6%9C%A8%E5%85%AE%20%E1%B5%88%E1%B6%BB?do=php&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3721,10 +3137,8 @@
       "lang": "php",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/B%E7%AB%99%20%E1%B5%88%E1%B6%BB?do=php&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3736,10 +3150,8 @@
       "lang": "php",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%93%87%E5%93%87%E5%BD%B1%E8%A7%86%20%E1%B5%88%E1%B6%BB?do=php&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3751,11 +3163,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E6%B2%B3%E9%A9%AC%E7%9F%AD%E5%89%A7?do=py&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E6%B2%B3%E9%A9%AC%E7%9F%AD%E5%89%A7?do=py&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3767,11 +3176,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%85%84%E5%BC%9F%E5%BD%B1%E8%A7%86?do=py&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%85%84%E5%BC%9F%E5%BD%B1%E8%A7%86?do=py&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3783,10 +3189,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "推荐接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%88%B1%E7%93%9CAPP?do=py&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3798,11 +3202,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "分类接口正常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%93%9C%E5%AD%90?do=py&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E7%93%9C%E5%AD%90?do=py&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3814,11 +3215,8 @@
       "lang": "hipy",
       "status": "success",
       "message": "分类接口正常 (容错:分类2)",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86?do=py&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86?do=py&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3830,11 +3228,26 @@
       "lang": "php",
       "status": "success",
       "message": "分类接口正常",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
+      "manuallyMarked": false
+    },
+    {
+      "key": "drpyS_啊哈DJ[听]",
+      "name": "啊哈DJ[听](DS)",
+      "api": "http://localhost:5757/api/啊哈DJ[听]?pwd=dzyyds",
+      "type": 4,
+      "searchable": 2,
+      "lang": "ds",
+      "status": "success",
+      "message": "2/4 接口正常",
       "testUrls": {
-        "home": "http://localhost:5757/api/%E8%8D%90%E7%89%87%E5%BD%B1%E8%A7%86%20%E1%B5%88%E1%B6%BB?do=php&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E8%8D%90%E7%89%87%E5%BD%B1%E8%A7%86%20%E1%B5%88%E1%B6%BB?do=php&pwd=dzyyds&ac=list&t=1&pg=1"
+        "home": "http://localhost:5757/api/%E5%95%8A%E5%93%88DJ[%E5%90%AC]?pwd=dzyyds",
+        "category": "http://localhost:5757/api/%E5%95%8A%E5%93%88DJ[%E5%90%AC]?pwd=dzyyds&ac=list&t=1&pg=1",
+        "search": "http://localhost:5757/api/%E5%95%8A%E5%93%88DJ[%E5%90%AC]?pwd=dzyyds&ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "detail": "http://localhost:5757/api/%E5%95%8A%E5%93%88DJ[%E5%90%AC]?pwd=dzyyds&ac=detail&ids=1"
       },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3850,7 +3263,7 @@
         "home": "http://localhost:5757/api/3Q%E5%BD%B1%E8%A7%86[%E4%BC%98]?pwd=dzyyds",
         "category": "http://localhost:5757/api/3Q%E5%BD%B1%E8%A7%86[%E4%BC%98]?pwd=dzyyds&ac=list&t=1&pg=1"
       },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3862,11 +3275,8 @@
       "lang": "ds",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%8E%A9%E5%81%B6%E5%93%A5%E5%93%A5DM[%E7%9B%98]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E7%8E%A9%E5%81%B6%E5%93%A5%E5%93%A5DM[%E7%9B%98]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3878,11 +3288,8 @@
       "lang": "ds",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%8E%A9%E5%81%B6%E5%93%A5%E5%93%A5[%E7%9B%98]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E7%8E%A9%E5%81%B6%E5%93%A5%E5%93%A5[%E7%9B%98]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3894,11 +3301,8 @@
       "lang": "ds",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E4%BA%8C%E5%B0%8F[%E7%9B%98]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E4%BA%8C%E5%B0%8F[%E7%9B%98]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3910,11 +3314,8 @@
       "lang": "ds",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%BD%91%E7%9B%98[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTfzp%2F%2FtMJvS9be5%2FvXacHElF5sqvn6YZ%2BAGwhNKsgAAAA",
-        "category": "http://localhost:5757/api/%E7%BD%91%E7%9B%98[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=H4sIAAAAAAAAA9PT088qzs%2FTfzp%2F%2FtMJvS9be5%2FvXacHElF5sqvn6YZ%2BAGwhNKsgAAAA"
-      },
-      "checkTime": "2026-03-14T04:55:39.367Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3926,10 +3327,8 @@
       "lang": "ds",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%BD%91%E7%9B%98[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=H4sIAAAAAAAAA9PT088qzs%2FTfzp%2F%2FtMJvS9be5%2FvXacHElF5tmb5s7U9AIVJTBogAAAA"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3941,11 +3340,8 @@
       "lang": "ds",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/NT%E5%8A%A8%E6%BC%AB[%E6%BC%AB]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/NT%E5%8A%A8%E6%BC%AB[%E6%BC%AB]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3957,11 +3353,8 @@
       "lang": "php",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%9B%B4%E8%A7%82%E7%9F%AD%E5%89%A7%20%E1%B5%88%E1%B6%BB[%E7%9F%AD]?do=php&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%9B%B4%E8%A7%82%E7%9F%AD%E5%89%A7%20%E1%B5%88%E1%B6%BB[%E7%9F%AD]?do=php&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3977,7 +3370,7 @@
         "home": "http://localhost:5757/api/%E5%97%B7%E5%91%9C%E5%8A%A8%E6%BC%AB[%E6%BC%AB]?pwd=dzyyds",
         "category": "http://localhost:5757/api/%E5%97%B7%E5%91%9C%E5%8A%A8%E6%BC%AB[%E6%BC%AB]?pwd=dzyyds&ac=list&t=1&pg=1"
       },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -3989,11 +3382,8 @@
       "lang": "cat",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%97%B7%E5%91%9C%E5%8A%A8%E6%BC%AB[%E6%BC%AB]?do=cat&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%97%B7%E5%91%9C%E5%8A%A8%E6%BC%AB[%E6%BC%AB]?do=cat&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4005,11 +3395,8 @@
       "lang": "ds",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%9B%AA%E8%8A%B1%E7%94%B5%E5%BD%B1[%E7%A3%81]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E9%9B%AA%E8%8A%B1%E7%94%B5%E5%BD%B1[%E7%A3%81]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4021,27 +3408,8 @@
       "lang": "ds",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%9B%B7%E9%B2%B8%E5%B0%8F%E7%AB%99[%E7%9B%98]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E9%9B%B7%E9%B2%B8%E5%B0%8F%E7%AB%99[%E7%9B%98]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
-      "manuallyMarked": false
-    },
-    {
-      "key": "drpyS_啊哈DJ[听]",
-      "name": "啊哈DJ[听](DS)",
-      "api": "http://localhost:5757/api/啊哈DJ[听]?pwd=dzyyds",
-      "type": 4,
-      "searchable": 2,
-      "lang": "ds",
-      "status": "error",
-      "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%95%8A%E5%93%88DJ[%E5%90%AC]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%95%8A%E5%93%88DJ[%E5%90%AC]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4053,11 +3421,8 @@
       "lang": "php",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%BB%85%E5%A3%AB%E6%BC%AB%E7%94%BB%20%E1%B5%88%E1%B6%BB[%E7%94%BB]?do=php&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E7%BB%85%E5%A3%AB%E6%BC%AB%E7%94%BB%20%E1%B5%88%E1%B6%BB[%E7%94%BB]?do=php&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4069,10 +3434,8 @@
       "lang": "ds",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E7%95%AA%E8%8C%84%E6%BC%AB%E7%94%BB[%E7%94%BB]?do=cat&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4084,11 +3447,8 @@
       "lang": "unknown",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E4%BB%93%E9%BC%A0",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E4%BB%93%E9%BC%A0"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4100,11 +3460,8 @@
       "lang": "unknown",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E5%92%96%E5%95%A1",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E5%92%96%E5%95%A1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4116,11 +3473,8 @@
       "lang": "unknown",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E9%B2%B8%E9%B1%BC",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E9%B2%B8%E9%B1%BC"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4132,11 +3486,8 @@
       "lang": "unknown",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E7%81%AB%E9%94%85",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E7%81%AB%E9%94%85"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4148,11 +3499,8 @@
       "lang": "unknown",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E6%97%97%E6%98%9F",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E6%97%97%E6%98%9F"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4164,10 +3512,8 @@
       "lang": "unknown",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E5%89%A7%E6%A2%A6"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4179,11 +3525,8 @@
       "lang": "unknown",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E9%A1%BE%E6%88%91",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E9%A1%BE%E6%88%91"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4195,11 +3538,8 @@
       "lang": "unknown",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E7%88%86%E7%82%B8",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E7%88%86%E7%82%B8"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4211,11 +3551,8 @@
       "lang": "unknown",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E7%81%B5%E8%99%8E",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E7%81%B5%E8%99%8E"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4227,11 +3564,8 @@
       "lang": "unknown",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E4%BA%91%E4%BA%91",
-        "category": "http://localhost:5757/api/Appget[%E6%A8%A1%E6%9D%BF]?pwd=dzyyds&ac=list&t=1&pg=1&extend=..%2Fjson%2FApp%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.json%24%E4%BA%91%E4%BA%91"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4243,11 +3577,8 @@
       "lang": "ds",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/18av[%E5%AF%86]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/18av[%E5%AF%86]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4259,11 +3590,8 @@
       "lang": "ds",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/55%E5%BD%B1%E8%A7%86?pwd=dzyyds",
-        "category": "http://localhost:5757/api/55%E5%BD%B1%E8%A7%86?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4275,11 +3603,8 @@
       "lang": "ds",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/999%E7%89%87?pwd=dzyyds",
-        "category": "http://localhost:5757/api/999%E7%89%87?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.368Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4291,11 +3616,8 @@
       "lang": "ds",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/TVB%E4%BA%91%E6%92%AD?pwd=dzyyds",
-        "category": "http://localhost:5757/api/TVB%E4%BA%91%E6%92%AD?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4307,11 +3629,8 @@
       "lang": "ds",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%8D%AB%E6%98%9F%E5%BD%B1%E8%A7%86?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%8D%AB%E6%98%9F%E5%BD%B1%E8%A7%86?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4323,11 +3642,8 @@
       "lang": "ds",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%9D%9E%E5%87%A1%E9%87%87%E9%9B%86[%E9%87%87]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E9%9D%9E%E5%87%A1%E9%87%87%E9%9B%86[%E9%87%87]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4339,10 +3655,8 @@
       "lang": "ds",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%9B%B6%E5%BA%A6?pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4354,11 +3668,8 @@
       "lang": "ds",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%BB%91%E6%96%99%E4%B8%8D%E6%89%93%E7%83%8A[%E5%AF%86]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E9%BB%91%E6%96%99%E4%B8%8D%E6%89%93%E7%83%8A[%E5%AF%86]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4370,11 +3681,8 @@
       "lang": "hipy",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppFox?do=py&pwd=dzyyds&extend=%7B%22host%22%3A%22http%3A%2F%2Fnico.oiio.fun%22%7D",
-        "category": "http://localhost:5757/api/AppFox?do=py&pwd=dzyyds&ac=list&t=1&pg=1&extend=%7B%22host%22%3A%22http%3A%2F%2Fnico.oiio.fun%22%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4386,11 +3694,8 @@
       "lang": "hipy",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppGet?do=py&pwd=dzyyds&extend=%7B%22host%22%3A%22http%3A%2F%2Fys.qist.top%22%2C%22key%22%3A%222SWSPFxugBLPPOKo%22%7D",
-        "category": "http://localhost:5757/api/AppGet?do=py&pwd=dzyyds&ac=list&t=1&pg=1&extend=%7B%22host%22%3A%22http%3A%2F%2Fys.qist.top%22%2C%22key%22%3A%222SWSPFxugBLPPOKo%22%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4402,11 +3707,8 @@
       "lang": "hipy",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppFox?do=py&pwd=dzyyds&extend=http%3A%2F%2Fapp.hktvyb.cc",
-        "category": "http://localhost:5757/api/AppFox?do=py&pwd=dzyyds&ac=list&t=1&pg=1&extend=http%3A%2F%2Fapp.hktvyb.cc"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4418,11 +3720,8 @@
       "lang": "hipy",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppFox?do=py&pwd=dzyyds&extend=%7B%22host%22%3A%22http%3A%2F%2Fwww.yezitv.top%2Fdtym.json%22%7D",
-        "category": "http://localhost:5757/api/AppFox?do=py&pwd=dzyyds&ac=list&t=1&pg=1&extend=%7B%22host%22%3A%22http%3A%2F%2Fwww.yezitv.top%2Fdtym.json%22%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4434,11 +3733,8 @@
       "lang": "hipy",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppMuou?do=py&pwd=dzyyds",
-        "category": "http://localhost:5757/api/AppMuou?do=py&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4454,7 +3750,7 @@
         "home": "http://localhost:5757/api/%E9%BA%BB%E8%B1%86%E7%A4%BE[%E5%AF%86]?pwd=dzyyds",
         "category": "http://localhost:5757/api/%E9%BA%BB%E8%B1%86%E7%A4%BE[%E5%AF%86]?pwd=dzyyds&ac=list&t=1&pg=1"
       },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4466,11 +3762,8 @@
       "lang": "ds",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E8%8D%89%E6%A6%B4%E7%A4%BE%E5%8C%BA[%E5%AF%86]?pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E8%8D%89%E6%A6%B4%E7%A4%BE%E5%8C%BA[%E5%AF%86]?pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4483,7 +3776,7 @@
       "status": "error",
       "message": "Cannot set properties of null (setting 'textContent')",
       "testUrls": {},
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4495,10 +3788,8 @@
       "lang": "hipy",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppGet?do=py&pwd=dzyyds&extend=%7B%22host%22%3A%22https%3A%2F%2Fmac.555618.xyz%22%2C%22key%22%3A%22%23getapp%40TMD%402025%22%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4510,11 +3801,8 @@
       "lang": "hipy",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppV2%C2%B9?do=py&pwd=dzyyds",
-        "category": "http://localhost:5757/api/AppV2%C2%B9?do=py&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4526,11 +3814,8 @@
       "lang": "hipy",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/getapp3.4.4?do=py&pwd=dzyyds&extend=%7B%22host%22%3A%22https%3A%2F%2F99.jl8.top%2F1.txt%22%2C%22key%22%3A%22xnybssspqtwotuwj%22%7D",
-        "category": "http://localhost:5757/api/getapp3.4.4?do=py&pwd=dzyyds&ac=list&t=1&pg=1&extend=%7B%22host%22%3A%22https%3A%2F%2F99.jl8.top%2F1.txt%22%2C%22key%22%3A%22xnybssspqtwotuwj%22%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4542,11 +3827,8 @@
       "lang": "hipy",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/getapp3.4.4?do=py&pwd=dzyyds&extend=%7B%22host%22%3A%22https%3A%2F%2Fjingyu4k-1312635929.cos.ap-nanjing.myqcloud.com%2F1.json%22%2C%22datakey%22%3A%22AAdgrdghjfgswerA%22%2C%22api%22%3A2%7D",
-        "category": "http://localhost:5757/api/getapp3.4.4?do=py&pwd=dzyyds&ac=list&t=1&pg=1&extend=%7B%22host%22%3A%22https%3A%2F%2Fjingyu4k-1312635929.cos.ap-nanjing.myqcloud.com%2F1.json%22%2C%22datakey%22%3A%22AAdgrdghjfgswerA%22%2C%22api%22%3A2%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4558,11 +3840,8 @@
       "lang": "hipy",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/emby?do=py&pwd=dzyyds&extend=%7B%22server%22%3A%22http%3A%2F%2F139.9.106.196%3A2345%22%2C%22username%22%3A%22kid%22%2C%22password%22%3A%22%22%7D",
-        "category": "http://localhost:5757/api/emby?do=py&pwd=dzyyds&ac=list&t=1&pg=1&extend=%7B%22server%22%3A%22http%3A%2F%2F139.9.106.196%3A2345%22%2C%22username%22%3A%22kid%22%2C%22password%22%3A%22%22%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4574,11 +3853,8 @@
       "lang": "hipy",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/AppV2%C2%B2?do=py&pwd=dzyyds&extend=http%3A%2F%2Fv.lnhaozhenjin.cn",
-        "category": "http://localhost:5757/api/AppV2%C2%B2?do=py&pwd=dzyyds&ac=list&t=1&pg=1&extend=http%3A%2F%2Fv.lnhaozhenjin.cn"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4590,11 +3866,8 @@
       "lang": "hipy",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/getapp3.4.4?do=py&pwd=dzyyds&extend=%7B%22host%22%3A%22https%3A%2F%2Fstaraugust123456.oss-cn-hangzhou.aliyuncs.com%2F2.txt%22%2C%22datakey%22%3A%22staraugust123456%22%2C%22api%22%3A2%7D",
-        "category": "http://localhost:5757/api/getapp3.4.4?do=py&pwd=dzyyds&ac=list&t=1&pg=1&extend=%7B%22host%22%3A%22https%3A%2F%2Fstaraugust123456.oss-cn-hangzhou.aliyuncs.com%2F2.txt%22%2C%22datakey%22%3A%22staraugust123456%22%2C%22api%22%3A2%7D"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4606,11 +3879,8 @@
       "lang": "php",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E5%97%B7%E5%91%9C%E5%8A%A8%E6%BC%AB%20%E1%B5%88%E1%B6%BB?do=php&pwd=dzyyds",
-        "category": "http://localhost:5757/api/%E5%97%B7%E5%91%9C%E5%8A%A8%E6%BC%AB%20%E1%B5%88%E1%B6%BB?do=php&pwd=dzyyds&ac=list&t=1&pg=1"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4621,11 +3891,14 @@
       "searchable": 1,
       "lang": "hipy",
       "status": "error",
-      "message": "推荐和分类接口均异常",
+      "message": "仅 1/4 接口正常",
       "testUrls": {
-        "home": "http://localhost:5757/api/%E6%96%B0%E6%B5%AA%E8%B5%84%E6%BA%90?do=py&pwd=dzyyds"
+        "home": "http://localhost:5757/api/%E6%96%B0%E6%B5%AA%E8%B5%84%E6%BA%90?do=py&pwd=dzyyds",
+        "category": "http://localhost:5757/api/%E6%96%B0%E6%B5%AA%E8%B5%84%E6%BA%90?do=py&pwd=dzyyds&ac=list&t=1&pg=1",
+        "search": "http://localhost:5757/api/%E6%96%B0%E6%B5%AA%E8%B5%84%E6%BA%90?do=py&pwd=dzyyds&ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "detail": "http://localhost:5757/api/%E6%96%B0%E6%B5%AA%E8%B5%84%E6%BA%90?do=py&pwd=dzyyds&ac=detail&ids=1"
       },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     },
     {
@@ -4637,10 +3910,8 @@
       "lang": "php",
       "status": "error",
       "message": "推荐和分类接口均异常",
-      "testUrls": {
-        "home": "http://localhost:5757/api/%E9%9B%B6%E5%BA%A6%E5%BD%B1%E8%A7%86%20%E1%B5%88%E1%B6%BB?do=php&pwd=dzyyds"
-      },
-      "checkTime": "2026-03-14T04:55:39.369Z",
+      "testUrls": {},
+      "checkTime": "2026-03-14T05:07:55.462Z",
       "manuallyMarked": false
     }
   ]
