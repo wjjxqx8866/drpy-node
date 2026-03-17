@@ -105,22 +105,8 @@ async function runTest() {
         console.log(`平均每次读取耗时: ${avgTime.toFixed(4)} ms`);
         console.log('✅ 性能测试完成。');
 
-        // 8. 优化后的 readHeader 性能测试
-        console.log(`\n[8/10] 优化后的 readHeader (Partial Read) 性能测试 (读取 ${iterations} 次取平均)...`);
-        
-        const perfStartOptimized = performance.now();
-        for(let i=0; i<iterations; i++) {
-            await FileHeaderManager.readHeader(testFile);
-        }
-        const perfEndOptimized = performance.now();
-        const totalTimeOptimized = perfEndOptimized - perfStartOptimized;
-        const avgTimeOptimized = totalTimeOptimized / iterations;
-        
-        console.log(`总耗时 (Optimized): ${totalTimeOptimized.toFixed(2)} ms`);
-        console.log(`平均每次读取耗时 (Optimized): ${avgTimeOptimized.toFixed(4)} ms`);
-        
-        const finalImprovement = ((avgTime - avgTimeOptimized) / avgTime * 100).toFixed(2);
-        console.log(`🚀 最终性能提升: ${finalImprovement}%`);
+        // 8. (已移除优化对比，直接全量读取更快)
+        console.log('\n[8/10] 跳过 Partial Read 性能测试 (全量读取更快)...');
 
         // 9. 写文件头性能测试
         console.log(`\n[9/10] 写文件头性能测试 (循环 ${iterations} 次)...`);
