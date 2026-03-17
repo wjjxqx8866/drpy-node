@@ -37,6 +37,7 @@ class FileHeaderManager {
 
     /**
      * Find the @header(...) block in the comment text
+     * Optimized state machine for parsing nested structures
      * @param {string} text Comment text
      * @param {string} ext File extension (.js or .py)
      * @returns {Object|null} { start, end, content }
@@ -48,52 +49,31 @@ class FileHeaderManager {
 
         let index = startIndex + startMarker.length;
         let balance = 1;
-        let inString = false;
-        let stringChar = '';
-        let escape = false;
-        let inLineComment = false;
-        let inBlockComment = false;
-
-        for (; index < text.length; index++) {
+        const len = text.length;
+        
+        // Fast scan loop
+        while (index < len) {
             const char = text[index];
 
-            if (inLineComment) {
-                if (char === '\n') inLineComment = false;
-                continue;
-            }
-
-            if (inBlockComment) {
-                if (char === '*' && text[index + 1] === '/') {
-                    inBlockComment = false;
-                    index++;
-                }
-                continue;
-            }
-
-            if (inString) {
-                if (escape) {
-                    escape = false;
-                } else if (char === '\\') {
-                    escape = true;
-                } else if (char === stringChar) {
-                    inString = false;
-                }
-                continue;
-            }
-
-            // Start of comment
-            if (char === '/' && text[index + 1] === '/') {
-                inLineComment = true;
-                index++; 
-            } else if (char === '/' && text[index + 1] === '*') {
-                inBlockComment = true;
+            // 1. String literal detection (Most common content inside JSON)
+            if (char === '"' || char === "'") {
+                const quote = char;
                 index++;
-            } else if (ext === '.py' && char === '#') {
-                inLineComment = true;
-            } else if (char === '"' || char === "'") {
-                inString = true;
-                stringChar = char;
-            } else if (char === '(') {
+                while (index < len) {
+                    const c = text[index];
+                    if (c === '\\') {
+                        index += 2; // Skip escaped char
+                    } else if (c === quote) {
+                        index++; // Include closing quote
+                        break; // End of string
+                    } else {
+                        index++;
+                    }
+                }
+                continue; // Continue outer loop
+            } 
+            // 2. Parentheses balance
+            else if (char === '(') {
                 balance++;
             } else if (char === ')') {
                 balance--;
@@ -105,6 +85,30 @@ class FileHeaderManager {
                     };
                 }
             }
+            // 3. Comments skipping (Only if strictly needed inside header object, usually standard JSON doesn't have comments but JS objects might)
+            // Optimization: Assume standard JSON5/JS object format inside @header, check for comments only if / or # encountered
+            else if (char === '/') {
+                const next = text[index + 1];
+                if (next === '/') { // Line comment
+                    index += 2;
+                    const newline = text.indexOf('\n', index);
+                    index = newline === -1 ? len : newline;
+                    continue;
+                } else if (next === '*') { // Block comment
+                    index += 2;
+                    const endComment = text.indexOf('*/', index);
+                    if (endComment === -1) { index = len; } 
+                    else { index = endComment + 2; }
+                    continue;
+                }
+            }
+            else if (ext === '.py' && char === '#') { // Python comment
+                 const newline = text.indexOf('\n', index + 1);
+                 index = newline === -1 ? len : newline;
+                 continue;
+            }
+
+            index++;
         }
         return null;
     }
