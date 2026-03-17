@@ -32,3 +32,6 @@ const f = await getEngine('央视大全[官]', {
 
 const [statuCode, contentType, buffer, headers] = f;
 console.log('resutl: header:', headers, 'buffer length:', buffer.length);
+
+const g = await getEngine('360影视[官]', {do: 'ds', ac: 'list', t: '2'})
+console.log(g)
