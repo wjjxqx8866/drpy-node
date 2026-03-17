@@ -32,7 +32,7 @@
     "admin:install": "cd drpy-node-admin && npm install"
   },
   "engines": {
-    "node": ">17 <26"
+    "node": ">17 <25"
   },
   "repository": "https://github.com/hjdhnx/drpy-node.git",
   "author": "晚风拂柳颜 <434857005@qq.com>",
