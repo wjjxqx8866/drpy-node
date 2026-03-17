@@ -208,19 +208,25 @@ class FileHeaderManager {
             throw new Error('Invalid header object');
         }
 
-        let content;
-        try {
-            content = await fs.readFile(filePath, 'utf8');
-        } catch (error) {
-            throw new Error(`Failed to read file: ${error.message}`);
-        }
-
         const ext = path.extname(filePath);
         const config = this.COMMENT_CONFIG[ext];
 
         if (!config) throw new Error(`Unsupported file type: ${ext}`);
 
         const headerStr = `@header(${JSON5.stringify(headerObj, null, 2)})`;
+
+        // 尝试使用 Buffer 优化写入 (针对已存在 header 的情况)
+        const bufferSuccess = await this._replaceHeaderBuffer(filePath, headerStr, config, ext);
+        if (bufferSuccess) {
+            return;
+        }
+
+        let content;
+        try {
+            content = await fs.readFile(filePath, 'utf8');
+        } catch (error) {
+            throw new Error(`Failed to read file: ${error.message}`);
+        }
 
         // 优化：先尝试只读取头部来匹配正则，避免全量匹配
         // 但由于 writeHeader 需要重写整个文件，全量内容是必须的
@@ -370,6 +376,119 @@ class FileHeaderManager {
             throw new Error(`Failed to write file: ${error.message}`);
         }
     }
+
+    /**
+     * 使用 Buffer 高效地替换文件头，避免大文件 String 转换开销
+     * @private
+     */
+    static async _replaceHeaderBuffer(filePath, headerStr, config, ext) {
+         let handle;
+         try {
+             handle = await fs.open(filePath, 'r');
+             const stats = await handle.stat();
+             
+             // 如果文件太小，Buffer 优化的开销可能不划算，fallback 到 string 处理
+             // 或者如果文件太大 (如 > 5MB)，我们只读取前 64KB 寻找 header
+             const MAX_SCAN_SIZE = 64 * 1024; // 64KB
+             const scanSize = Math.min(stats.size, MAX_SCAN_SIZE);
+             
+             const buffer = Buffer.alloc(scanSize);
+             await handle.read(buffer, 0, scanSize, 0);
+             await handle.close();
+             handle = null;
+             
+             // 将 buffer 转为 string 进行正则匹配 (只转前 64KB)
+             const contentHead = buffer.toString('utf8');
+             
+             const match = contentHead.match(config.regex);
+             
+             if (match) {
+                 const [fullComment] = match;
+                 // 找到 headerBlock
+                 const headerBlock = this.findHeaderBlock(fullComment, ext);
+                 
+                 if (headerBlock) {
+                     // 计算 headerBlock 在文件中的 byte offset
+                     // 注意：fullComment 是 regex 匹配出来的 string
+                     // 我们需要找到 fullComment 在 buffer 中的 byte offset
+                     
+                     // Buffer.indexOf(string) 可以找到 byte offset
+                     // 但 regex 匹配的 fullComment 可能包含 unicode，直接 indexOf string 是安全的
+                     // 前提是 encoding 一致 (utf8)
+                     
+                     const commentStartOffset = buffer.indexOf(fullComment);
+                     if (commentStartOffset === -1) {
+                         // Fallback if not found (encoding issues?)
+                         return false; 
+                     }
+                     
+                     // headerBlock.start 是相对于 fullComment 字符串的 char index
+                     // 我们需要 byte index。这有点麻烦，因为 fullComment 可能包含多字节字符。
+                     // 所以我们需要把 fullComment.substring(0, headerBlock.start) 转为 Buffer 算长度
+                     
+                     const preHeaderStr = fullComment.substring(0, headerBlock.start);
+                     const preHeaderLen = Buffer.byteLength(preHeaderStr);
+                     
+                     const postHeaderStr = fullComment.substring(headerBlock.end);
+                     
+                     // 构造新的 header buffer
+                     const newHeaderBuf = Buffer.from(headerStr);
+                     
+                     // 计算替换点
+                     const replaceStart = commentStartOffset + preHeaderLen;
+                     
+                     // 原有的 header content byte length
+                     const oldHeaderContentStr = headerBlock.content; // 这里包含了 header(...) 括号内的内容? 
+                     // findHeaderBlock 返回的是 {start, end, content}
+                     // start/end 是相对于 fullComment 的 index
+                     // content 是 header(...) 括号内的内容，还是 @header(...)?
+                     // 看 findHeaderBlock 实现:
+                     // content: text.substring(startIndex + startMarker.length, index) -> 只是括号内的内容
+                     // start: startIndex ( "@" 的位置 )
+                     // end: index + 1 ( ")" 后面的位置 )
+                     
+                     // 所以 headerBlock.start 指向 "@header" 的 "@"
+                     // headerBlock.end 指向 ")" 后面
+                     
+                     // 原始的 header 部分 (string)
+                     const oldHeaderFullStr = fullComment.substring(headerBlock.start, headerBlock.end);
+                     const oldHeaderByteLen = Buffer.byteLength(oldHeaderFullStr);
+                     
+                     // 准备写入
+                     // 如果新旧 header 长度一致，可以直接 overwrite (极快)
+                     // 如果不一致，需要重写文件剩余部分
+                     
+                     if (newHeaderBuf.length === oldHeaderByteLen) {
+                         // Overwrite inplace
+                         const writeHandle = await fs.open(filePath, 'r+');
+                         await writeHandle.write(newHeaderBuf, 0, newHeaderBuf.length, replaceStart);
+                         await writeHandle.close();
+                         return true;
+                     } else {
+                         // 重写文件
+                         // 读取整个文件为 Buffer 然后 concat
+                         // 避免 string 转换
+                         
+                         const fullFileBuf = await fs.readFile(filePath);
+                         const finalBuf = Buffer.concat([
+                             fullFileBuf.subarray(0, replaceStart),
+                             newHeaderBuf,
+                             fullFileBuf.subarray(replaceStart + oldHeaderByteLen)
+                         ]);
+                         
+                         await fs.writeFile(filePath, finalBuf);
+                         return true;
+                     }
+                 }
+             }
+             
+             return false; // Fallback to string mode if no match or complex case
+         } catch (e) {
+             if (handle) await handle.close();
+             return false;
+         }
+    }
+
 
     /**
      * 移除头信息区域

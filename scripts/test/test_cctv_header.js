@@ -126,6 +126,12 @@ async function runTest() {
         const avgTimeWrite = totalTimeWrite / iterations;
         console.log(`总耗时 (Write ${iterations}次): ${totalTimeWrite.toFixed(2)} ms`);
         console.log(`平均每次写入耗时: ${avgTimeWrite.toFixed(4)} ms`);
+        
+        // 验证 Buffer 模式是否生效 (检查耗时是否显著低于 String 模式)
+        // 理论上 Buffer 模式会快很多
+        if (avgTimeWrite < 1.0) {
+             console.log('✅ 写入性能极佳，推测已启用 Buffer 优化。');
+        }
 
         // 10. 移除文件头性能测试
         console.log(`\n[10/10] 移除文件头性能测试 (循环 ${iterations} 次)...`);
