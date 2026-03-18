@@ -9,7 +9,7 @@
 })
 */
 
-function i4e(url, timestamp, session, traceId) {    
+function i4e(url, timestamp, session, traceId) {
     // 1. 获取 URL 的路径部分（去除查询参数）
     let hh = `${rule.host}/api`;
     let path = url.split("?")[0].replace(hh, '');
@@ -40,14 +40,14 @@ function i4e(url, timestamp, session, traceId) {
 function decrypt(data) {
     let key = "0x1A2B3C4D5E6F7A8B9C";
     let output = "";
-    
+
     for (let i = 0; i < data.length; i += 2) {
         let hexChar = data.substr(i, 2);
         let intVal = parseInt(hexChar, 16);
         let charCode = intVal ^ key.charCodeAt((i / 2) % key.length);
         output += String.fromCharCode(charCode);
     }
-    
+
     return output;
 }
 
@@ -77,8 +77,8 @@ var rule = {
     quickSearch: 1,
     filterable: 0,
     headers: {
-        'User-Agent': MOBILE_UA,
-        'x-platform': 'web'
+        'User-Agent': 'SYMX_ANDROID',
+        'x-platform': 'android'
     },
     play_parse: true,
     search_match: true,
@@ -88,20 +88,20 @@ var rule = {
         let result = reqCookie(`${rule.host}/api/stats/track`, {
             method: 'GET',
             headers: {
-                'User-Agent': MOBILE_UA,
-                'x-platform': 'web',
+                'User-Agent': 'SYMX_ANDROID',
+                'x-platform': 'android',
                 'referer': `${rule.host}/m/index`
             }
         }, false);
         console.log(result.cookie);
         rule.cookies = result.cookie;
         rule.headers["cookie"] = result.cookie;
-        
+
         let result2 = request(`${rule.host}/api/system/config`, {
             method: 'GET',
             headers: {
-                'User-Agent': MOBILE_UA,
-                'x-platform': 'web',
+                'User-Agent': 'SYMX_ANDROID',
+                'x-platform': 'android',
                 'cookie': rule.cookies,
                 'referer': `${rule.host}/`
             }
@@ -160,8 +160,8 @@ var rule = {
         let sign = i4e(input, timestamp, rule.session, rule.traceId);
         let html = request(input, {
             headers: {
-                'User-Agent': MOBILE_UA,
-                'x-platform': 'web',
+                'User-Agent': 'SYMX_ANDROID',
+                'x-platform': 'android',
                 'cookie': rule.cookies,
                 [rule.reportId]: sign,
                 'x-timestamp': timestamp,
@@ -170,7 +170,7 @@ var rule = {
             method: 'GET'
         });
         log("html>>>>>" + html)
-        
+
         let data = JSON.parse(html).data;
 
         rule.cid = data.categoryId;
@@ -223,9 +223,9 @@ var rule = {
         let sign = i4e(input, timestamp, rule.session, rule.traceId);
         let html = request(input, {
             headers: {
-                'User-Agent': MOBILE_UA,
+                'User-Agent': 'SYMX_ANDROID',
                 'Accept': 'application/json, text/plain, */*',
-                'x-platform': 'web',
+                'x-platform': 'android',
                 'x-timestamp': timestamp,
                 [rule.reportId]: sign,
                 'referer': `${rule.host}/m/search?keyword=${encodeURIComponent(KEY)}`,
@@ -255,18 +255,17 @@ var rule = {
         let sign1 = i4e(purl1, timestamp1, rule.session, rule.traceId);
         let html1 = request(purl1, {
             headers: {
-                'User-Agent': MOBILE_UA,
+                'User-Agent': 'SYMX_ANDROID',
                 'Accept': 'application/json, text/plain, */*',
-                'x-platform': 'web',
+                'x-platform': 'android',
                 'x-timestamp': timestamp1,
                 [rule.reportId]: sign1,
                 'referer': `${rule.host}/m/player?cid=${rule.cid}&film_id=${rule.filmid}&line_id=${linesid}`,
-                'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
                 'cookie': rule.cookies
             },
             method: 'GET'
         });
-                
+
         let purl = `${rule.host}/api/line/play/parse?lineId=${linesid}`;
 
         let timestamp = new Date().getTime().toString();
@@ -275,13 +274,12 @@ var rule = {
         let sign = i4e(purl, timestamp, rule.session, rule.traceId);
         let html = request(purl, {
             headers: {
-                'User-Agent': MOBILE_UA,
+                'User-Agent': 'SYMX_ANDROID',
                 'Accept': 'application/json, text/plain, */*',
-                'x-platform': 'web',
+                'x-platform': 'android',
                 'x-timestamp': timestamp,
                 [rule.reportId]: sign,
                 'referer': `${rule.host}/m/player?cid=${rule.cid}&film_id=${rule.filmid}&line_id=${linesid}`,
-                'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
                 'cookie': rule.cookies
             },
             method: 'GET'
@@ -295,4 +293,3 @@ var rule = {
     }),
 
 }
-

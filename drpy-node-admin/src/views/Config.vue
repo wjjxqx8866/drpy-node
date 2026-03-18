@@ -4,6 +4,9 @@ import { useConfigStore } from '../stores/config'
 
 const configStore = useConfigStore()
 const editingKey = ref(null)
+
+// Page layout refs for sticky header
+const pageContainer = ref(null)
 const editValue = ref('')
 
 // Config categories and descriptions
@@ -133,49 +136,54 @@ const getTypeIcon = (value) => {
 </script>
 
 <template>
-  <div class="space-y-6">
-    <!-- Header -->
-    <div class="flex items-center justify-between">
-      <div>
-        <h2 class="text-xl font-semibold">环境变量配置</h2>
-        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
-          管理 drpy-node 的环境变量和配置项
-        </p>
+  <div class="config-page">
+    <!-- Sticky Header Section -->
+    <div class="config-header">
+      <!-- Header -->
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-xl font-semibold">环境变量配置</h2>
+          <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
+            管理 drpy-node 的环境变量和配置项
+          </p>
+        </div>
+        <button
+          @click="configStore.fetchConfig()"
+          :disabled="configStore.loading"
+          class="btn btn-secondary"
+        >
+          <svg v-if="configStore.loading" class="w-4 h-4 mr-2 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+          </svg>
+          刷新
+        </button>
       </div>
-      <button
-        @click="configStore.fetchConfig()"
-        :disabled="configStore.loading"
-        class="btn btn-secondary"
-      >
-        <svg v-if="configStore.loading" class="w-4 h-4 mr-2 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-        </svg>
-        刷新
-      </button>
     </div>
 
-    <!-- Loading state -->
-    <div v-if="configStore.loading && !configStore.config" class="flex justify-center py-12">
-      <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
-    </div>
+    <!-- Scrollable Content -->
+    <div class="config-content">
+      <!-- Loading state -->
+      <div v-if="configStore.loading && !configStore.config" class="flex justify-center py-12">
+        <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
+      </div>
 
-    <!-- Error state -->
-    <div v-else-if="configStore.error" class="card p-6 border-red-200 dark:border-red-800">
-      <p class="text-red-600 dark:text-red-400">加载配置失败: {{ configStore.error }}</p>
-    </div>
+      <!-- Error state -->
+      <div v-else-if="configStore.error" class="card p-6 border-red-200 dark:border-red-800">
+        <p class="text-red-600 dark:text-red-400">加载配置失败: {{ configStore.error }}</p>
+      </div>
 
-    <!-- Config groups -->
-    <div v-else class="space-y-6">
-      <div v-for="(configs, groupName) in groupedConfigs" :key="groupName" class="card overflow-hidden">
-        <div class="px-6 py-4 bg-gray-50 dark:bg-gray-700/50 border-b border-gray-200 dark:border-gray-700">
-          <h3 class="font-semibold text-gray-900 dark:text-gray-100">{{ groupName }}</h3>
-        </div>
+      <!-- Config groups -->
+      <div v-else class="space-y-6">
+        <div v-for="(configs, groupName) in groupedConfigs" :key="groupName" class="card overflow-hidden">
+          <div class="px-6 py-4 bg-gray-50 dark:bg-gray-700/50 border-b border-gray-200 dark:border-gray-700">
+            <h3 class="font-semibold text-gray-900 dark:text-gray-100">{{ groupName }}</h3>
+          </div>
 
-        <div v-if="Object.keys(configs).length === 0" class="p-6 text-center text-gray-500 dark:text-gray-400">
-          暂无配置项
-        </div>
+          <div v-if="Object.keys(configs).length === 0" class="p-6 text-center text-gray-500 dark:text-gray-400">
+            暂无配置项
+          </div>
 
-        <div v-else class="divide-y divide-gray-200 dark:divide-gray-700">
+          <div v-else class="divide-y divide-gray-200 dark:divide-gray-700">
           <div
             v-for="(value, key) in configs"
             :key="key"
@@ -234,4 +242,25 @@ const getTypeIcon = (value) => {
       </div>
     </div>
   </div>
+  </div>
 </template>
+
+<style scoped>
+.config-page {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 8rem - 4rem);
+  min-height: 500px;
+}
+
+.config-header {
+  flex-shrink: 0;
+  padding-bottom: 1rem;
+}
+
+.config-content {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+</style>

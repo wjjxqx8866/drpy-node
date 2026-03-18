@@ -5,6 +5,9 @@ import { useSystemStore } from '../stores/system'
 const systemStore = useSystemStore()
 const healthCheckInterval = ref(null)
 
+// Page layout refs for sticky header
+const pageContainer = ref(null)
+
 onMounted(async () => {
   await systemStore.checkHealth()
   await systemStore.fetchRoutes()
@@ -82,51 +85,56 @@ const restartService = async () => {
 </script>
 
 <template>
-  <div class="space-y-6">
-    <!-- Health Status -->
-    <div class="card p-6">
-      <div class="flex items-center justify-between mb-4">
-        <h3 class="text-lg font-semibold">服务状态</h3>
+  <div class="dashboard-page">
+    <!-- Sticky Header Section -->
+    <div class="dashboard-header">
+      <!-- Health Status -->
+      <div class="card p-6">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-lg font-semibold">服务状态</h3>
+          <div class="flex items-center gap-3">
+            <button
+              @click="restartService"
+              :disabled="restarting"
+              class="btn btn-secondary text-sm"
+              :class="{ 'opacity-50 cursor-not-allowed': restarting }"
+            >
+              <svg v-if="restarting" class="w-4 h-4 mr-2 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              <svg v-else class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              {{ restarting ? '重启中...' : '重启服务' }}
+            </button>
+            <span
+              class="badge"
+              :class="getStatusBadge(systemStore.health.status)"
+            >
+              {{ systemStore.health.status?.toUpperCase() || 'UNKNOWN' }}
+            </span>
+          </div>
+        </div>
         <div class="flex items-center gap-3">
-          <button
-            @click="restartService"
-            :disabled="restarting"
-            class="btn btn-secondary text-sm"
-            :class="{ 'opacity-50 cursor-not-allowed': restarting }"
-          >
-            <svg v-if="restarting" class="w-4 h-4 mr-2 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-            </svg>
-            <svg v-else class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-            </svg>
-            {{ restarting ? '重启中...' : '重启服务' }}
-          </button>
-          <span
-            class="badge"
-            :class="getStatusBadge(systemStore.health.status)"
-          >
-            {{ systemStore.health.status?.toUpperCase() || 'UNKNOWN' }}
+          <div
+            class="w-3 h-3 rounded-full animate-pulse-slow"
+            :class="systemStore.health.status === 'ok' || systemStore.health.status === 'healthy'
+              ? 'bg-green-500'
+              : 'bg-red-500'"
+          />
+          <span class="text-gray-600 dark:text-gray-400">
+            {{ systemStore.health.status === 'ok' || systemStore.health.status === 'healthy'
+              ? '服务运行正常'
+              : '服务异常' }}
           </span>
         </div>
       </div>
-      <div class="flex items-center gap-3">
-        <div
-          class="w-3 h-3 rounded-full animate-pulse-slow"
-          :class="systemStore.health.status === 'ok' || systemStore.health.status === 'healthy'
-            ? 'bg-green-500'
-            : 'bg-red-500'"
-        />
-        <span class="text-gray-600 dark:text-gray-400">
-          {{ systemStore.health.status === 'ok' || systemStore.health.status === 'healthy'
-            ? '服务运行正常'
-            : '服务异常' }}
-        </span>
-      </div>
     </div>
 
-    <!-- Stats Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    <!-- Scrollable Content -->
+    <div class="dashboard-content">
+      <!-- Stats Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       <!-- JS Sources -->
       <div class="card p-5">
         <div class="flex items-center justify-between">
@@ -197,8 +205,8 @@ const restartService = async () => {
     </div>
 
     <!-- Quick Actions -->
-    <div class="card p-6">
-      <h3 class="text-lg font-semibold mb-4">快捷操作</h3>
+      <div class="card p-6">
+        <h3 class="text-lg font-semibold mb-4">快捷操作</h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
         <RouterLink to="/config" class="flex items-center gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
           <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -222,5 +230,26 @@ const restartService = async () => {
         </RouterLink>
       </div>
     </div>
+    </div>
   </div>
 </template>
+
+<style scoped>
+.dashboard-page {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 8rem - 4rem);
+  min-height: 500px;
+}
+
+.dashboard-header {
+  flex-shrink: 0;
+  padding-bottom: 1rem;
+}
+
+.dashboard-content {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+</style>

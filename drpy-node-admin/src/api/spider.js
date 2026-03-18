@@ -1,5 +1,21 @@
 import apiClient from './client'
 
+// 解析 MCP 响应的辅助函数
+const parseMcpResponse = (response) => {
+  console.log('MCP raw response:', response)
+  if (response?.content?.[0]?.text) {
+    try {
+      const parsed = JSON.parse(response.content[0].text)
+      console.log('MCP parsed:', parsed)
+      return parsed
+    } catch (e) {
+      console.log('MCP parse error:', e)
+      return response.content[0].text
+    }
+  }
+  return response
+}
+
 export const spiderApi = {
   // List all sources via MCP
   async listSources() {
@@ -20,7 +36,7 @@ export const spiderApi = {
       name: 'validate_spider',
       arguments: { path }
     })
-    return response
+    return parseMcpResponse(response)
   },
 
   // Check syntax via MCP
@@ -29,7 +45,7 @@ export const spiderApi = {
       name: 'check_syntax',
       arguments: { path }
     })
-    return response
+    return parseMcpResponse(response)
   },
 
   // Get spider template via MCP
@@ -38,7 +54,15 @@ export const spiderApi = {
       name: 'get_spider_template',
       arguments: {}
     })
-    return response
+    // MCP 返回: { content: [{ type: "text", text: "模板内容..." }] }
+    // 模板内容直接在 text 字段中，不是 JSON 格式
+    if (response?.content?.[0]?.text) {
+      const templateText = response.content[0].text
+      console.log('Template text loaded, length:', templateText?.length)
+      return templateText
+    }
+    console.log('Unexpected template response:', response)
+    return ''
   },
 
   // Debug spider rule via MCP
@@ -47,6 +71,6 @@ export const spiderApi = {
       name: 'debug_spider_rule',
       arguments: params
     })
-    return response
+    return parseMcpResponse(response)
   }
 }

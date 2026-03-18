@@ -64,6 +64,75 @@ drpy-node-admin/
 
 Admin 面板通过 drpy-node-mcp 与主项目通信，需要后端提供相应的 API 接口。
 
+### 日志功能说明
+
+日志查看页面使用 WebSocket 实时接收后端日志。确保：
+
+1. **开发环境**：
+   - 后端服务器运行在 `http://localhost:5757`
+   - Vite 开发服务器自动代理 `/ws` 请求到后端
+
+2. **生产环境**：
+   - 确保后端的 `/ws` 端点可访问
+   - 如果前后端分离部署，配置 `VITE_BACKEND_URL` 环境变量
+   - 示例：`VITE_BACKEND_URL=http://your-backend:5757`
+
+### 部署说明
+
+#### 开发环境
+```bash
+# 终端 1: 启动后端
+npm run dev
+
+# 终端 2: 启动前端
+cd drpy-node-admin
+npm run dev
+```
+
+#### 生产环境
+```bash
+# 构建前端
+cd drpy-node-admin
+npm run build
+
+# 将 dist 目录部署到静态服务器
+# 或配置反向代理将 /admin 请求指向 dist 目录
+```
+
+#### Nginx 配置示例
+```nginx
+server {
+    listen 80;
+    server_name your-domain.com;
+
+    # 主服务
+    location / {
+        proxy_pass http://localhost:5757;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+
+    # WebSocket 支持
+    location /ws {
+        proxy_pass http://localhost:5757;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+
+    # Admin 面板
+    location /admin {
+        alias /path/to/drpy-node-admin/dist;
+        try_files $uri $uri/ /admin/index.html;
+    }
+}
+```
+
 ## License
 
 MIT

@@ -27,6 +27,25 @@ export const fileApi = {
       name: 'read_file',
       arguments: { path }
     })
+    // MCP 返回格式: { content: [{ type: "text", text: '{"type":"text","content":"..."}' }] }
+    // 需要解析多层结构，同时保持与 Files.vue 的兼容性
+    console.log('read_file raw response:', response)
+    if (response?.content?.[0]?.text) {
+      try {
+        const parsed = JSON.parse(response.content[0].text)
+        console.log('read_file parsed:', parsed)
+        // 返回与 Files.vue 兼容的格式
+        if (parsed.type === 'text') {
+          return { type: 'text', content: parsed.content }
+        } else if (parsed.type === 'image') {
+          return { type: 'image', dataUrl: parsed.dataUrl }
+        }
+        return parsed
+      } catch (e) {
+        // 如果解析失败，可能直接返回文本
+        return { type: 'text', content: response.content[0].text }
+      }
+    }
     return response
   },
 
@@ -36,7 +55,9 @@ export const fileApi = {
       name: 'write_file',
       arguments: { path, content }
     })
-    return response
+    console.log('write_file response:', response)
+    // MCP 返回格式: { content: [{ type: "text", text: "Successfully wrote..." }] }
+    return response?.content?.[0]?.text || response
   },
 
   // Delete file via MCP
