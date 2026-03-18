@@ -71,7 +71,7 @@ export async function readFile(req, reply) {
         }
 
         const ext = path.extname(filePath).toLowerCase();
-        const imageExts = ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.ico', '.bmp'];
+        const imageExts = ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.ico', '.bmp', '.tiff', '.tif'];
 
         if (imageExts.includes(ext)) {
             // 图片文件 - 返回 base64

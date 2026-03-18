@@ -15,26 +15,36 @@ const pageContainer = ref(null)
 
 // 支持的文件类型
 const SUPPORTED_TEXT_EXTENSIONS = new Set([
-  'js', 'json', 'md', 'txt', 'html', 'htm', 'css', 'scss', 'less', 'xml', 'py',
+  'js', 'json', 'md', 'txt', 'html', 'htm', 'css', 'scss', 'less', 'xml', 'py', 'php',
   'ts', 'vue', 'jsx', 'tsx', 'yaml', 'yml', 'ini', 'conf', 'config', 'env',
   'gitignore', 'eslintrc', 'prettierrc', 'babelrc', 'editorconfig',
-  'lock', 'csv', 'sql', 'sh', 'bat', 'cmd', 'ps1', 'log'
+  'lock', 'csv', 'sql', 'sh', 'bat', 'cmd', 'ps1', 'log', 'out', 'err',
+  'c', 'cpp', 'h', 'hpp', 'cs', 'go', 'rs', 'rb', 'java', 'kt', 'dart', 'swift',
+  'properties', 'toml', 'pom', 'gradle'
 ])
 
 const SUPPORTED_IMAGE_EXTENSIONS = new Set([
-  'png', 'jpg', 'jpeg', 'gif', 'svg', 'webp', 'ico', 'bmp'
+  'png', 'jpg', 'jpeg', 'gif', 'svg', 'webp', 'ico', 'bmp', 'tiff', 'tif'
 ])
 
-const isSupportedFile = (fileName) => {
-  const ext = fileName.split('.').pop()?.toLowerCase()
-  return SUPPORTED_TEXT_EXTENSIONS.has(ext) || SUPPORTED_IMAGE_EXTENSIONS.has(ext)
-}
+const EXACT_TEXT_FILES = new Set([
+  'license', 'makefile', 'dockerfile', 'caddyfile', 'readme', 'changelog', 'authors'
+])
 
 const getFileType = (fileName) => {
-  const ext = fileName.split('.').pop()?.toLowerCase()
-  if (SUPPORTED_IMAGE_EXTENSIONS.has(ext)) return 'image'
-  if (SUPPORTED_TEXT_EXTENSIONS.has(ext)) return 'text'
+  const nameLower = fileName.toLowerCase()
+  let ext = ''
+  if (nameLower.includes('.')) {
+    ext = nameLower.split('.').pop()
+  }
+  
+  if (ext && SUPPORTED_IMAGE_EXTENSIONS.has(ext)) return 'image'
+  if ((ext && SUPPORTED_TEXT_EXTENSIONS.has(ext)) || EXACT_TEXT_FILES.has(nameLower)) return 'text'
   return 'unsupported'
+}
+
+const isSupportedFile = (fileName) => {
+  return getFileType(fileName) !== 'unsupported'
 }
 
 const pathParts = computed(() => {
