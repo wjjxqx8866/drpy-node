@@ -34,10 +34,13 @@ const menuNames = {
     ]"
   >
     <!-- Logo -->
-    <div class="flex items-center justify-between h-16 px-6 border-b border-gray-200 dark:border-gray-700 shrink-0">
-      <h1 class="text-xl font-bold text-primary-600 dark:text-primary-400">
-        DRPYS ADMIN
-      </h1>
+    <div class="flex items-center h-16 px-6 border-b border-gray-200 dark:border-gray-700 shrink-0">
+      <div class="flex items-center gap-3">
+        <img src="/drpys.png" alt="Logo" class="w-8 h-8 rounded-full" />
+        <h1 class="text-xl font-bold text-primary-600 dark:text-primary-400">
+          DRPYS ADMIN
+        </h1>
+      </div>
     </div>
 
     <!-- Navigation -->
