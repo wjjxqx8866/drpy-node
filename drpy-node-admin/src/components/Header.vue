@@ -21,7 +21,7 @@ const route = useRoute()
 
       <!-- Page title -->
       <h2 class="text-lg font-semibold text-gray-900 dark:text-gray-100">
-        {{ route.meta.title || 'DRPY Node Admin' }}
+        {{ route.meta.title || 'DRPYS ADMIN' }}
       </h2>
     </div>
 

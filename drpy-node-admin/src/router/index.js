@@ -64,6 +64,10 @@ router.beforeEach((to, from, next) => {
   if (window.innerWidth < 1024) {
     themeStore.closeSidebar()
   }
+  
+  // Update document title
+  document.title = to.meta.title ? `${to.meta.title} - DRPYS ADMIN` : 'DRPYS ADMIN'
+  
   next()
 })
 

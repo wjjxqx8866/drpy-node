@@ -36,7 +36,7 @@ const menuNames = {
     <!-- Logo -->
     <div class="flex items-center justify-between h-16 px-6 border-b border-gray-200 dark:border-gray-700 shrink-0">
       <h1 class="text-xl font-bold text-primary-600 dark:text-primary-400">
-        DRPY Admin
+        DRPYS ADMIN
       </h1>
     </div>
 
