@@ -24,7 +24,17 @@ const sourcesList = computed(() => {
     type: 'catvod',
     path: `spider/catvod/${name}`
   }))
-  return [...jsSources, ...catvodSources]
+  const phpSources = (systemStore.sources.php || []).map(name => ({
+    name,
+    type: 'php',
+    path: `spider/php/${name}`
+  }))
+  const pySources = (systemStore.sources.py || []).map(name => ({
+    name,
+    type: 'py',
+    path: `spider/py/${name}`
+  }))
+  return [...jsSources, ...catvodSources, ...phpSources, ...pySources]
 })
 
 const filterType = ref('all')
@@ -109,12 +119,14 @@ const editSource = (source) => {
           </div>
 
           <!-- Type filter -->
-          <div class="flex gap-2">
+          <div class="flex gap-2 flex-wrap">
             <button
               v-for="type in [
                 { value: 'all', label: '全部' },
                 { value: 'js', label: 'JS' },
-                { value: 'catvod', label: 'CatVod' }
+                { value: 'catvod', label: 'CatVod' },
+                { value: 'php', label: 'PHP' },
+                { value: 'py', label: 'HIPY' }
               ]"
               :key="type.value"
               @click="filterType = type.value"
@@ -132,8 +144,8 @@ const editSource = (source) => {
 
     <!-- Scrollable Content -->
     <div class="sources-content">
-      <!-- Stats -->
-      <div class="grid grid-cols-3 gap-4">
+    <!-- Stats -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
       <div class="card p-4 text-center">
         <p class="text-2xl font-bold text-gray-900 dark:text-gray-100">{{ filteredSources.length }}</p>
         <p class="text-sm text-gray-500 dark:text-gray-400">显示</p>
@@ -145,6 +157,14 @@ const editSource = (source) => {
       <div class="card p-4 text-center">
         <p class="text-2xl font-bold text-purple-600">{{ systemStore.sources.catvod?.length || 0 }}</p>
         <p class="text-sm text-gray-500 dark:text-gray-400">CatVod 源</p>
+      </div>
+      <div class="card p-4 text-center">
+        <p class="text-2xl font-bold text-indigo-600">{{ systemStore.sources.php?.length || 0 }}</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400">PHP 源</p>
+      </div>
+      <div class="card p-4 text-center">
+        <p class="text-2xl font-bold text-yellow-600">{{ systemStore.sources.py?.length || 0 }}</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400">HIPY 源</p>
       </div>
     </div>
 
@@ -170,9 +190,14 @@ const editSource = (source) => {
               <div class="flex items-center gap-3">
                 <span
                   class="badge text-xs"
-                  :class="source.type === 'js' ? 'badge-info' : 'badge-warning'"
+                  :class="{
+                    'badge-info': source.type === 'js',
+                    'badge-warning': source.type === 'catvod',
+                    'badge-primary': source.type === 'php',
+                    'badge-success': source.type === 'py'
+                  }"
                 >
-                  {{ source.type.toUpperCase() }}
+                  {{ source.type === 'py' ? 'HIPY' : source.type.toUpperCase() }}
                 </span>
                 <h4 class="font-medium text-gray-900 dark:text-gray-100 truncate">
                   {{ source.name }}

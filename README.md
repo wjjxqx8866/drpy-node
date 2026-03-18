@@ -35,6 +35,7 @@ nodejs作为服务端的drpy实现。全面升级异步写法
 
 ### 插件应用列表
 
+* [Admin 管理面板](/apps/admin)
 * [DrPlayer](/apps/drplayer)
 * [Websocket实时日志](/apps/websocket)
 * [cookie管理插件](/apps/cookie-butler/index.html)

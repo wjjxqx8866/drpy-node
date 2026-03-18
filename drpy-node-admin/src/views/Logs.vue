@@ -20,7 +20,7 @@ const getWebSocketUrl = () => {
   if (customBackendUrl) {
     const protocol = customBackendUrl.startsWith('https') ? 'wss:' : 'ws:'
     const host = customBackendUrl.replace(/^https?:\/\//, '').replace(/\/$/, '')
-    return `${protocol}//${host}/ws`
+    return `${protocol}//${host}/api/admin/logs/stream`
   }
 
   // 默认：使用当前主机的 WebSocket 端点

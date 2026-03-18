@@ -128,6 +128,10 @@ const restartService = async () => {
               : '服务异常' }}
           </span>
         </div>
+        <div class="mt-4 pt-4 border-t border-gray-100 dark:border-gray-700 flex justify-between items-center text-sm">
+           <span class="text-gray-500">系统版本</span>
+           <span class="font-mono font-medium">{{ systemStore.health.version || 'Unknown' }}</span>
+        </div>
       </div>
     </div>
 

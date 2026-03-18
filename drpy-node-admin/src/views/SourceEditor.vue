@@ -1,11 +1,14 @@
 <script setup>
-import { ref, onMounted, watch } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { fileApi } from '../api/file'
 import { spiderApi } from '../api/spider'
+import { VueMonacoEditor } from '@guolao/vue-monaco-editor'
+import { useThemeStore } from '../stores/theme'
 
 const route = useRoute()
 const router = useRouter()
+const themeStore = useThemeStore()
 
 // Page layout refs for sticky header
 const pageContainer = ref(null)
@@ -18,6 +21,18 @@ const saving = ref(false)
 const validating = ref(false)
 const validationError = ref(null)
 const hasChanges = ref(false)
+
+const editorLanguage = computed(() => {
+  const path = filePath.value.toLowerCase()
+  if (path.endsWith('.js')) return 'javascript'
+  if (path.endsWith('.php')) return 'php'
+  if (path.endsWith('.py')) return 'python'
+  return 'javascript'
+})
+
+// Check if dark mode is active
+const isDarkMode = computed(() => themeStore.isDark)
+
 
 onMounted(async () => {
   if (filePath.value) {
@@ -183,22 +198,31 @@ const goBack = () => {
     </div>
 
     <!-- Editor -->
-    <div class="card flex-1 overflow-hidden">
-      <div v-if="loading" class="h-full flex items-center justify-center">
+    <div class="card flex-1 overflow-hidden flex flex-col relative min-h-[400px]">
+      <div v-if="loading" class="h-full flex items-center justify-center flex-1">
         <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
       </div>
 
-      <textarea
-        v-else
-        v-model="fileContent"
-        class="w-full h-full min-h-[500px] p-4 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-mono text-sm resize-none focus:outline-none"
-        placeholder="// 编辑源文件内容..."
-        spellcheck="false"
-      />
+      <div v-else class="absolute inset-0">
+        <vue-monaco-editor
+          v-model:value="fileContent"
+          :language="editorLanguage"
+          :theme="isDarkMode ? 'vs-dark' : 'vs'"
+          :options="{
+            automaticLayout: true,
+            minimap: { enabled: false },
+            fontSize: 14,
+            wordWrap: 'on',
+            scrollBeyondLastLine: false,
+            tabSize: 4
+          }"
+          height="100%"
+        />
+      </div>
     </div>
 
       <!-- Status bar -->
-      <div class="mt-2 flex items-center justify-between text-sm text-gray-500 dark:text-gray-400">
+      <div class="mt-2 flex-shrink-0 flex items-center justify-between text-sm text-gray-500 dark:text-gray-400">
         <span>{{ fileContent.split('\n').length }} 行</span>
         <span v-if="hasChanges" class="text-orange-600 dark:text-orange-400">有未保存的更改</span>
       </div>
@@ -210,8 +234,9 @@ const goBack = () => {
 .editor-page {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 8rem - 4rem);
-  min-height: 500px;
+  height: calc(100vh - 4rem - 2rem); /* 4rem for header, 2rem for padding */
+  min-height: 400px;
+  overflow: hidden; /* Prevent page-level scrollbar */
 }
 
 .editor-header {
@@ -220,7 +245,9 @@ const goBack = () => {
 
 .editor-content {
   flex: 1;
-  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
   min-height: 0;
+  overflow: hidden; /* Prevent content-level scrollbar */
 }
 </style>

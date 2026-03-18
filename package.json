@@ -1,6 +1,6 @@
 {
   "name": "drpy-node",
-  "version": "1.3.30",
+  "version": "1.3.31",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -28,7 +28,7 @@
     "test:bundle": "cd drpy-node-bundle && node localDsCoreTest.js",
     "test-bun:bundle": "cd drpy-node-bundle && bun localDsCoreTest.js",
     "admin:dev": "cd drpy-node-admin && npm run dev",
-    "admin:build": "cd drpy-node-admin && npm run build",
+    "admin:build": "cd drpy-node-admin && npm run build:apps",
     "admin:install": "cd drpy-node-admin && npm install"
   },
   "engines": {

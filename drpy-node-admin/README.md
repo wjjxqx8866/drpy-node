@@ -60,6 +60,65 @@ drpy-node-admin/
 └── package.json       # 项目配置
 ```
 
+## SPA 集成与部署 (重要)
+
+本项目被设计为 drpy-node 的一个子应用 (SPA 插件)，默认部署在 `/apps/admin/` 路径下。为了确保单页面应用(SPA)在子目录下正常运行并解决刷新 404 问题，采用了与 `drplayer` 一致的配置模式。
+
+### 1. 关键配置
+
+#### 环境变量 (.env.production.apps)
+用于指定生产构建时的基础路径：
+```env
+# 子目录部署配置 - 部署到 /apps/admin/ 目录
+VITE_BASE_PATH=/apps/admin/
+```
+
+#### Vite 配置 (vite.config.js)
+构建配置会自动读取环境变量中的 `VITE_BASE_PATH`：
+```javascript
+// 基础路径：优先使用环境变量 VITE_BASE_PATH，否则使用默认值
+base: mode.includes('production') ? (env.VITE_BASE_PATH || './') : '/'
+```
+
+#### 路由配置 (src/router/index.js)
+Vue Router 必须使用与 `base` 一致的 History 模式，否则会导致路由跳转失效或刷新白屏：
+```javascript
+const router = createRouter({
+  // 必须传入 base 路径
+  history: createWebHistory(import.meta.env.VITE_BASE_PATH || import.meta.env.BASE_URL),
+  routes
+})
+```
+
+### 2. 后端集成 (drpy-node)
+
+后端通过 `controllers/static.js` 和 `controllers/fastify-spa-routes.js` 提供支持：
+
+1.  **静态资源服务**：`fastify-static` 将 `apps` 目录映射到 `/apps/` 路由。
+2.  **SPA 路由回退**：`addSPARoutes` 插件拦截 `/apps/admin/*` 的请求，当请求的资源不存在时（如刷新页面），自动返回 `/apps/admin/index.html`，由前端路由接管。
+
+```javascript
+// controllers/static.js
+fastify.register(addSPARoutes, {
+    appsDir: options.appsDir,
+    spaApps: ['drplayer', 'admin'] // 注册为 SPA 应用
+});
+```
+
+### 3. 构建与发布
+
+**请务必使用以下命令进行构建，以确保加载正确的环境变量：**
+
+```bash
+# 在 drpy-node-admin 目录下
+npm run build:apps
+
+# 或者在项目根目录下
+npm run admin:build
+```
+
+构建产物将输出到 `../apps/admin` 目录，可以直接被 drpy-node 服务加载。
+
 ## 与 drpy-node 集成
 
 Admin 面板通过 drpy-node-mcp 与主项目通信，需要后端提供相应的 API 接口。
