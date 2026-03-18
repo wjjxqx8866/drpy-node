@@ -234,9 +234,8 @@ const goBack = () => {
 .editor-page {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 4rem - 2rem); /* 4rem for header, 2rem for padding */
-  min-height: 400px;
-  overflow: hidden; /* Prevent page-level scrollbar */
+  flex: 1;
+  height: 100%;
 }
 
 .editor-header {
@@ -248,6 +247,5 @@ const goBack = () => {
   display: flex;
   flex-direction: column;
   min-height: 0;
-  overflow: hidden; /* Prevent content-level scrollbar */
 }
 </style>

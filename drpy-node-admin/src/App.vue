@@ -37,10 +37,13 @@ const themeStore = useThemeStore()
 </template>
 
 <style>
-/* 应用容器 - 确保占满整个视口高度 */
+/* 应用容器 - 确保占满整个视口高度并禁止滚动 */
 .app-container {
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
   background-color: rgb(249 250 251);
+  display: flex;
 }
 
 .dark .app-container {
@@ -49,6 +52,11 @@ const themeStore = useThemeStore()
 
 /* 主内容区域 */
 .main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
   margin-left: 0;
 }
 
@@ -58,11 +66,15 @@ const themeStore = useThemeStore()
   }
 }
 
-/* 内容区域 - 确保有最小高度 */
+/* 内容区域 - 占据剩余高度并控制内部滚动 */
 .content-area {
-  padding: 1rem 1rem 1rem 1rem;
-  margin-top: 4rem;
-  min-height: calc(100vh - 4rem);
+  flex: 1;
+  padding: 1rem;
+  margin-top: 4rem; /* 为 Header 留出空间 */
+  overflow-y: auto; /* 允许内部滚动 */
+  height: calc(100vh - 4rem);
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 1024px) {
@@ -82,8 +94,11 @@ const themeStore = useThemeStore()
   opacity: 0;
 }
 
-/* 确保页面内容正确显示 */
+/* 确保页面内容正确显示并撑满高度 */
 .content-area > div {
-  min-height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0; /* 允许 flex 子项收缩 */
 }
 </style>
