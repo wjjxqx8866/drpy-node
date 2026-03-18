@@ -13,7 +13,7 @@ async function addSPARoutes(fastify, options) {
     for (const appName of spaApps) {
         // 1. 处理根路径重定向
         fastify.get(`/apps/${appName}`, async (request, reply) => {
-            return reply.redirect(301, `/apps/${appName}/`);
+            return reply.redirect(`/apps/${appName}/`, 301);
         });
 
         // 2. 处理应用根路径
