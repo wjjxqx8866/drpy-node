@@ -27,11 +27,18 @@ export async function executeQuery(req, reply) {
         }
 
         // 额外安全检查
-        const dangerousKeywords = ['drop ', 'delete ', 'insert ', 'update ', 'alter ', 'create ', 'truncate '];
+        const dangerousKeywords = [
+            'drop', 'delete', 'insert', 'update', 'alter', 'create', 'truncate', 
+            'replace', 'grant', 'revoke', 'lock', 'unlock', 'reindex', 'vacuum'
+        ];
+        
         for (const keyword of dangerousKeywords) {
-            if (trimmedSql.includes(keyword)) {
+            // Check for keyword surrounded by whitespace or non-word characters
+            // This prevents matching "update_time" but matches "update table" or "update\ntable"
+            const regex = new RegExp(`(^|[\\s\\W])${keyword}([\\s\\W]|$)`, 'i');
+            if (regex.test(trimmedSql)) {
                 return reply.code(403).send({
-                    error: `不允许使用 ${keyword.toUpperCase().trim()} 语句`
+                    error: `不允许使用 ${keyword.toUpperCase()} 语句`
                 });
             }
         }

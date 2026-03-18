@@ -5,6 +5,7 @@
 
 import path from 'path';
 import fs from 'fs-extra';
+import { validateBasicAuth } from '../utils/api_validate.js';
 
 // 导入子控制器
 import * as systemController from './admin/systemController.js';
@@ -72,6 +73,19 @@ const FULL_ENV_TEMPLATE = {
 
 // 导出路由配置
 export default async function adminController(fastify, options, done) {
+    // 注册 Basic Auth 验证钩子
+    fastify.addHook('preHandler', async (request, reply) => {
+        // 只对 /api/admin/* 接口进行验证
+        if (request.url.startsWith('/api/admin')) {
+            await new Promise((resolve, reject) => {
+                validateBasicAuth(request, reply, (err) => {
+                    if (err) reject(err);
+                    else resolve();
+                });
+            });
+        }
+    });
+
     // ==================== 系统管理 API ====================
     fastify.get('/api/admin/health', systemController.getHealth);
     fastify.post('/api/admin/restart', systemController.restartService);

@@ -6,10 +6,10 @@
 import fs from 'fs-extra';
 import path from 'path';
 import vm from 'vm';
-import { exec } from 'child_process';
+import { execFile } from 'child_process';
 import util from 'util';
 
-const execAsync = util.promisify(exec);
+const execFileAsync = util.promisify(execFile);
 
 // 列出所有源
 export async function listSources(req, reply) {
@@ -86,7 +86,7 @@ export async function validateSpider(req, reply) {
         // PHP 文件验证
         if (filePath.endsWith('.php')) {
             try {
-                await execAsync(`php -l "${fullPath}"`);
+                await execFileAsync('php', ['-l', fullPath]);
                 return reply.send({
                     isValid: true,
                     message: 'PHP 语法检查通过 (结构验证暂不支持)'
@@ -102,7 +102,7 @@ export async function validateSpider(req, reply) {
         // Python 文件验证
         if (filePath.endsWith('.py')) {
             try {
-                await execAsync(`python -m py_compile "${fullPath}"`);
+                await execFileAsync('python', ['-m', 'py_compile', fullPath]);
                 return reply.send({
                     isValid: true,
                     message: 'Python 语法检查通过 (结构验证暂不支持)'
@@ -188,7 +188,7 @@ export async function checkSyntax(req, reply) {
         // PHP 语法检查
         if (filePath.endsWith('.php')) {
             try {
-                await execAsync(`php -l "${fullPath}"`);
+                await execFileAsync('php', ['-l', fullPath]);
                 return reply.send({
                     isValid: true,
                     message: 'PHP 语法检查通过'
@@ -339,8 +339,22 @@ export async function getLibsInfo(req, reply) {
 }
 
 function isSafePath(filePath) {
-    return !filePath.includes('..') &&
-           !filePath.includes('~') &&
-           !filePath.startsWith('/') &&
-           !filePath.includes('node_modules');
+    if (!filePath || typeof filePath !== 'string') return false;
+    
+    // Prevent absolute paths from user input directly
+    if (path.isAbsolute(filePath)) return false;
+
+    // Resolve full path and check if it is within CWD
+    const fullPath = path.resolve(process.cwd(), filePath);
+    const cwd = process.cwd();
+    
+    // Ensure the resolved path is inside the current working directory
+    if (!fullPath.startsWith(cwd)) return false;
+
+    // Blacklist check
+    const blacklist = ['node_modules', 'database.db', '.git', '.env'];
+    const relativePath = path.relative(cwd, fullPath);
+    if (blacklist.some(item => relativePath.includes(item))) return false;
+
+    return true;
 }

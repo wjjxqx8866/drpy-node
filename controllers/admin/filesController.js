@@ -175,9 +175,32 @@ export async function deleteFile(req, reply) {
 }
 
 function isSafePath(filePath) {
-    return !filePath.includes('..') &&
-           !filePath.includes('~') &&
-           !filePath.startsWith('/') &&
-           !filePath.includes('node_modules') &&
-           !filePath.includes('database.db');
+    if (!filePath || typeof filePath !== 'string') return false;
+    
+    // Prevent absolute paths from user input directly
+    if (path.isAbsolute(filePath)) return false;
+
+    // Resolve full path and check if it is within CWD
+    const fullPath = path.resolve(process.cwd(), filePath);
+    const cwd = process.cwd();
+    
+    // Ensure the resolved path is inside the current working directory
+    if (!fullPath.startsWith(cwd)) return false;
+
+    // Blacklist check for sensitive files/directories
+    const blacklist = [
+        'node_modules', 
+        'database.db', 
+        '.git', 
+        '.env',
+        'package-lock.json',
+        'yarn.lock'
+    ];
+    
+    // Check if any part of the relative path matches the blacklist
+    // We check against the relative path to avoid matching parts of CWD
+    const relativePath = path.relative(cwd, fullPath);
+    if (blacklist.some(item => relativePath.includes(item))) return false;
+
+    return true;
 }
