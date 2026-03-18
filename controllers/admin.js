@@ -13,6 +13,8 @@ import * as logsController from './admin/logsController.js';
 import * as sourcesController from './admin/sourcesController.js';
 import * as filesController from './admin/filesController.js';
 import * as dbController from './admin/dbController.js';
+import * as subController from './admin/subController.js';
+import * as backupController from './admin/backupController.js';
 
 // 配置常量
 const CONFIG_PATH = path.join(process.cwd(), 'config/env.json');
@@ -116,6 +118,16 @@ export default async function adminController(fastify, options, done) {
     fastify.post('/api/admin/db/query', dbController.executeQuery);
     fastify.get('/api/admin/db/tables', dbController.getTables);
     fastify.get('/api/admin/db/tables/:table/schema', dbController.getTableSchema);
+
+    // ==================== Sub文件管理 API ====================
+    fastify.get('/api/admin/sub/files', subController.getSubFiles);
+    fastify.get('/api/admin/sub/file', subController.getSubFileContent);
+    fastify.post('/api/admin/sub/file', subController.saveSubFileContent);
+
+    // ==================== 备份恢复 API ====================
+    fastify.get('/api/admin/backup/config', backupController.getBackupConfig);
+    fastify.post('/api/admin/backup/create', backupController.createBackup);
+    fastify.post('/api/admin/backup/restore', backupController.restoreBackup);
 
     // ==================== 路由信息 API ====================
     fastify.get('/api/admin/routes', getRoutesInfo);

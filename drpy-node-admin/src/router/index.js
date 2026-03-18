@@ -49,6 +49,18 @@ const routes = [
     name: 'database',
     component: () => import('../views/Database.vue'),
     meta: { title: '数据库' }
+  },
+  {
+    path: '/subscription',
+    name: 'subscription',
+    component: () => import('../views/Subscription.vue'),
+    meta: { title: '订阅管理' }
+  },
+  {
+    path: '/backup',
+    name: 'backup',
+    component: () => import('../views/Backup.vue'),
+    meta: { title: '系统备份' }
   }
 ]
 

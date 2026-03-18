@@ -93,5 +93,31 @@ export const adminApi = {
 
     async getApiDocs() {
         return client.get('/api/admin/docs');
+    },
+
+    // ==================== 订阅管理 ====================
+    async getSubFiles() {
+        return client.get('/api/admin/sub/files');
+    },
+
+    async getSubFile(name) {
+        return client.get('/api/admin/sub/file', { params: { name } });
+    },
+
+    async saveSubFile(name, content) {
+        return client.post('/api/admin/sub/file', { name, content });
+    },
+
+    // ==================== 备份恢复 ====================
+    async getBackupConfig() {
+        return client.get('/api/admin/backup/config');
+    },
+
+    async createBackup() {
+        return client.post('/api/admin/backup/create');
+    },
+
+    async restoreBackup() {
+        return client.post('/api/admin/backup/restore');
     }
 };
