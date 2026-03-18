@@ -1,5 +1,5 @@
 import path from 'path';
-import fs from 'fs-extra';
+import fs from '../../utils/fsWrapper.js';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);

@@ -1,4 +1,4 @@
-import fs from 'fs-extra';
+import fs from '../fsWrapper.js';
 import path from 'path';
 
 export async function readLogLines(lines = 50) {

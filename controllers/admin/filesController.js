@@ -3,7 +3,7 @@
  * 提供文件列表、读取、写入、删除功能
  */
 
-import fs from 'fs-extra';
+import fs from '../../utils/fsWrapper.js';
 import path from 'path';
 import mime from 'mime-types';
 

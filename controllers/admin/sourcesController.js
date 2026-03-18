@@ -3,7 +3,7 @@
  * 提供源列表、验证、语法检查、模板获取等功能
  */
 
-import fs from 'fs-extra';
+import fs from '../../utils/fsWrapper.js';
 import path from 'path';
 import vm from 'vm';
 import { execFile } from 'child_process';

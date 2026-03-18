@@ -3,7 +3,7 @@
  * 提供日志读取
  */
 
-import fs from 'fs-extra';
+import fs from '../../utils/fsWrapper.js';
 import path from 'path';
 
 // 读取日志
