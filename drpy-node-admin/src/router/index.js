@@ -27,6 +27,12 @@ const routes = [
     meta: { title: '源编辑器' }
   },
   {
+    path: '/parses',
+    name: 'parses',
+    component: () => import('../views/Parses.vue'),
+    meta: { title: '解析管理' }
+  },
+  {
     path: '/logs',
     name: 'logs',
     component: () => import('../views/Logs.vue'),
