@@ -123,6 +123,8 @@ export default async function adminController(fastify, options) {
 
     // ==================== 备份恢复 API ====================
     fastify.get('/api/admin/backup/config', backupController.getBackupConfig);
+    fastify.post('/api/admin/backup/config', backupController.updateBackupConfig);
+    fastify.post('/api/admin/backup/config/reset', backupController.resetBackupConfig);
     fastify.post('/api/admin/backup/create', backupController.createBackup);
     fastify.post('/api/admin/backup/restore', backupController.restoreBackup);
 
