@@ -33,6 +33,12 @@ const routes = [
     meta: { title: '解析管理' }
   },
   {
+    path: '/map-manager',
+    name: 'map-manager',
+    component: () => import('../views/MapManager.vue'),
+    meta: { title: '站源映射' }
+  },
+  {
     path: '/logs',
     name: 'logs',
     component: () => import('../views/Logs.vue'),
