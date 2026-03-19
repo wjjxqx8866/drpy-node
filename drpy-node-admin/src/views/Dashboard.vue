@@ -53,6 +53,20 @@ const getStatusBadge = (status) => {
 
 const restarting = ref(false)
 
+const formatUptime = (seconds) => {
+  if (!seconds) return '0秒';
+  const d = Math.floor(seconds / (3600 * 24));
+  const h = Math.floor((seconds % (3600 * 24)) / 3600);
+  const m = Math.floor((seconds % 3600) / 60);
+  
+  let result = '';
+  if (d > 0) result += `${d}天`;
+  if (h > 0 || d > 0) result += `${h}时`;
+  result += `${m}分`;
+  
+  return result;
+}
+
 const restartService = async () => {
   if (!confirm('确定要重启 drpy-node 服务吗？这将中断所有连接。')) {
     return
@@ -115,17 +129,22 @@ const restartService = async () => {
             </span>
           </div>
         </div>
-        <div class="flex items-center gap-3">
-          <div
-            class="w-3 h-3 rounded-full animate-pulse-slow"
-            :class="systemStore.health.status === 'ok' || systemStore.health.status === 'healthy'
-              ? 'bg-green-500'
-              : 'bg-red-500'"
-          />
-          <span class="text-gray-600 dark:text-gray-400">
-            {{ systemStore.health.status === 'ok' || systemStore.health.status === 'healthy'
-              ? '服务运行正常'
-              : '服务异常' }}
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div
+              class="w-3 h-3 rounded-full animate-pulse-slow"
+              :class="systemStore.health.status === 'ok' || systemStore.health.status === 'healthy'
+                ? 'bg-green-500'
+                : 'bg-red-500'"
+            />
+            <span class="text-gray-600 dark:text-gray-400">
+              {{ systemStore.health.status === 'ok' || systemStore.health.status === 'healthy'
+                ? '服务运行正常'
+                : '服务异常' }}
+            </span>
+          </div>
+          <span v-if="systemStore.health.uptime" class="text-sm text-gray-500">
+            运行时长: {{ formatUptime(systemStore.health.uptime) }}
           </span>
         </div>
         <div class="mt-4 pt-4 border-t border-gray-100 dark:border-gray-700 flex justify-between items-center text-sm">
