@@ -74,17 +74,14 @@ const FULL_ENV_TEMPLATE = {
 };
 
 // 导出路由配置
-export default async function adminController(fastify, options, done) {
+export default async function adminController(fastify, options) {
     // 注册 Basic Auth 验证钩子
-    fastify.addHook('preHandler', async (request, reply) => {
+    fastify.addHook('preHandler', (request, reply, done) => {
         // 只对 /api/admin/* 接口进行验证
         if (request.url.startsWith('/api/admin')) {
-            await new Promise((resolve, reject) => {
-                validateBasicAuth(request, reply, (err) => {
-                    if (err) reject(err);
-                    else resolve();
-                });
-            });
+            validateBasicAuth(request, reply, done);
+        } else {
+            done();
         }
     });
 
@@ -146,8 +143,6 @@ export default async function adminController(fastify, options, done) {
             }
         });
     }
-
-    done();
 }
 
 // ==================== 辅助函数 ====================
