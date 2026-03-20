@@ -125,6 +125,7 @@ todo:
 * [drpyS源属性说明](docs/ruleAttr.md)
 * [drpy2写源简述](docs/ruleDesc.md)
 * [关姐算法搭建说明](docs/suanfa.md)
+* [重要问题记录](docs/issue.md)
 
 ## 问题说明
 
