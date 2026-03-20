@@ -16,6 +16,7 @@ import * as dbController from './admin/dbController.js';
 import * as subController from './admin/subController.js';
 import * as backupController from './admin/backupController.js';
 import * as pluginsController from './admin/pluginsController.js';
+import * as terminalController from './admin/terminalController.js';
 
 // 配置常量
 const CONFIG_PATH = path.join(process.cwd(), 'config/env.json');
@@ -89,6 +90,7 @@ export default async function adminController(fastify, options) {
     // ==================== 系统管理 API ====================
     fastify.get('/api/admin/health', systemController.getHealth);
     fastify.post('/api/admin/restart', systemController.restartService);
+    fastify.get('/api/admin/terminal/ws', { websocket: true }, terminalController.handleTerminalWs);
 
     // ==================== 日志 API ====================
     fastify.get('/api/admin/logs', logsController.getLogs);

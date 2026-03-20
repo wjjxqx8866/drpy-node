@@ -79,6 +79,12 @@ const routes = [
     name: 'backup',
     component: () => import('../views/Backup.vue'),
     meta: { title: '系统备份' }
+  },
+  {
+    path: '/terminal',
+    name: 'terminal',
+    component: () => import('../views/Terminal.vue'),
+    meta: { title: '终端模拟' }
   }
 ]
 
