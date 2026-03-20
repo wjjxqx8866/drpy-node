@@ -114,6 +114,12 @@ export async function readFile(req, reply) {
 // 写入文件
 export async function writeFile(req, reply) {
     try {
+        if (process.env.READ_ONLY_MODE === '1') {
+            return reply.code(403).send({
+                error: '系统当前处于只读模式，禁止修改文件'
+            });
+        }
+
         const { path: filePath, content } = req.body;
 
         if (!filePath || !isSafePath(filePath)) {
@@ -144,6 +150,12 @@ export async function writeFile(req, reply) {
 // 删除文件
 export async function deleteFile(req, reply) {
     try {
+        if (process.env.READ_ONLY_MODE === '1') {
+            return reply.code(403).send({
+                error: '系统当前处于只读模式，禁止删除文件'
+            });
+        }
+
         const { path: filePath } = req.query; // in fastify, DELETE params might be in query or we can use body depending on client
 
         const fp = filePath || (req.body && req.body.path);

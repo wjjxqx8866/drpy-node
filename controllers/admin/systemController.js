@@ -59,6 +59,13 @@ export async function getHealth(req, reply) {
 // 服务重启
 export async function restartService(req, reply) {
     try {
+        if (process.env.READ_ONLY_MODE === '1') {
+            return reply.send({
+                success: false,
+                message: '系统当前处于只读模式，禁止远程重启服务'
+            });
+        }
+
         // 检查是否在 PM2 环境运行
         try {
             await execPromise('pm2 restart drpys');
