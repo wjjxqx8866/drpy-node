@@ -1,4 +1,5 @@
 import os from 'os';
+import { PROJECT_ROOT } from '../../utils/pathHelper.js';
 
 let pty;
 let isPtyAvailable = false;
@@ -48,7 +49,7 @@ export const handleTerminalWs = (socket, req) => {
         name: 'xterm-color',
         cols: 80,
         rows: 30,
-        cwd: process.cwd(),
+        cwd: PROJECT_ROOT,
         env: process.env
     });
 

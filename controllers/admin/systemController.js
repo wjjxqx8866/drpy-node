@@ -10,6 +10,7 @@ import path from 'path';
 import fs from '../../utils/fsWrapper.js';
 import { isPhpAvailable, phpVersion } from '../../utils/phpEnv.js';
 import { daemon } from '../../utils/daemonManager.js';
+import { PROJECT_ROOT } from '../../utils/pathHelper.js';
 
 const execPromise = util.promisify(exec);
 
@@ -18,7 +19,7 @@ export async function getHealth(req, reply) {
     try {
         const uptime = process.uptime();
         const memory = process.memoryUsage();
-        const packageJson = await fs.readJson(path.join(process.cwd(), 'package.json'));
+        const packageJson = await fs.readJson(path.join(PROJECT_ROOT, 'package.json'));
 
         let pythonAvailable = false;
         try {

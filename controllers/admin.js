@@ -17,9 +17,10 @@ import * as subController from './admin/subController.js';
 import * as backupController from './admin/backupController.js';
 import * as pluginsController from './admin/pluginsController.js';
 import * as terminalController from './admin/terminalController.js';
+import { PROJECT_ROOT } from '../utils/pathHelper.js';
 
 // 配置常量
-const CONFIG_PATH = path.join(process.cwd(), 'config/env.json');
+const CONFIG_PATH = path.join(PROJECT_ROOT, 'config/env.json');
 
 const FULL_ENV_TEMPLATE = {
     "ali_token": "",
@@ -261,7 +262,7 @@ async function getEnv(req, reply) {
 
 async function getVersion(req, reply) {
     try {
-        const packageJson = await fs.readJson(path.join(process.cwd(), 'package.json'));
+        const packageJson = await fs.readJson(path.join(PROJECT_ROOT, 'package.json'));
         return reply.send({ version: packageJson.version });
     } catch (e) {
         reply.code(500).send({ error: e.message });
@@ -270,7 +271,7 @@ async function getVersion(req, reply) {
 
 async function getRoutesInfo(req, reply) {
     try {
-        const indexControllerPath = path.join(process.cwd(), 'controllers/index.js');
+        const indexControllerPath = path.join(PROJECT_ROOT, 'controllers/index.js');
 
         if (!await fs.pathExists(indexControllerPath)) {
             return reply.send({

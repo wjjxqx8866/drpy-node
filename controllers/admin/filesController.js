@@ -6,6 +6,7 @@
 import fs from '../../utils/fsWrapper.js';
 import path from 'path';
 import mime from 'mime-types';
+import { PROJECT_ROOT } from '../../utils/pathHelper.js';
 
 // 列出目录
 export async function listDirectory(req, reply) {
@@ -18,7 +19,7 @@ export async function listDirectory(req, reply) {
             });
         }
 
-        const fullPath = path.join(process.cwd(), dirPath);
+        const fullPath = path.join(PROJECT_ROOT, dirPath);
         const files = await fs.readdir(fullPath, { withFileTypes: true });
 
         const result = files.map(f => {
@@ -62,7 +63,7 @@ export async function readFile(req, reply) {
             });
         }
 
-        const fullPath = path.join(process.cwd(), filePath);
+        const fullPath = path.join(PROJECT_ROOT, filePath);
 
         if (!await fs.pathExists(fullPath)) {
             return reply.code(404).send({
@@ -121,7 +122,7 @@ export async function writeFile(req, reply) {
             });
         }
 
-        const fullPath = path.join(process.cwd(), filePath);
+        const fullPath = path.join(PROJECT_ROOT, filePath);
 
         // 确保目录存在
         await fs.ensureDir(path.dirname(fullPath));
@@ -153,7 +154,7 @@ export async function deleteFile(req, reply) {
             });
         }
 
-        const fullPath = path.join(process.cwd(), fp);
+        const fullPath = path.join(PROJECT_ROOT, fp);
 
         if (!await fs.pathExists(fullPath)) {
             return reply.code(404).send({
@@ -181,8 +182,8 @@ function isSafePath(filePath) {
     if (path.isAbsolute(filePath)) return false;
 
     // Resolve full path and check if it is within CWD
-    const fullPath = path.resolve(process.cwd(), filePath);
-    const cwd = process.cwd();
+    const fullPath = path.resolve(PROJECT_ROOT, filePath);
+    const cwd = PROJECT_ROOT;
     
     // Ensure the resolved path is inside the current working directory
     if (!fullPath.startsWith(cwd)) return false;

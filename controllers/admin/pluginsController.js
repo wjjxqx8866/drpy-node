@@ -1,8 +1,9 @@
 import path from 'path';
 import fs from '../../utils/fsWrapper.js';
 import { pathToFileURL } from 'url';
+import { PROJECT_ROOT } from '../../utils/pathHelper.js';
 
-const ROOT_DIR = process.cwd();
+const ROOT_DIR = PROJECT_ROOT;
 const userConfigPath = path.join(ROOT_DIR, '.plugins.js');
 const exampleConfigPath = path.join(ROOT_DIR, '.plugins.example.js');
 

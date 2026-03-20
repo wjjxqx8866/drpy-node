@@ -5,6 +5,7 @@
 
 import path from 'path';
 import { spawnSync } from 'child_process';
+import { PROJECT_ROOT } from '../../utils/pathHelper.js';
 
 let SQLiteDatabase = null;
 
@@ -204,7 +205,7 @@ export async function executeQuery(req, reply) {
             }
         }
 
-        const dbPath = path.join(process.cwd(), 'database.db');
+        const dbPath = path.join(PROJECT_ROOT, 'database.db');
         const Database = await getDatabaseClass();
         const db = new Database(dbPath);
 
@@ -228,7 +229,7 @@ export async function executeQuery(req, reply) {
 // 获取表结构
 export async function getTables(req, reply) {
     try {
-        const dbPath = path.join(process.cwd(), 'database.db');
+        const dbPath = path.join(PROJECT_ROOT, 'database.db');
         const Database = await getDatabaseClass();
         const db = new Database(dbPath);
 
@@ -259,7 +260,7 @@ export async function getTableSchema(req, reply) {
             });
         }
 
-        const dbPath = path.join(process.cwd(), 'database.db');
+        const dbPath = path.join(PROJECT_ROOT, 'database.db');
         const Database = await getDatabaseClass();
         const db = new Database(dbPath);
 
