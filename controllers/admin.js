@@ -90,6 +90,7 @@ export default async function adminController(fastify, options) {
     // ==================== 系统管理 API ====================
     fastify.get('/api/admin/health', systemController.getHealth);
     fastify.post('/api/admin/restart', systemController.restartService);
+    fastify.get('/api/admin/terminal/status', terminalController.getTerminalStatus);
     fastify.get('/api/admin/terminal/ws', { websocket: true }, terminalController.handleTerminalWs);
 
     // ==================== 日志 API ====================

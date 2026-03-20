@@ -1,7 +1,32 @@
 import os from 'os';
-import pty from 'node-pty';
+
+let pty;
+let isPtyAvailable = false;
+
+try {
+    pty = await import('node-pty');
+    // For ES modules, the default export might be nested depending on how it's built,
+    // but usually import() gives an object where the module exports are properties.
+    if (pty.default) {
+        pty = pty.default;
+    }
+    isPtyAvailable = true;
+} catch (error) {
+    console.warn('[Terminal] node-pty load failed, terminal feature will be disabled.', error.message);
+    isPtyAvailable = false;
+}
+
+export const getTerminalStatus = (req, reply) => {
+    return reply.send({ available: isPtyAvailable });
+};
 
 export const handleTerminalWs = (socket, req) => {
+    if (!isPtyAvailable) {
+        socket.send('\r\n\x1b[31m[!] Terminal feature is not available on this platform (node-pty failed to load).\x1b[0m\r\n');
+        socket.close();
+        return;
+    }
+
     // Determine shell based on platform
     const shell = os.platform() === 'win32' ? 'powershell.exe' : 'bash';
 

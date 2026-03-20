@@ -84,7 +84,20 @@ const routes = [
     path: '/terminal',
     name: 'terminal',
     component: () => import('../views/Terminal.vue'),
-    meta: { title: '终端模拟' }
+    meta: { title: '终端模拟' },
+    beforeEnter: async (to, from, next) => {
+      try {
+        const apiClient = (await import('../api/client.js')).default
+        const res = await apiClient.get('/api/admin/terminal/status')
+        if (res && res.available) {
+          next()
+        } else {
+          next('/')
+        }
+      } catch (e) {
+        next('/')
+      }
+    }
   }
 ]
 
