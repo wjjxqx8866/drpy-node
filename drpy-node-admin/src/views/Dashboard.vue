@@ -147,9 +147,19 @@ const restartService = async () => {
             运行时长: {{ formatUptime(systemStore.health.uptime) }}
           </span>
         </div>
-        <div class="mt-4 pt-4 border-t border-gray-100 dark:border-gray-700 flex justify-between items-center text-sm">
-           <span class="text-gray-500">系统版本</span>
-           <span class="badge badge-info font-mono text-xs">v{{ systemStore.health.version || 'Unknown' }}</span>
+        <div class="mt-4 pt-4 border-t border-gray-100 dark:border-gray-700 flex flex-col gap-2 text-sm">
+          <div class="flex justify-between items-center">
+            <span class="text-gray-500">运行环境</span>
+            <div class="flex items-center gap-1.5">
+              <span class="badge bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400 font-mono text-xs">{{ systemStore.health.platform?.platform }}</span>
+              <span class="badge bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-400 font-mono text-xs">{{ systemStore.health.platform?.arch }}</span>
+              <span class="badge bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-400 font-mono text-xs">Node {{ systemStore.health.platform?.nodeVersion }}</span>
+            </div>
+          </div>
+          <div class="flex justify-between items-center">
+             <span class="text-gray-500">系统版本</span>
+             <span class="badge badge-info font-mono text-xs">v{{ systemStore.health.version || 'Unknown' }}</span>
+          </div>
         </div>
       </div>
     </div>
