@@ -8,6 +8,8 @@ import { exec } from 'child_process';
 import util from 'util';
 import path from 'path';
 import fs from '../../utils/fsWrapper.js';
+import { isPhpAvailable, phpVersion } from '../../utils/phpEnv.js';
+import { daemon } from '../../utils/daemonManager.js';
 
 const execPromise = util.promisify(exec);
 
@@ -17,6 +19,13 @@ export async function getHealth(req, reply) {
         const uptime = process.uptime();
         const memory = process.memoryUsage();
         const packageJson = await fs.readJson(path.join(process.cwd(), 'package.json'));
+
+        let pythonAvailable = false;
+        try {
+            pythonAvailable = await daemon.isPythonAvailable();
+        } catch (err) {
+            console.error('检查 Python 状态失败:', err);
+        }
 
         return reply.send({
             status: 'ok',
@@ -31,6 +40,10 @@ export async function getHealth(req, reply) {
                 arch: os.arch(),
                 platform: os.platform(),
                 nodeVersion: process.version
+            },
+            env: {
+                php: isPhpAvailable ? (phpVersion || true) : false,
+                python: pythonAvailable
             },
             timestamp: Date.now()
         });

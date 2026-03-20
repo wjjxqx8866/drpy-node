@@ -158,7 +158,11 @@ const restartService = async () => {
           </div>
           <div class="flex justify-between items-center">
              <span class="text-gray-500">系统版本</span>
-             <span class="badge badge-info font-mono text-xs">v{{ systemStore.health.version || 'Unknown' }}</span>
+             <div class="flex items-center gap-1.5">
+               <span class="badge font-mono text-xs" :class="systemStore.health.env?.php ? 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400' : 'bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-400'" title="PHP环境状态">PHP {{ typeof systemStore.health.env?.php === 'string' ? systemStore.health.env.php : (systemStore.health.env?.php ? 'ON' : 'OFF') }}</span>
+               <span class="badge font-mono text-xs" :class="systemStore.health.env?.python ? 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400' : 'bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-400'" title="Python环境状态">Py {{ typeof systemStore.health.env?.python === 'string' ? systemStore.health.env.python : (systemStore.health.env?.python ? 'ON' : 'OFF') }}</span>
+               <span class="badge badge-info font-mono text-xs">v{{ systemStore.health.version || 'Unknown' }}</span>
+             </div>
           </div>
         </div>
       </div>
