@@ -22,7 +22,12 @@ const initTerminal = () => {
     cursorBlink: true,
     fontSize: 14,
     fontFamily: 'Menlo, Monaco, "Courier New", monospace',
-    theme: getThemeColors()
+    theme: getThemeColors(),
+    allowProposedApi: true,
+    // Enable better touch scrolling behavior
+    scrollback: 5000,
+    macOptionIsMeta: true,
+    scrollOnUserInput: true
   })
   
   fitAddon = new FitAddon()
@@ -30,6 +35,42 @@ const initTerminal = () => {
   
   term.open(terminalContainer.value)
   fitAddon.fit()
+
+  // Set up mobile scrolling workaround
+  const viewport = terminalContainer.value.querySelector('.xterm-viewport');
+  const screen = terminalContainer.value.querySelector('.xterm-screen');
+  
+  if (viewport && screen) {
+    let touchStartY = 0;
+    let touchStartScrollTop = 0;
+    
+    // Delegate touch events from the screen to the viewport
+    screen.addEventListener('touchstart', (e) => {
+      if (e.touches.length === 1) {
+        touchStartY = e.touches[0].clientY;
+        touchStartScrollTop = viewport.scrollTop;
+      }
+    }, { passive: true });
+
+    screen.addEventListener('touchmove', (e) => {
+      if (e.touches.length === 1) {
+        const touchCurrentY = e.touches[0].clientY;
+        const deltaY = touchStartY - touchCurrentY;
+        
+        // Prevent default to stop xterm from intercepting, but only if we actually scrolled
+        if (Math.abs(deltaY) > 0) {
+            // Apply delta relative to original start to avoid compounding rounding errors
+            viewport.scrollTop = touchStartScrollTop + deltaY;
+            if (e.cancelable) {
+              e.preventDefault();
+            }
+        }
+      }
+    }, { passive: false }); // Changed back to false to allow preventDefault
+
+    // Let xterm.js handle its own refresh on scroll
+    // viewport.addEventListener('scroll', () => { ... })
+  }
   
   // Handle terminal resize
   term.onResize(({ cols, rows }) => {
@@ -50,6 +91,7 @@ const initTerminal = () => {
     if (fitAddon) {
       try {
         fitAddon.fit()
+        if (term) term.scrollToBottom()
       } catch (e) {
         // ignore
       }
@@ -145,7 +187,15 @@ const getDefaultWsUrl = () => {
   return `${protocol}//${host}/api/admin/terminal/ws`
 }
 
+const preventGlobalScroll = () => {
+  if (window.scrollY > 0 || window.scrollX > 0) {
+    window.scrollTo(0, 0);
+  }
+}
+
 onMounted(() => {
+  window.addEventListener('scroll', preventGlobalScroll, { passive: true })
+  
   wsUrl.value = getDefaultWsUrl()
   
   nextTick(() => {
@@ -156,6 +206,8 @@ onMounted(() => {
 })
 
 onUnmounted(() => {
+  window.removeEventListener('scroll', preventGlobalScroll)
+  
   if (resizeObserver) {
     resizeObserver.disconnect()
   }
@@ -169,9 +221,9 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="h-full flex flex-col space-y-4">
+  <div class="terminal-page flex flex-col space-y-4">
     <!-- Header Controls -->
-    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-4">
+    <div class="terminal-header bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-4">
       <div class="flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center">
         <div class="flex-1 w-full max-w-2xl">
           <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
@@ -218,9 +270,9 @@ onUnmounted(() => {
     </div>
 
     <!-- Terminal Container -->
-    <div class="flex-1 bg-white dark:bg-[#1e1e1e] rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col min-h-[400px]">
+    <div class="terminal-content flex-1 bg-white dark:bg-[#1e1e1e] rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col min-h-0 relative">
       <!-- Mac-like window controls for aesthetic -->
-      <div class="h-8 bg-gray-100 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 flex items-center px-4 gap-2 select-none">
+      <div class="h-8 shrink-0 bg-gray-100 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 flex items-center px-4 gap-2 select-none">
         <div class="w-3 h-3 rounded-full bg-red-500"></div>
         <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
         <div class="w-3 h-3 rounded-full bg-green-500"></div>
@@ -228,20 +280,45 @@ onUnmounted(() => {
       </div>
       
       <!-- Actual xterm.js container -->
-      <div ref="terminalContainer" class="flex-1 p-2 terminal-wrapper w-full h-full overflow-hidden"></div>
+      <div class="flex-1 relative w-full overflow-hidden terminal-wrapper" style="touch-action: none;">
+        <div class="absolute inset-0 p-2">
+          <div ref="terminalContainer" class="w-full h-full"></div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+.terminal-page {
+  display: flex;
+  flex-direction: column;
+  height: calc(100dvh - 8rem);
+}
+</style>
 
 <style>
 .terminal-wrapper {
   /* Ensure xterm takes full height and width */
 }
-.terminal-wrapper .terminal {
-  height: 100%;
-}
 .terminal-wrapper .xterm-viewport {
   /* custom scrollbar for terminal */
   scrollbar-width: thin;
+  /* Improve scrolling on touch devices */
+  -webkit-overflow-scrolling: touch;
+}
+.terminal-wrapper .xterm-screen {
+  /* Improve scrolling on touch devices */
+  z-index: 1;
+}
+
+/* Ensure the page doesn't scroll globally when focusing the terminal */
+body:has(.terminal-page) {
+  overflow: hidden !important;
+  width: 100%;
+  height: 100%;
+}
+.xterm-viewport {
+  background-color: transparent !important; /* Help with rendering glitches */
 }
 </style>
