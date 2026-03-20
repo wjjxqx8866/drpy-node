@@ -17,10 +17,23 @@ try {
 }
 
 export const getTerminalStatus = (req, reply) => {
-    return reply.send({ available: isPtyAvailable });
+    // 检查环境变量是否启用了终端功能，默认不启用 (0 或 false)
+    const isTerminalEnabled = process.env.ENABLE_TERMINAL === '1' || process.env.ENABLE_TERMINAL === 'true';
+    
+    return reply.send({ 
+        available: isPtyAvailable && isTerminalEnabled 
+    });
 };
 
 export const handleTerminalWs = (socket, req) => {
+    const isTerminalEnabled = process.env.ENABLE_TERMINAL === '1' || process.env.ENABLE_TERMINAL === 'true';
+
+    if (!isTerminalEnabled) {
+        socket.send('\r\n\x1b[31m[!] Terminal feature is disabled. Please set ENABLE_TERMINAL=1 in .env to enable it.\x1b[0m\r\n');
+        socket.close();
+        return;
+    }
+
     if (!isPtyAvailable) {
         socket.send('\r\n\x1b[31m[!] Terminal feature is not available on this platform (node-pty failed to load).\x1b[0m\r\n');
         socket.close();
