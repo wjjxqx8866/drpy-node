@@ -69,6 +69,12 @@ const routes = [
     meta: { title: '订阅管理' }
   },
   {
+    path: '/plugins',
+    name: 'plugins',
+    component: () => import('../views/Plugins.vue'),
+    meta: { title: '插件管理' }
+  },
+  {
     path: '/backup',
     name: 'backup',
     component: () => import('../views/Backup.vue'),
