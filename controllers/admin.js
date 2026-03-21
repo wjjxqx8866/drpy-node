@@ -17,6 +17,7 @@ import * as subController from './admin/subController.js';
 import * as backupController from './admin/backupController.js';
 import * as pluginsController from './admin/pluginsController.js';
 import * as terminalController from './admin/terminalController.js';
+import * as cryptoController from './admin/cryptoController.js';
 import { PROJECT_ROOT } from '../utils/pathHelper.js';
 
 // 配置常量
@@ -141,6 +142,9 @@ export default async function adminController(fastify, options) {
     // ==================== 路由信息 API ====================
     fastify.get('/api/admin/routes', getRoutesInfo);
     fastify.get('/api/admin/docs', systemController.getApiDocs);
+
+    // ==================== 加解密 API ====================
+    fastify.post('/api/admin/crypto/decode', cryptoController.decode);
 
     // MCP 兼容层
     const ENABLE_MCP_COMPAT = process.env.ENABLE_MCP_COMPAT !== 'false';
