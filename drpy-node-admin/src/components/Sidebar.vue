@@ -8,6 +8,12 @@ const themeStore = useThemeStore()
 const route = useRoute()
 const isTerminalAvailable = ref(false)
 
+const goHome = () => {
+  if (window.confirm('确定要返回主页吗？')) {
+    window.location.href = '/'
+  }
+}
+
 onMounted(async () => {
   try {
     const res = await apiClient.get('/api/admin/terminal/status')
@@ -69,7 +75,11 @@ const menuNames = {
     ]"
   >
     <!-- Logo -->
-    <div class="flex items-center h-16 px-4 border-b border-gray-200 dark:border-gray-700 shrink-0">
+    <div 
+      class="flex items-center h-16 px-4 border-b border-gray-200 dark:border-gray-700 shrink-0 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+      @click="goHome"
+      title="返回主页"
+    >
       <div class="flex items-center gap-2">
         <img src="/drpys.png" alt="Logo" class="w-7 h-7 rounded-full" />
         <h1 class="text-lg font-bold text-primary-600 dark:text-primary-400 truncate">
