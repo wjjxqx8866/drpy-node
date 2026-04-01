@@ -4,6 +4,7 @@
   filterable: 0,
   quickSearch: 0,
   title: '设置中心',
+  isProxyPath: true,
   logo: 'https://avatars.githubusercontent.com/u/49803097?v=4',
   more: {
     sourceTag: '设置,动作',
@@ -65,6 +66,8 @@ let quick_data = {
     阿里: 'https://www.alipan.com/s/vgXMcowK8pQ',
     天翼: 'https://cloud.189.cn/web/share?code=INJbU3NbqyUj',
     百度: 'https://pan.baidu.com/s/1L0UIv4p0X0QrbbKErJuc_w?pwd=2pwj',
+    迅雷1: 'https://pan.xunlei.com/s/VOkBwLBNoXN8eO9WrcVbXdTcA1?pwd=8tvj#',
+    迅雷2: 'https://pan.xunlei.com/s/VOin43oarqFZiGguKJEeqZoGA1?pwd=kybc',
     移动1: 'https://yun.139.com/shareweb/#/w/i/0i5CLQ7BpV7Ai',
     移动2: 'https://caiyun.139.com/m/i?2jexC1gcjeN7q',
     移动3: 'https://yun.139.com/shareweb/#/w/i/2i2MoE9ZHn9p1',
@@ -72,6 +75,7 @@ let quick_data = {
     直链1: 'https://vdse.bdstatic.com//628ca08719cef5987ea2ae3c6f0d2386.mp4',
     嗅探1: 'https://www.6080kk.cc/haokanplay/178120-1-1.html',
     嗅探2: 'https://www.hahads.com/play/537106-3-1.html',
+    央视跨源: 'cctv://3c18e2b3bba249b78b831e910608cfec',
     多集: 'https://v.qq.com/x/cover/m441e3rjq9kwpsc/m00253deqqo.html@https://pan.quark.cn/s/6c8158e258f3@https://pan.baidu.com/s/1TdbgcwaMG1dK7B5pQ1LbBg?pwd=1234',
     海阔二级单线路: gzip(JSON.stringify({
         "actor": "剧集",
@@ -121,13 +125,15 @@ var rule = {
     类型: '设置',
     title: '设置中心',
     推荐: async function () {
-        let {publicUrl} = this;
+        let {publicUrl, requestHost} = this;
         // log('publicUrl:', publicUrl);
         let setIcon = urljoin(publicUrl, './images/icon_cookie/设置.png');
         let searchIcon = urljoin(publicUrl, './images/icon_cookie/搜索.jpg');
         let chatIcon = urljoin(publicUrl, './images/icon_cookie/chat.webp');
+        let drpysIcon = urljoin(publicUrl, './images/drpys.png');
+        let drpyshIcon = urljoin(publicUrl, './images/drpysh.png');
         const data = deepCopy(action_data);
-        data.push({
+        const data1 = {
             vod_id: JSON.stringify({
                 actionId: '源内搜索',
                 id: 'wd',
@@ -140,7 +146,33 @@ var rule = {
             vod_name: '源内搜索',
             vod_pic: searchIcon,
             vod_tag: 'action',
-        });
+        };
+        data.push(data1);
+        const data2 = {
+            vod_id: JSON.stringify({
+                actionId: 'browser',
+                type: 'browser',
+                title: 'DS仓库',
+                url: 'https://repo.tvshare.cn/',
+            }),
+            vod_name: 'DS仓库',
+            vod_pic: drpyshIcon,
+            vod_tag: 'action'
+        }
+        data.unshift(data2);
+        const data3 = {
+            vod_id: JSON.stringify({
+                actionId: 'browser',
+                type: 'browser',
+                title: '后台管理',
+                url: requestHost + '/apps/admin',
+                header: {'Authorization': 'Basic YWRtaW46ZHJweXM='},
+            }),
+            vod_name: '后台管理',
+            vod_pic: drpysIcon,
+            vod_tag: 'action'
+        };
+        data.unshift(data3);
         data.forEach(it => {
             if (!it.vod_pic) {
                 it.vod_pic = setIcon;
@@ -229,8 +261,8 @@ var rule = {
     aliScanCheck: null,
     biliScanCheck: null,
     host: 'http://empty',
-    class_name: '推送&夸克&UC&阿里&百度&哔哩&天翼&系统配置&测试&接口挂载&视频解析',
-    class_url: 'push&quark&uc&ali&baidu&bili&cloud&system&test&apiLink&videoParse',
+    class_name: '推送&夸克&UC&阿里&百度&哔哩&天翼&迅雷&系统配置&测试&接口挂载&视频解析',
+    class_url: 'push&quark&uc&ali&baidu&bili&cloud&xun&system&test&apiLink&videoParse',
     url: '/fyclass',
 
     预处理: async function (env) {
@@ -250,6 +282,7 @@ var rule = {
             'bili': urljoin(publicUrl, './images/icon_cookie/哔哩.png'),
             'cloud': urljoin(publicUrl, './images/icon_cookie/天翼.png'),
             'baidu': urljoin(publicUrl, './images/icon_cookie/百度.png'),
+            'xun': urljoin(publicUrl,'./images/icon_cookie/迅雷.jpg'),
             'adult': urljoin(publicUrl, './images/icon_cookie/chat.webp'),
             'test': urljoin(publicUrl, './icon.svg'),
             'lives': urljoin(publicUrl, './images/lives.jpg'),
@@ -387,6 +420,17 @@ var rule = {
                     vod_tag: 'action'
                 });
                 break;
+            case 'xun':
+                d.push(genMultiInput('xun_username', '设置迅雷账号', null, images.xun));
+                d.push(getInput('get_xun_username', '查看迅雷账号', images.xun));
+                d.push({
+                    vod_id: '迅雷登录',
+                    vod_name: '迅雷登录',
+                    vod_pic: images.xun,
+                    vod_remarks: '迅雷',
+                    vod_tag: 'action'
+                });
+                break;
             case 'system':
                 d.push(genMultiInput('hide_adult', '设置青少年模式', '把值设置为1将会在全部接口隐藏18+源，其他值不过滤，跟随订阅', images.settings));
                 d.push(getInput('get_hide_adult', '查看青少年模式', images.settings));
@@ -481,8 +525,7 @@ var rule = {
                 vod_name: '测试代理流',
                 vod_play_from: 'drpyS本地流代理',
                 // vod_play_url: '测试播放流$' + getProxyUrl().split('?')[0] + media_url + '#不代理直接播$' + media_url + '#8k播放$' + m3u8_url,
-                // vod_play_url: '测试播放流$' + getProxyUrl().split('?')[0] + media_url + '#不代理直接播$' + media_url
-                vod_play_url: '测试播放流$' + getProxyUrl() + '&url=' + media_url + '#不代理直接播$' + media_url
+                vod_play_url: '测试播放流$' + getProxyUrl().split('?')[0] + media_url + '#不代理直接播$' + media_url
             }
         }
     },
@@ -491,16 +534,15 @@ var rule = {
         let {input} = this;
         return {parse: 0, url: input}
     },
-    proxy_rule: async function (params) {
+    proxy_rule: async function () {
         let {input, proxyPath} = this;
-        const url = proxyPath || params.url;
+        const url = proxyPath;
         log('start proxy:', url);
         try {
             const headers = {
                 'user-agent': PC_UA,
             }
-            // return [200, null, url, headers, 2]
-            return [302, null, '', {location: url}]
+            return [200, null, url, headers, 2]
         } catch (e) {
             log('proxy error:', e.message);
             return [500, 'text/plain', e.message]
@@ -508,6 +550,24 @@ var rule = {
     },
     action: async function (action, value) {
         let {httpUrl, imageApi, requestHost, publicUrl} = this;
+        if (action === '迅雷登录'){
+            if(ENV.get('xun_username')!==''){
+                await Xun.getVerifyCode()
+                return {action: getVerify('verify', '验证码', '请输入验证码').vod_id}
+            }else {
+                return '账号不能为空！'
+            }
+        }
+        if (action === 'verify' && value){
+            ENV.set('xun_auth','')
+            let verification_code = JSON.parse(value).verify;
+            await Xun.getVerify(verification_code)
+            if(ENV.get('xun_auth')!==''){
+                return '登录成功'
+            }else {
+                return '登录失败'
+            }
+        }
         if (action === 'set-cookie') {
             return JSON.stringify({
                 action: {
@@ -1277,6 +1337,7 @@ var rule = {
             'cloud_cookie',
             'bili_cookie',
             'baidu_cookie',
+            'xun_username',
             'hide_adult',
             'thread',
             'play_local_proxy_type',
@@ -1315,6 +1376,7 @@ var rule = {
             'get_cloud_cookie',
             'get_bili_cookie',
             'get_baidu_cookie',
+            'get_xun_username',
             'get_hide_adult',
             'get_thread',
             'play_local_proxy_type',
@@ -1467,6 +1529,28 @@ var rule = {
 
 };
 
+function getVerify(actionId, title, desc, img) {
+    return {
+        vod_id: JSON.stringify({
+            actionId: actionId,
+            type: 'multiInput',
+            title: title,
+            width: 640,
+            msg: desc || '通过action配置的多项输入',
+            input: [
+                {
+                    id: 'verify',
+                    name: title,
+                    tip: `请输入${title}内容`,
+                    value: ''
+                }
+            ]
+        }),
+        vod_name: title,
+        vod_tag: 'action',
+        vod_pic: img || 'https://pic.qisuidc.cn/s/2024/10/23/6718c212f1fdd.webp',
+    }
+}
 
 function genMultiInput(actionId, title, desc, img) {
     return {
